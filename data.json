@@ -1,0 +1,15 @@
+{
+  "quarter": {
+    "label": "Q3 2026",
+    "sub": "Jul – Sep 2026",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "updated": "awaiting first sync",
+  "departments": [
+    { "dept": "Finance",    "rock": "Finance — Q3 rock (add title here)",    "progress": 0, "subtasks": 0 },
+    { "dept": "Operations", "rock": "Operations — Q3 rock (add title here)", "progress": 0, "subtasks": 0 },
+    { "dept": "Marketing",  "rock": "Marketing — Q3 rock (add title here)",  "progress": 0, "subtasks": 0 },
+    { "dept": "People",     "rock": "People — Q3 rock (add title here)",     "progress": 0, "subtasks": 0 }
+  ]
+}

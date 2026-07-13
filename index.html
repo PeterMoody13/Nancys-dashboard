@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nancy Spains — Q3 Leaderboard</title>
+<style>
+  /* ============================================================
+     NANCY SPAINS — OFFICE PROGRESS LEADERBOARD (live version)
+     Brand colours from nancyspains.co.uk. Georgia throughout.
+     Data comes from data.json, refreshed by the scheduled job.
+     ============================================================ */
+  :root{
+    --green-deep:  #02231f;
+    --green-panel: #063029;
+    --gold:        #c69947;
+    --gold-soft:   #d8b978;
+    --cream:       #f2e6c7;
+    --white:       #ffffff;
+    --muted:       #8fa8a0;
+    --track:       #0e352d;
+    --ontrack:     #3aa64a;
+    --risk:        #e0a02e;
+    --off:         #d0342c;
+    --done:        #2b9fb3;
+    --notstart:    #6b7c78;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{
+    height:100%;
+    background:var(--green-deep);
+    color:var(--white);
+    font-family:Georgia,'Times New Roman',serif;
+    overflow:hidden;
+  }
+  .screen{ height:100vh; display:flex; flex-direction:column; padding:4vh 4vw; }
+
+  header{ display:flex; align-items:flex-end; justify-content:space-between; }
+  .logo{ height:7.5vh; width:auto; display:block; }
+  .headline{ text-align:right; }
+  .headline h1{ font-size:4.2vh; color:var(--cream); font-weight:bold; letter-spacing:0.01em; }
+  .headline .sub{ font-size:2.0vh; color:var(--muted); margin-top:0.4vh; font-style:italic; }
+
+  .rule{ height:0.28vh; background:var(--gold); margin:2.2vh 0 0.8vh; }
+
+  .quarter{ display:flex; align-items:center; gap:1.2vw; margin-bottom:1.2vh; }
+  .quarter .qbar{ flex:1; height:0.7vh; background:var(--track); border-radius:1vh; overflow:hidden; }
+  .quarter .qfill{ height:100%; background:var(--gold); opacity:0.6; }
+  .quarter .qtext{ font-size:1.7vh; color:var(--muted); font-style:italic; white-space:nowrap; }
+
+  .board{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:1.6vh; }
+  .row{
+    display:grid;
+    grid-template-columns:6vw 22vw 1fr 12vw;
+    align-items:center;
+    gap:1.6vw;
+    padding:1.4vh 1.4vw;
+    border-radius:1.2vh;
+  }
+  .row.leader{ background:linear-gradient(90deg, rgba(198,153,71,0.16), rgba(198,153,71,0.02)); }
+
+  .rank{ font-size:6.5vh; font-weight:bold; color:var(--muted); text-align:center; line-height:1; }
+  .row.leader .rank{ color:var(--gold); }
+
+  .who .dept{ font-size:3.4vh; font-weight:bold; color:var(--cream); }
+  .who .rock{ font-size:1.9vh; color:var(--muted); margin-top:0.4vh;
+              overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  .metric .barwrap{ position:relative; height:2.4vh; background:var(--track);
+                    border-radius:2vh; overflow:hidden; }
+  .metric .fill{ position:absolute; left:0; top:0; height:100%; border-radius:2vh;
+                 width:0; transition:width 1.3s cubic-bezier(.2,.7,.2,1); }
+  .metric .pace{ position:absolute; top:-0.6vh; bottom:-0.6vh; width:0.25vh;
+                 background:var(--cream); opacity:0.8; }
+  .metric .pace::after{ content:"pace"; position:absolute; top:-2.0vh; left:50%;
+                 transform:translateX(-50%); font-size:1.1vh; font-style:italic;
+                 color:var(--muted); letter-spacing:0.05em; }
+
+  .right{ text-align:right; }
+  .right .pct{ font-size:4.6vh; font-weight:bold; color:var(--white);
+               font-variant-numeric:tabular-nums; line-height:1; }
+  .right .status{ font-size:1.7vh; font-weight:bold; letter-spacing:0.04em; margin-top:0.5vh; }
+
+  footer{ display:flex; justify-content:space-between; align-items:center;
+          margin-top:1.4vh; padding-top:1.4vh; border-top:0.28vh solid var(--gold); }
+  .tagline{ font-style:italic; font-size:2.0vh; color:var(--gold-soft); }
+  .updated{ font-size:1.7vh; color:var(--muted); }
+  .updated b{ color:var(--gold-soft); font-weight:normal; }
+</style>
+</head>
+<body>
+<div class="screen">
+
+  <header>
+    <img class="logo" src="https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png" alt="Nancy Spains">
+    <div class="headline">
+      <h1 id="boardTitle">Leaderboard</h1>
+      <div class="sub" id="periodSub">—</div>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+  <div class="quarter">
+    <span class="qtext" id="qLeft">—</span>
+    <div class="qbar"><div class="qfill" id="qFill"></div></div>
+    <span class="qtext" id="qRight"></span>
+  </div>
+
+  <main class="board" id="board"></main>
+
+  <footer>
+    <div class="tagline" id="values"></div>
+    <div class="updated">Updated <b id="lastUpdated">—</b></div>
+  </footer>
+
+</div>
+
+<script>
+/* ================================================================
+   THINGS YOU MIGHT EDIT
+   ---------------------------------------------------------------- */
+
+/* Company values — edit any time (order shown left to right). These
+   live here, not in Monday, so change them whenever they change. */
+const VALUES = ["Ambition", "Energy", "Ownership", "Hard Work"];
+
+/* Shown only if the live data can't be reached (so the TV never
+   goes blank). Normally the real numbers come from data.json. */
+const FALLBACK = {
+  quarter: { label:"Q3 2026", sub:"Jul – Sep 2026", start:"2026-07-01", end:"2026-09-30" },
+  updated: "offline",
+  departments: [
+    { dept:"Finance", rock:"—", progress:0 },
+    { dept:"Operations", rock:"—", progress:0 },
+    { dept:"Marketing", rock:"—", progress:0 },
+    { dept:"People", rock:"—", progress:0 }
+  ]
+};
+
+/* ================================================================
+   Logic below — no need to edit.
+   ================================================================ */
+const STATUS = {
+  ontrack:  { label:"On Target",   colour:"#3aa64a" },
+  risk:     { label:"At Risk",     colour:"#e0a02e" },
+  off:      { label:"Off Track",   colour:"#d0342c" },
+  done:     { label:"Complete",    colour:"#2b9fb3" },
+  notstart: { label:"Not Started", colour:"#6b7c78" }
+};
+
+function quarterElapsed(q){
+  const start = new Date(q.start+"T00:00:00");
+  const end   = new Date(q.end  +"T23:59:59");
+  const now   = new Date();
+  return Math.max(0, Math.min(1, (now - start) / (end - start)));
+}
+
+function deriveStatus(progress, expectedPct){
+  if(progress >= 100) return 'done';
+  if(progress <= 0 && expectedPct < 8) return 'notstart';
+  const delta = progress - expectedPct;
+  if(delta >= -8)  return 'ontrack';
+  if(delta >= -22) return 'risk';
+  return 'off';
+}
+
+function render(payload){
+  const q = payload.quarter;
+  const elapsed = quarterElapsed(q);
+  const expectedPct = Math.round(elapsed*100);
+
+  document.getElementById('boardTitle').textContent = q.label.split(' ')[0] + ' Leaderboard';
+  document.getElementById('periodSub').textContent = q.sub;
+  document.getElementById('qFill').style.width = (elapsed*100)+'%';
+  document.getElementById('qLeft').textContent = q.label;
+  document.getElementById('qRight').textContent = expectedPct + '% through the quarter';
+  document.getElementById('lastUpdated').textContent = payload.updated || '—';
+  document.getElementById('values').textContent = VALUES.join('   ·   ');
+
+  const rows = [...payload.departments].sort((a,b)=>b.progress-a.progress);
+  const board = document.getElementById('board');
+  board.innerHTML = '';
+  rows.forEach((d,i)=>{
+    const key = deriveStatus(d.progress, expectedPct);
+    const s = STATUS[key];
+    const row = document.createElement('div');
+    row.className = 'row' + (i===0 ? ' leader' : '');
+    row.innerHTML = `
+      <div class="rank">${i+1}</div>
+      <div class="who">
+        <div class="dept">${d.dept}</div>
+        <div class="rock">${d.rock || ''}</div>
+      </div>
+      <div class="metric">
+        <div class="barwrap">
+          <div class="fill" style="background:${s.colour}"></div>
+          <div class="pace" style="left:${expectedPct}%"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="pct">${d.progress}%</div>
+        <div class="status" style="color:${s.colour}">${s.label}</div>
+      </div>`;
+    board.appendChild(row);
+    const fill = row.querySelector('.fill');
+    requestAnimationFrame(()=>setTimeout(()=>{ fill.style.width = d.progress+'%'; }, 150));
+  });
+}
+
+async function loadAndRender(){
+  let payload;
+  try{
+    const res = await fetch('data.json?t=' + Date.now(), { cache:'no-store' });
+    if(!res.ok) throw new Error('bad response');
+    payload = await res.json();
+    if(!payload.departments || !payload.departments.length) throw new Error('empty');
+  }catch(e){
+    payload = FALLBACK;
+  }
+  render(payload);
+}
+
+loadAndRender();
+/* Re-check the data every 10 minutes (also recomputes the daily pace). */
+setInterval(loadAndRender, 10*60*1000);
+/* Full reload every 6 hours, in case the page itself is updated. */
+setTimeout(()=>location.reload(), 6*60*60*1000);
+</script>
+</body>
+</html>
