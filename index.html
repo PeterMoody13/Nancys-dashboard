@@ -130,10 +130,10 @@ const FALLBACK = {
   quarter: { label:"Q3 2026", sub:"Jul – Sep 2026", start:"2026-07-01", end:"2026-09-30" },
   updated: "offline",
   departments: [
-    { dept:"Finance", rock:"—", progress:0 },
-    { dept:"Operations", rock:"—", progress:0 },
-    { dept:"Marketing", rock:"—", progress:0 },
-    { dept:"People", rock:"—", progress:0 }
+    { dept:"Finance", rock:"—", progress:0, subtasks:0 },
+    { dept:"Operations", rock:"—", progress:0, subtasks:0 },
+    { dept:"Marketing", rock:"—", progress:0, subtasks:0 },
+    { dept:"People", rock:"—", progress:0, subtasks:0 }
   ]
 };
 
@@ -181,7 +181,8 @@ function render(payload){
   const board = document.getElementById('board');
   board.innerHTML = '';
   rows.forEach((d,i)=>{
-    const key = deriveStatus(d.progress, expectedPct);
+    /* A rock with no subtasks yet is "Not Started" (not "At Risk"). */
+    const key = (!d.subtasks) ? 'notstart' : deriveStatus(d.progress, expectedPct);
     const s = STATUS[key];
     const row = document.createElement('div');
     row.className = 'row' + (i===0 ? ' leader' : '');
