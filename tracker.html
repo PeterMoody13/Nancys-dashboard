@@ -57,7 +57,7 @@
   .todo{ display:flex; align-items:center; gap:clamp(12px,1.8vmin,20px); background:var(--green-panel);
     border-left:5px solid var(--muted); border-radius:10px; padding:clamp(12px,1.8vmin,20px); }
   .todo .txt{ flex:1; font-size:clamp(16px,2.4vmin,30px); color:var(--cream); }
-  .todo .meta{ font-size:clamp(12px,1.5vmin,18px); color:var(--muted); font-style:italic; }
+  .td-pills{ display:flex; align-items:center; gap:clamp(6px,1vmin,12px); flex:none; }
   .foot{ display:flex; align-items:center; justify-content:space-between;
     margin-top:clamp(10px,1.6vmin,18px); padding-top:clamp(8px,1.2vmin,14px); border-top:2px solid var(--gold); }
   .values{ font-style:italic; font-size:clamp(12px,1.6vmin,20px); color:var(--gold-soft); }
@@ -92,12 +92,14 @@ const PSTATUS = {
   stuck:   {label:"Stuck",         colour:"#d0342c"},
   done:    {label:"Done",          colour:"#3aa64a"}
 };
-const PRICOL = { High:"var(--hi)", Medium:"var(--med)", Low:"var(--lo)" };
+const PRICOL   = { High:"#d0342c", Medium:"#e0a02e", Low:"#3aa64a" };
+const STATECOL = { Open:"#8fa8a0", Doing:"#e0a02e", Done:"#3aa64a" };
 const DWELL = 15000;   /* ms per slide */
 
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK;
 
+function pill(label, colour){ return `<span class="st-pill" style="color:${colour}">${label}</span>`; }
 function topBar(q){
   return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
     <div class="when"><div class="lbl">Personal Tracker</div><div class="big">${q.label} · ${q.sub||''}</div></div></div>`;
@@ -114,7 +116,7 @@ function deptSlide(d,i,total,q){
           <span class="nm">${p.name}</span><span class="st-pill" style="color:${s.colour}">${s.label}</span></div>`;}).join('')
     : `<div class="empty">No pillars added yet.</div>`;
   const flags = (d.flags&&d.flags.length)
-    ? d.flags.map(f=>`<div class="flag"><span class="fdot" style="background:${PRICOL[f.priority]||'var(--med)'}"></span>${f.text}</div>`).join('')
+    ? d.flags.map(f=>`<div class="flag"><span class="fdot" style="background:${PRICOL[f.priority]||'#e0a02e'}"></span>${f.text}</div>`).join('')
     : `<div class="none">No flags — all clear.</div>`;
   return `<div class="slide">${topBar(q)}
     <div class="dept-name">${d.dept}</div>
@@ -125,8 +127,14 @@ function deptSlide(d,i,total,q){
 }
 function todoSlide(i,total,q){
   const items = (DATA.todos&&DATA.todos.length)
-    ? DATA.todos.map(t=>`<div class="todo" style="border-left-color:${PRICOL[t.priority]||'var(--med)'}">
-        <span class="txt">${t.text}</span><span class="meta">${t.priority} · ${t.state}</span></div>`).join('')
+    ? DATA.todos.map(t=>{
+        const pc = PRICOL[t.priority] || '#e0a02e';
+        const sc = STATECOL[t.state] || '#8fa8a0';
+        return `<div class="todo" style="border-left-color:${pc}">
+          <span class="txt">${t.text}</span>
+          <span class="td-pills">${pill(t.priority, pc)}${pill(t.state, sc)}</span>
+        </div>`;
+      }).join('')
     : `<div class="empty">Nothing on your list — nice.</div>`;
   return `<div class="slide">${topBar(q)}<div class="todo-head">My To-Do</div>
     <div class="todos">${items}</div>${foot(i,total)}</div>`;
