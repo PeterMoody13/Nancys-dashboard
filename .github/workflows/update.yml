@@ -2,8 +2,8 @@ name: Update dashboard data
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes (change if you like)
-  workflow_dispatch:          # lets you run it manually from the Actions tab
+    - cron: "*/2 * * * *"    # every 2 minutes (cron-job.org also pings this)
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -20,10 +20,13 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Read Monday and build data.json
-        run: node fetch-monday.js
+      - name: Read Monday + Outlook and build data
+        run: |
+          npm install node-ical --no-save
+          node fetch-monday.js
         env:
           MONDAY_TOKEN: ${{ secrets.MONDAY_TOKEN }}
+          ICS_URL: ${{ secrets.ICS_URL }}
 
       - name: Publish updated data
         run: |
