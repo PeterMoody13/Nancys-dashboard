@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 16:02",
+  "updated": "14 Jul 2026, 16:04",
   "departments": [
     {
       "dept": "Finance",
@@ -19,20 +19,7 @@
     },
     {
       "dept": "Operations",
-      "pillars": [
-        {
-          "name": "Test 1",
-          "status": "done"
-        },
-        {
-          "name": "Test 2",
-          "status": "working"
-        },
-        {
-          "name": "test 3",
-          "status": "working"
-        }
-      ],
+      "pillars": [],
       "flags": []
     },
     {
