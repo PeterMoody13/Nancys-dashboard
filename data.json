@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 14:31",
+  "updated": "14 Jul 2026, 14:34",
   "departments": [
     {
       "dept": "Finance",
@@ -16,8 +16,8 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock (add title here)",
-      "progress": 100,
-      "subtasks": 1
+      "progress": 33,
+      "subtasks": 3
     },
     {
       "dept": "Marketing",
