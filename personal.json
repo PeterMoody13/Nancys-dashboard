@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 15:12",
+  "updated": "14 Jul 2026, 15:14",
   "departments": [
     {
       "dept": "Finance",
@@ -66,6 +66,11 @@
       "text": "Contact Peter for Posh Cockney SLA",
       "priority": "Medium",
       "state": "Doing"
+    },
+    {
+      "text": "Setup dashboards on TV and iPad",
+      "priority": "Medium",
+      "state": "Open"
     }
   ]
 }
