@@ -1,0 +1,11 @@
+{
+  "quarter": { "label": "Q3 2026", "sub": "Jul – Sep 2026", "start": "2026-07-01", "end": "2026-09-30" },
+  "updated": "awaiting first sync",
+  "departments": [
+    { "dept": "Finance",    "pillars": [], "flags": [] },
+    { "dept": "Operations", "pillars": [], "flags": [] },
+    { "dept": "Marketing",  "pillars": [], "flags": [] },
+    { "dept": "People",     "pillars": [], "flags": [] }
+  ],
+  "todos": []
+}

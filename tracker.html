@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Nancy Spains — Personal Tracker</title>
+<style>
+  /* ============================================================
+     NANCY SPAINS — PERSONAL TRACKER (iPad, auto-rotating, LIVE)
+     Reads personal.json (refreshed by the scheduled job).
+     Pillars use Monday's status buttons:
+       grey = Not Started, amber = Working on it, red = Stuck, green = Done
+     ============================================================ */
+  :root{
+    --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
+    --cream:#f2e6c7; --white:#fff; --muted:#8fa8a0; --track:#0e352d;
+    --hi:#d0342c; --med:#e0a02e; --lo:#3aa64a;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; background:var(--green-deep); color:var(--white);
+    font-family:Georgia,'Times New Roman',serif; overflow:hidden; }
+  .stage{ position:relative; height:100vh; width:100vw; }
+  .slide{ position:absolute; inset:0; display:flex; flex-direction:column;
+    padding:clamp(20px,4vmin,56px); opacity:0; transition:opacity .6s ease; pointer-events:none; }
+  .slide.active{ opacity:1; pointer-events:auto; }
+  .top{ display:flex; align-items:center; justify-content:space-between;
+    border-bottom:2px solid var(--gold); padding-bottom:clamp(10px,1.6vmin,20px); }
+  .top .logo{ height:clamp(28px,5vmin,54px); width:auto; }
+  .top .when{ text-align:right; }
+  .top .when .lbl{ font-size:clamp(13px,1.7vmin,20px); color:var(--muted); font-style:italic; }
+  .top .when .big{ font-size:clamp(16px,2.4vmin,28px); color:var(--gold-soft); }
+  .dept-name{ font-size:clamp(30px,7vmin,72px); font-weight:bold; color:var(--gold);
+    margin:clamp(10px,2vmin,26px) 0 clamp(2px,.6vmin,8px); }
+  .dept-sub{ font-size:clamp(13px,1.7vmin,20px); color:var(--muted); font-style:italic;
+    margin-bottom:clamp(10px,1.6vmin,18px); }
+  .pillars{ flex:1; display:flex; flex-direction:column; gap:clamp(6px,1vmin,12px); overflow:hidden; }
+  .pillar{ display:flex; align-items:center; gap:clamp(10px,1.6vmin,18px);
+    padding:clamp(9px,1.5vmin,18px) clamp(10px,1.4vmin,16px); background:var(--green-panel); border-radius:12px; }
+  .pillar .dot{ width:clamp(11px,1.5vmin,18px); height:clamp(11px,1.5vmin,18px);
+    border-radius:50%; flex:none; box-shadow:0 0 10px currentColor; }
+  .pillar .nm{ flex:1; font-size:clamp(16px,2.5vmin,32px); color:var(--cream);
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .st-pill{ flex:none; font-size:clamp(12px,1.6vmin,20px); font-weight:bold; letter-spacing:.03em;
+    padding:clamp(4px,.7vmin,9px) clamp(10px,1.4vmin,18px); border-radius:40px; border:2px solid currentColor; }
+  .empty{ color:var(--muted); font-style:italic; font-size:clamp(15px,2.1vmin,26px); padding:clamp(10px,2vmin,20px) 0; }
+  .flags{ margin-top:clamp(12px,2vmin,22px); background:var(--green-panel);
+    border:1px solid rgba(198,153,71,.3); border-radius:14px; padding:clamp(12px,1.8vmin,20px); }
+  .flags h3{ font-size:clamp(13px,1.6vmin,18px); color:var(--gold); letter-spacing:.08em;
+    text-transform:uppercase; margin-bottom:clamp(6px,1vmin,12px); }
+  .flag{ display:flex; align-items:center; gap:clamp(8px,1.2vmin,14px);
+    font-size:clamp(14px,2vmin,24px); color:var(--white); padding:clamp(3px,.6vmin,7px) 0; }
+  .fdot{ width:clamp(9px,1.3vmin,15px); height:clamp(9px,1.3vmin,15px); border-radius:50%; flex:none; }
+  .flags .none{ color:var(--muted); font-style:italic; font-size:clamp(14px,1.9vmin,22px); }
+  .todo-head{ font-size:clamp(30px,7vmin,72px); font-weight:bold; color:var(--gold);
+    margin:clamp(10px,2vmin,26px) 0 clamp(12px,2vmin,22px); }
+  .todos{ flex:1; display:flex; flex-direction:column; gap:clamp(8px,1.4vmin,16px); }
+  .todo{ display:flex; align-items:center; gap:clamp(12px,1.8vmin,20px); background:var(--green-panel);
+    border-left:5px solid var(--muted); border-radius:10px; padding:clamp(12px,1.8vmin,20px); }
+  .todo .txt{ flex:1; font-size:clamp(16px,2.4vmin,30px); color:var(--cream); }
+  .todo .meta{ font-size:clamp(12px,1.5vmin,18px); color:var(--muted); font-style:italic; }
+  .foot{ display:flex; align-items:center; justify-content:space-between;
+    margin-top:clamp(10px,1.6vmin,18px); padding-top:clamp(8px,1.2vmin,14px); border-top:2px solid var(--gold); }
+  .values{ font-style:italic; font-size:clamp(12px,1.6vmin,20px); color:var(--gold-soft); }
+  .dots{ display:flex; gap:8px; }
+  .dots span{ width:9px; height:9px; border-radius:50%; background:var(--track); }
+  .dots span.on{ background:var(--gold); }
+  .timer{ position:absolute; left:0; top:0; height:4px; background:var(--gold); width:0; z-index:5; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage"><div class="timer" id="timer"></div></div>
+
+<script>
+/* ---- editable: your company values (shown in the footer) ---- */
+const VALUES = ["Ambition","Energy","Ownership","Hard Work"];
+
+/* shown only if live data can't be reached */
+const FALLBACK = {
+  quarter:{label:"Q3 2026", sub:"Jul – Sep 2026"},
+  updated:"offline",
+  departments:[
+    {dept:"Finance",pillars:[],flags:[]},{dept:"Operations",pillars:[],flags:[]},
+    {dept:"Marketing",pillars:[],flags:[]},{dept:"People",pillars:[],flags:[]}
+  ],
+  todos:[]
+};
+
+const LOGO = "https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png";
+const PSTATUS = {
+  notstart:{label:"Not Started",  colour:"#8fa8a0"},
+  working: {label:"Working on it", colour:"#e0a02e"},
+  stuck:   {label:"Stuck",         colour:"#d0342c"},
+  done:    {label:"Done",          colour:"#3aa64a"}
+};
+const PRICOL = { High:"var(--hi)", Medium:"var(--med)", Low:"var(--lo)" };
+const DWELL = 15000;   /* ms per slide */
+
+const stage = document.getElementById('stage');
+let idx = 0, iv = null, DATA = FALLBACK;
+
+function topBar(q){
+  return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
+    <div class="when"><div class="lbl">Personal Tracker</div><div class="big">${q.label} · ${q.sub||''}</div></div></div>`;
+}
+function foot(i,total){
+  let dots=''; for(let k=0;k<total;k++) dots+=`<span class="${k===i?'on':''}"></span>`;
+  return `<div class="foot"><div class="values">${VALUES.join('   ·   ')}</div><div class="dots">${dots}</div></div>`;
+}
+function deptSlide(d,i,total,q){
+  const done = (d.pillars||[]).filter(p=>p.status==='done').length;
+  const body = (d.pillars&&d.pillars.length)
+    ? d.pillars.map(p=>{ const s=PSTATUS[p.status]||PSTATUS.notstart;
+        return `<div class="pillar"><span class="dot" style="color:${s.colour};background:${s.colour}"></span>
+          <span class="nm">${p.name}</span><span class="st-pill" style="color:${s.colour}">${s.label}</span></div>`;}).join('')
+    : `<div class="empty">No pillars added yet.</div>`;
+  const flags = (d.flags&&d.flags.length)
+    ? d.flags.map(f=>`<div class="flag"><span class="fdot" style="background:${PRICOL[f.priority]||'var(--med)'}"></span>${f.text}</div>`).join('')
+    : `<div class="none">No flags — all clear.</div>`;
+  return `<div class="slide">${topBar(q)}
+    <div class="dept-name">${d.dept}</div>
+    <div class="dept-sub">${done} of ${(d.pillars||[]).length} pillars done · ${q.label}</div>
+    <div class="pillars">${body}</div>
+    <div class="flags"><h3>Your flags &amp; watch-list</h3>${flags}</div>
+    ${foot(i,total)}</div>`;
+}
+function todoSlide(i,total,q){
+  const items = (DATA.todos&&DATA.todos.length)
+    ? DATA.todos.map(t=>`<div class="todo" style="border-left-color:${PRICOL[t.priority]||'var(--med)'}">
+        <span class="txt">${t.text}</span><span class="meta">${t.priority} · ${t.state}</span></div>`).join('')
+    : `<div class="empty">Nothing on your list — nice.</div>`;
+  return `<div class="slide">${topBar(q)}<div class="todo-head">My To-Do</div>
+    <div class="todos">${items}</div>${foot(i,total)}</div>`;
+}
+
+function build(){
+  const q = DATA.quarter || FALLBACK.quarter;
+  const depts = DATA.departments || [];
+  const total = depts.length + 1;
+  let html = '<div class="timer" id="timer"></div>';
+  depts.forEach((d,i)=> html += deptSlide(d,i,total,q));
+  html += todoSlide(total-1,total,q);
+  stage.innerHTML = html;
+  if(idx >= total) idx = 0;
+  show(idx);
+  clearInterval(iv); iv = setInterval(next, DWELL);
+}
+function slides(){ return [...stage.querySelectorAll('.slide')]; }
+function show(n){
+  const S = slides(); if(!S.length) return;
+  idx = (n + S.length) % S.length;
+  S.forEach((s,i)=>s.classList.toggle('active', i===idx));
+  const timer = document.getElementById('timer');
+  if(timer){ timer.style.transition='none'; timer.style.width='0';
+    requestAnimationFrame(()=>{ timer.style.transition=`width ${DWELL}ms linear`; timer.style.width='100%'; }); }
+}
+function next(){ show(idx+1); }
+function go(n){ show(n); clearInterval(iv); iv=setInterval(next,DWELL); }
+
+async function load(){
+  try{
+    const res = await fetch('personal.json?t=' + Date.now(), { cache:'no-store' });
+    if(!res.ok) throw 0;
+    const j = await res.json();
+    if(j && j.departments) DATA = j;
+  }catch(e){ if(DATA===FALLBACK) {/* keep fallback */} }
+  build();
+}
+
+load();
+/* re-check the live data every 5 minutes */
+setInterval(load, 5*60*1000);
+/* full reload every 6 hours in case the page itself changes */
+setTimeout(()=>location.reload(), 6*60*60*1000);
+
+/* manual control */
+stage.addEventListener('click', ()=>go(idx+1));
+document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
+let x0=null;
+stage.addEventListener('touchstart', e=>x0=e.touches[0].clientX, {passive:true});
+stage.addEventListener('touchend', e=>{ if(x0===null)return; const dx=e.changedTouches[0].clientX-x0;
+  if(Math.abs(dx)>40) go(idx+(dx<0?1:-1)); x0=null; });
+</script>
+</body>
+</html>
