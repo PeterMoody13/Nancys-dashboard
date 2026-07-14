@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 15:21",
+  "updated": "14 Jul 2026, 15:22",
   "departments": [
     {
       "dept": "Finance",
@@ -71,6 +71,21 @@
       "text": "Dingle promotion",
       "priority": "High",
       "state": "Doing"
+    },
+    {
+      "text": "Setup Bi-weekly meetings",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Personal licences for AGMs",
+      "priority": "Medium",
+      "state": "Doing"
+    },
+    {
+      "text": "Weekly digest due Friday",
+      "priority": "Medium",
+      "state": "Open"
     }
   ]
 }
