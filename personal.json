@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 16:08",
+  "updated": "14 Jul 2026, 16:11",
   "departments": [
     {
       "dept": "Finance",
@@ -79,5 +79,12 @@
       "priority": "Medium",
       "state": "Doing"
     }
-  ]
+  ],
+  "today": [
+    {
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    }
+  ],
+  "todayLabel": "Tuesday 14 July"
 }
