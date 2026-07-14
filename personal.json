@@ -1,11 +1,71 @@
 {
-  "quarter": { "label": "Q3 2026", "sub": "Jul – Sep 2026", "start": "2026-07-01", "end": "2026-09-30" },
-  "updated": "awaiting first sync",
+  "quarter": {
+    "label": "Q3 2026",
+    "sub": "Jul – Sep 2026",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "updated": "14 Jul 2026, 14:41",
   "departments": [
-    { "dept": "Finance",    "pillars": [], "flags": [] },
-    { "dept": "Operations", "pillars": [], "flags": [] },
-    { "dept": "Marketing",  "pillars": [], "flags": [] },
-    { "dept": "People",     "pillars": [], "flags": [] }
+    {
+      "dept": "Finance",
+      "pillars": [
+        {
+          "name": "Make decision on Access v Workforce",
+          "status": "done"
+        }
+      ],
+      "flags": [
+        {
+          "text": "Finance pack format needs CEO sign-off",
+          "priority": "Medium"
+        }
+      ]
+    },
+    {
+      "dept": "Operations",
+      "pillars": [
+        {
+          "name": "Test 1",
+          "status": "done"
+        },
+        {
+          "name": "Test 2",
+          "status": "working"
+        },
+        {
+          "name": "test 3",
+          "status": "working"
+        }
+      ],
+      "flags": [
+        {
+          "text": "Stock SOP slipping behind pace — check with Nick",
+          "priority": "Medium"
+        }
+      ]
+    },
+    {
+      "dept": "Marketing",
+      "pillars": [],
+      "flags": [
+        {
+          "text": "CMO role still vacant — chase recruiter",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "dept": "People",
+      "pillars": [],
+      "flags": []
+    }
   ],
-  "todos": []
+  "todos": [
+    {
+      "text": "Contact Peter for Posh Cockney SLA",
+      "priority": "Medium",
+      "state": "Doing"
+    }
+  ]
 }
