@@ -162,13 +162,13 @@ async function load(){
     if(!res.ok) throw 0;
     const j = await res.json();
     if(j && j.departments) DATA = j;
-  }catch(e){ if(DATA===FALLBACK) {/* keep fallback */} }
+  }catch(e){ /* keep whatever we last had */ }
   build();
 }
 
 load();
-/* re-check the live data every 5 minutes */
-setInterval(load, 5*60*1000);
+/* re-check the live data every 60 seconds (kept snappy for your own edits) */
+setInterval(load, 60*1000);
 /* full reload every 6 hours in case the page itself changes */
 setTimeout(()=>location.reload(), 6*60*60*1000);
 
