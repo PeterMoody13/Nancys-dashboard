@@ -10,6 +10,7 @@
      Reads personal.json (refreshed by the scheduled job).
      Pillars use Monday's status buttons:
        grey = Not Started, amber = Working on it, red = Stuck, green = Done
+     To-dos are sorted High -> Medium -> Low.
      ============================================================ */
   :root{
     --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
@@ -51,13 +52,17 @@
     font-size:clamp(14px,2vmin,24px); color:var(--white); padding:clamp(3px,.6vmin,7px) 0; }
   .fdot{ width:clamp(9px,1.3vmin,15px); height:clamp(9px,1.3vmin,15px); border-radius:50%; flex:none; }
   .flags .none{ color:var(--muted); font-style:italic; font-size:clamp(14px,1.9vmin,22px); }
-  .todo-head{ font-size:clamp(30px,7vmin,72px); font-weight:bold; color:var(--gold);
-    margin:clamp(10px,2vmin,26px) 0 clamp(12px,2vmin,22px); }
-  .todos{ flex:1; display:flex; flex-direction:column; gap:clamp(8px,1.4vmin,16px); }
-  .todo{ display:flex; align-items:center; gap:clamp(12px,1.8vmin,20px); background:var(--green-panel);
-    border-left:5px solid var(--muted); border-radius:10px; padding:clamp(12px,1.8vmin,20px); }
-  .todo .txt{ flex:1; font-size:clamp(16px,2.4vmin,30px); color:var(--cream); }
-  .td-pills{ display:flex; align-items:center; gap:clamp(6px,1vmin,12px); flex:none; }
+  .todo-head{ font-size:clamp(28px,6vmin,64px); font-weight:bold; color:var(--gold);
+    margin:clamp(8px,1.6vmin,20px) 0 clamp(8px,1.4vmin,16px); }
+  /* to-dos: compact rows so a long list fits */
+  .todos{ flex:1; display:flex; flex-direction:column; gap:clamp(4px,.7vmin,9px); overflow:hidden; }
+  .todo{ display:flex; align-items:center; gap:clamp(10px,1.4vmin,16px); background:var(--green-panel);
+    border-left:4px solid var(--muted); border-radius:8px; padding:clamp(6px,1vmin,12px) clamp(10px,1.4vmin,16px); }
+  .todo .txt{ flex:1; font-size:clamp(13px,1.9vmin,23px); color:var(--cream);
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .td-pills{ display:flex; align-items:center; gap:clamp(5px,.8vmin,10px); flex:none; }
+  .td-pill{ font-size:clamp(10px,1.3vmin,16px); font-weight:bold; letter-spacing:.02em;
+    padding:clamp(2px,.4vmin,5px) clamp(7px,1vmin,13px); border-radius:40px; border:2px solid currentColor; }
   .foot{ display:flex; align-items:center; justify-content:space-between;
     margin-top:clamp(10px,1.6vmin,18px); padding-top:clamp(8px,1.2vmin,14px); border-top:2px solid var(--gold); }
   .values{ font-style:italic; font-size:clamp(12px,1.6vmin,20px); color:var(--gold-soft); }
@@ -94,12 +99,13 @@ const PSTATUS = {
 };
 const PRICOL   = { High:"#d0342c", Medium:"#e0a02e", Low:"#3aa64a" };
 const STATECOL = { Open:"#8fa8a0", Doing:"#e0a02e", Done:"#3aa64a" };
+const PRIORDER = { High:0, Medium:1, Low:2 };
 const DWELL = 15000;   /* ms per slide */
 
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK;
 
-function pill(label, colour){ return `<span class="st-pill" style="color:${colour}">${label}</span>`; }
+function pill(label, colour){ return `<span class="td-pill" style="color:${colour}">${label}</span>`; }
 function topBar(q){
   return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
     <div class="when"><div class="lbl">Personal Tracker</div><div class="big">${q.label} · ${q.sub||''}</div></div></div>`;
@@ -126,8 +132,10 @@ function deptSlide(d,i,total,q){
     ${foot(i,total)}</div>`;
 }
 function todoSlide(i,total,q){
-  const items = (DATA.todos&&DATA.todos.length)
-    ? DATA.todos.map(t=>{
+  const list = [...(DATA.todos||[])].sort(
+    (a,b)=>(PRIORDER[a.priority]??1) - (PRIORDER[b.priority]??1));
+  const items = list.length
+    ? list.map(t=>{
         const pc = PRICOL[t.priority] || '#e0a02e';
         const sc = STATECOL[t.state] || '#8fa8a0';
         return `<div class="todo" style="border-left-color:${pc}">
