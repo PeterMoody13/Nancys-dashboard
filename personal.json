@@ -5,22 +5,21 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 15:14",
+  "updated": "14 Jul 2026, 15:16",
   "departments": [
     {
       "dept": "Finance",
       "pillars": [
         {
           "name": "Make decision on Access v Workforce",
-          "status": "done"
+          "status": "working"
+        },
+        {
+          "name": "Create Standards Book",
+          "status": "working"
         }
       ],
-      "flags": [
-        {
-          "text": "Finance pack format needs CEO sign-off",
-          "priority": "Medium"
-        }
-      ]
+      "flags": []
     },
     {
       "dept": "Operations",
@@ -38,19 +37,14 @@
           "status": "working"
         }
       ],
-      "flags": [
-        {
-          "text": "Stock SOP slipping behind pace — check with Nick",
-          "priority": "Medium"
-        }
-      ]
+      "flags": []
     },
     {
       "dept": "Marketing",
       "pillars": [],
       "flags": [
         {
-          "text": "CMO role still vacant — chase recruiter",
+          "text": "CMO role still vacant",
           "priority": "High"
         }
       ]
@@ -58,7 +52,12 @@
     {
       "dept": "People",
       "pillars": [],
-      "flags": []
+      "flags": [
+        {
+          "text": "Monitor training enrolment",
+          "priority": "Medium"
+        }
+      ]
     }
   ],
   "todos": [
@@ -70,7 +69,7 @@
     {
       "text": "Setup dashboards on TV and iPad",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     }
   ]
 }
