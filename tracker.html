@@ -8,9 +8,7 @@
   /* ============================================================
      NANCY SPAINS — PERSONAL TRACKER (iPad, auto-rotating, LIVE)
      Reads personal.json (refreshed by the scheduled job).
-     Pillars use Monday's status buttons:
-       grey = Not Started, amber = Working on it, red = Stuck, green = Done
-     To-dos are sorted High -> Medium -> Low.
+     Rotation: each department -> My To-Do -> Today's calendar.
      ============================================================ */
   :root{
     --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
@@ -52,17 +50,18 @@
     font-size:clamp(14px,2vmin,24px); color:var(--white); padding:clamp(3px,.6vmin,7px) 0; }
   .fdot{ width:clamp(9px,1.3vmin,15px); height:clamp(9px,1.3vmin,15px); border-radius:50%; flex:none; }
   .flags .none{ color:var(--muted); font-style:italic; font-size:clamp(14px,1.9vmin,22px); }
-  .todo-head{ font-size:clamp(28px,6vmin,64px); font-weight:bold; color:var(--gold);
-    margin:clamp(8px,1.6vmin,20px) 0 clamp(8px,1.4vmin,16px); }
-  /* to-dos: compact rows so a long list fits */
-  .todos{ flex:1; display:flex; flex-direction:column; gap:clamp(4px,.7vmin,9px); overflow:hidden; }
-  .todo{ display:flex; align-items:center; gap:clamp(10px,1.4vmin,16px); background:var(--green-panel);
+  .head{ font-size:clamp(28px,6vmin,64px); font-weight:bold; color:var(--gold);
+    margin:clamp(8px,1.6vmin,20px) 0 clamp(2px,.5vmin,6px); }
+  .list{ flex:1; display:flex; flex-direction:column; gap:clamp(4px,.7vmin,9px); overflow:hidden; }
+  .row-item{ display:flex; align-items:center; gap:clamp(10px,1.4vmin,16px); background:var(--green-panel);
     border-left:4px solid var(--muted); border-radius:8px; padding:clamp(6px,1vmin,12px) clamp(10px,1.4vmin,16px); }
-  .todo .txt{ flex:1; font-size:clamp(13px,1.9vmin,23px); color:var(--cream);
+  .row-item .txt{ flex:1; font-size:clamp(13px,1.9vmin,23px); color:var(--cream);
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .td-pills{ display:flex; align-items:center; gap:clamp(5px,.8vmin,10px); flex:none; }
   .td-pill{ font-size:clamp(10px,1.3vmin,16px); font-weight:bold; letter-spacing:.02em;
     padding:clamp(2px,.4vmin,5px) clamp(7px,1vmin,13px); border-radius:40px; border:2px solid currentColor; }
+  .cal-time{ flex:none; min-width:clamp(52px,7vmin,96px); font-weight:bold; color:var(--gold-soft);
+    font-size:clamp(13px,1.9vmin,23px); font-variant-numeric:tabular-nums; }
   .foot{ display:flex; align-items:center; justify-content:space-between;
     margin-top:clamp(10px,1.6vmin,18px); padding-top:clamp(8px,1.2vmin,14px); border-top:2px solid var(--gold); }
   .values{ font-style:italic; font-size:clamp(12px,1.6vmin,20px); color:var(--gold-soft); }
@@ -76,36 +75,30 @@
 <div class="stage" id="stage"><div class="timer" id="timer"></div></div>
 
 <script>
-/* ---- editable: your company values (shown in the footer) ---- */
+/* ---- editable: your company values (footer) ---- */
 const VALUES = ["Ambition","Energy","Ownership","Hard Work"];
 
-/* shown only if live data can't be reached */
 const FALLBACK = {
-  quarter:{label:"Q3 2026", sub:"Jul – Sep 2026"},
-  updated:"offline",
-  departments:[
-    {dept:"Finance",pillars:[],flags:[]},{dept:"Operations",pillars:[],flags:[]},
-    {dept:"Marketing",pillars:[],flags:[]},{dept:"People",pillars:[],flags:[]}
-  ],
-  todos:[]
+  quarter:{label:"Q3 2026", sub:"Jul – Sep 2026"}, updated:"offline",
+  departments:[{dept:"Finance",pillars:[],flags:[]},{dept:"Operations",pillars:[],flags:[]},
+    {dept:"Marketing",pillars:[],flags:[]},{dept:"People",pillars:[],flags:[]}],
+  todos:[], today:[], todayLabel:""
 };
 
 const LOGO = "https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png";
 const PSTATUS = {
-  notstart:{label:"Not Started",  colour:"#8fa8a0"},
-  working: {label:"Working on it", colour:"#e0a02e"},
-  stuck:   {label:"Stuck",         colour:"#d0342c"},
-  done:    {label:"Done",          colour:"#3aa64a"}
+  notstart:{label:"Not Started",colour:"#8fa8a0"}, working:{label:"Working on it",colour:"#e0a02e"},
+  stuck:{label:"Stuck",colour:"#d0342c"}, done:{label:"Done",colour:"#3aa64a"}
 };
 const PRICOL   = { High:"#d0342c", Medium:"#e0a02e", Low:"#3aa64a" };
 const STATECOL = { Open:"#8fa8a0", Doing:"#e0a02e", Done:"#3aa64a" };
 const PRIORDER = { High:0, Medium:1, Low:2 };
-const DWELL = 15000;   /* ms per slide */
+const DWELL = 15000;
 
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK;
 
-function pill(label, colour){ return `<span class="td-pill" style="color:${colour}">${label}</span>`; }
+function pill(label,colour){ return `<span class="td-pill" style="color:${colour}">${label}</span>`; }
 function topBar(q){
   return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
     <div class="when"><div class="lbl">Personal Tracker</div><div class="big">${q.label} · ${q.sub||''}</div></div></div>`;
@@ -115,57 +108,60 @@ function foot(i,total){
   return `<div class="foot"><div class="values">${VALUES.join('   ·   ')}</div><div class="dots">${dots}</div></div>`;
 }
 function deptSlide(d,i,total,q){
-  const done = (d.pillars||[]).filter(p=>p.status==='done').length;
-  const body = (d.pillars&&d.pillars.length)
-    ? d.pillars.map(p=>{ const s=PSTATUS[p.status]||PSTATUS.notstart;
+  const done=(d.pillars||[]).filter(p=>p.status==='done').length;
+  const body=(d.pillars&&d.pillars.length)
+    ? d.pillars.map(p=>{const s=PSTATUS[p.status]||PSTATUS.notstart;
         return `<div class="pillar"><span class="dot" style="color:${s.colour};background:${s.colour}"></span>
           <span class="nm">${p.name}</span><span class="st-pill" style="color:${s.colour}">${s.label}</span></div>`;}).join('')
     : `<div class="empty">No pillars added yet.</div>`;
-  const flags = (d.flags&&d.flags.length)
+  const flags=(d.flags&&d.flags.length)
     ? d.flags.map(f=>`<div class="flag"><span class="fdot" style="background:${PRICOL[f.priority]||'#e0a02e'}"></span>${f.text}</div>`).join('')
     : `<div class="none">No flags — all clear.</div>`;
-  return `<div class="slide">${topBar(q)}
-    <div class="dept-name">${d.dept}</div>
+  return `<div class="slide">${topBar(q)}<div class="dept-name">${d.dept}</div>
     <div class="dept-sub">${done} of ${(d.pillars||[]).length} pillars done · ${q.label}</div>
     <div class="pillars">${body}</div>
-    <div class="flags"><h3>Your flags &amp; watch-list</h3>${flags}</div>
-    ${foot(i,total)}</div>`;
+    <div class="flags"><h3>Your flags &amp; watch-list</h3>${flags}</div>${foot(i,total)}</div>`;
 }
 function todoSlide(i,total,q){
-  const list = [...(DATA.todos||[])].sort(
-    (a,b)=>(PRIORDER[a.priority]??1) - (PRIORDER[b.priority]??1));
-  const items = list.length
-    ? list.map(t=>{
-        const pc = PRICOL[t.priority] || '#e0a02e';
-        const sc = STATECOL[t.state] || '#8fa8a0';
-        return `<div class="todo" style="border-left-color:${pc}">
-          <span class="txt">${t.text}</span>
-          <span class="td-pills">${pill(t.priority, pc)}${pill(t.state, sc)}</span>
-        </div>`;
-      }).join('')
+  const list=[...(DATA.todos||[])].sort((a,b)=>(PRIORDER[a.priority]??1)-(PRIORDER[b.priority]??1));
+  const items=list.length
+    ? list.map(t=>{const pc=PRICOL[t.priority]||'#e0a02e', sc=STATECOL[t.state]||'#8fa8a0';
+        return `<div class="row-item" style="border-left-color:${pc}"><span class="txt">${t.text}</span>
+          <span class="td-pills">${pill(t.priority,pc)}${pill(t.state,sc)}</span></div>`;}).join('')
     : `<div class="empty">Nothing on your list — nice.</div>`;
-  return `<div class="slide">${topBar(q)}<div class="todo-head">My To-Do</div>
-    <div class="todos">${items}</div>${foot(i,total)}</div>`;
+  return `<div class="slide">${topBar(q)}<div class="head">My To-Do</div>
+    <div class="list">${items}</div>${foot(i,total)}</div>`;
+}
+function todaySlide(i,total,q){
+  const evs=DATA.today||[];
+  const items=evs.length
+    ? evs.map(e=>`<div class="row-item" style="border-left-color:var(--gold)">
+        <span class="cal-time">${e.time}</span><span class="txt">${e.title}</span></div>`).join('')
+    : `<div class="empty">Nothing in the diary today.</div>`;
+  return `<div class="slide">${topBar(q)}<div class="head">Today</div>
+    <div class="dept-sub">${DATA.todayLabel||''}</div>
+    <div class="list">${items}</div>${foot(i,total)}</div>`;
 }
 
 function build(){
-  const q = DATA.quarter || FALLBACK.quarter;
-  const depts = DATA.departments || [];
-  const total = depts.length + 1;
-  let html = '<div class="timer" id="timer"></div>';
-  depts.forEach((d,i)=> html += deptSlide(d,i,total,q));
-  html += todoSlide(total-1,total,q);
-  stage.innerHTML = html;
-  if(idx >= total) idx = 0;
+  const q=DATA.quarter||FALLBACK.quarter;
+  const depts=DATA.departments||[];
+  const total=depts.length+2;   /* + My To-Do + Today */
+  let html='<div class="timer" id="timer"></div>';
+  depts.forEach((d,i)=> html+=deptSlide(d,i,total,q));
+  html+=todoSlide(total-2,total,q);
+  html+=todaySlide(total-1,total,q);
+  stage.innerHTML=html;
+  if(idx>=total) idx=0;
   show(idx);
-  clearInterval(iv); iv = setInterval(next, DWELL);
+  clearInterval(iv); iv=setInterval(next,DWELL);
 }
 function slides(){ return [...stage.querySelectorAll('.slide')]; }
 function show(n){
-  const S = slides(); if(!S.length) return;
-  idx = (n + S.length) % S.length;
+  const S=slides(); if(!S.length) return;
+  idx=(n+S.length)%S.length;
   S.forEach((s,i)=>s.classList.toggle('active', i===idx));
-  const timer = document.getElementById('timer');
+  const timer=document.getElementById('timer');
   if(timer){ timer.style.transition='none'; timer.style.width='0';
     requestAnimationFrame(()=>{ timer.style.transition=`width ${DWELL}ms linear`; timer.style.width='100%'; }); }
 }
@@ -174,21 +170,17 @@ function go(n){ show(n); clearInterval(iv); iv=setInterval(next,DWELL); }
 
 async function load(){
   try{
-    const res = await fetch('personal.json?t=' + Date.now(), { cache:'no-store' });
+    const res=await fetch('personal.json?t='+Date.now(),{cache:'no-store'});
     if(!res.ok) throw 0;
-    const j = await res.json();
-    if(j && j.departments) DATA = j;
-  }catch(e){ /* keep whatever we last had */ }
+    const j=await res.json();
+    if(j && j.departments) DATA=j;
+  }catch(e){}
   build();
 }
-
 load();
-/* re-check the live data every 60 seconds (kept snappy for your own edits) */
-setInterval(load, 60*1000);
-/* full reload every 6 hours in case the page itself changes */
+setInterval(load, 60*1000);            /* re-check data every 60s */
 setTimeout(()=>location.reload(), 6*60*60*1000);
 
-/* manual control */
 stage.addEventListener('click', ()=>go(idx+1));
 document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
 let x0=null;
