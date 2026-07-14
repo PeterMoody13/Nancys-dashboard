@@ -5,17 +5,13 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Jul 2026, 15:16",
+  "updated": "14 Jul 2026, 15:18",
   "departments": [
     {
       "dept": "Finance",
       "pillars": [
         {
-          "name": "Make decision on Access v Workforce",
-          "status": "working"
-        },
-        {
-          "name": "Create Standards Book",
+          "name": "Heineken funding",
           "status": "working"
         }
       ],
