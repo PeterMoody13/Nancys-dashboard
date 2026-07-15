@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 00:58",
+  "updated": "15 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -82,8 +82,12 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+      "time": "08:30",
+      "title": "Board Meeting"
+    },
+    {
+      "time": "10:15",
+      "title": "Nancy Spains x HUK: Trade Agreement"
     }
   ],
   "todayLabel": "Wednesday 15 July"
