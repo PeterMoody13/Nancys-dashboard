@@ -5,31 +5,69 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 13:24",
+  "updated": "15 Jul 2026, 13:26",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance — Q3 rock (add title here)",
       "progress": 50,
-      "subtasks": 4
+      "subtasks": 4,
+      "pillars": [
+        {
+          "name": "Funding - NatWest",
+          "status": "done"
+        },
+        {
+          "name": "Budget",
+          "status": "done"
+        },
+        {
+          "name": "Heineken Funding",
+          "status": "working"
+        },
+        {
+          "name": "Systems Automation",
+          "status": "working"
+        }
+      ]
     },
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock (add title here)",
       "progress": 0,
-      "subtasks": 0
+      "subtasks": 0,
+      "pillars": []
     },
     {
       "dept": "Marketing",
       "rock": "Marketing — Q3 rock (add title here)",
       "progress": 0,
-      "subtasks": 0
+      "subtasks": 0,
+      "pillars": []
     },
     {
       "dept": "People",
       "rock": "People — Q3 rock: Develop people systems.",
       "progress": 0,
-      "subtasks": 4
+      "subtasks": 4,
+      "pillars": [
+        {
+          "name": "Systems - Workforce",
+          "status": "working"
+        },
+        {
+          "name": "Recruitment Project",
+          "status": "working"
+        },
+        {
+          "name": "Internal Training",
+          "status": "working"
+        },
+        {
+          "name": "Apprenticeship Scheme",
+          "status": "working"
+        }
+      ]
     }
   ]
 }

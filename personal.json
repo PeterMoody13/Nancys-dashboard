@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 13:24",
+  "updated": "15 Jul 2026, 13:26",
   "departments": [
     {
       "dept": "Finance",
@@ -15,16 +15,16 @@
           "status": "done"
         },
         {
+          "name": "Budget",
+          "status": "done"
+        },
+        {
           "name": "Heineken Funding",
           "status": "working"
         },
         {
           "name": "Systems Automation",
           "status": "working"
-        },
-        {
-          "name": "Budget",
-          "status": "done"
         }
       ],
       "flags": []
