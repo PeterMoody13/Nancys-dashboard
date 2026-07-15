@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 13:50",
+  "updated": "15 Jul 2026, 13:52",
   "departments": [
     {
       "dept": "Finance",
@@ -65,7 +65,7 @@
           "status": "working"
         },
         {
-          "name": "Recruitment Project",
+          "name": "Recruitment Project - Organic Recruitment",
           "status": "working"
         },
         {
