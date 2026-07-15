@@ -5,11 +5,11 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 13:48",
+  "updated": "15 Jul 2026, 13:50",
   "departments": [
     {
       "dept": "Finance",
-      "rock": "Finance — Q3 rock: Financial Systems",
+      "rock": "Finance — Q3 rock: Financial systems",
       "progress": 50,
       "subtasks": 4,
       "pillars": [
@@ -33,10 +33,23 @@
     },
     {
       "dept": "Operations",
-      "rock": "Operations — Q3 rock (add title here)",
+      "rock": "Operations — Q3 rock: Operational systems",
       "progress": 0,
-      "subtasks": 0,
-      "pillars": []
+      "subtasks": 3,
+      "pillars": [
+        {
+          "name": "Systems Automation",
+          "status": "working"
+        },
+        {
+          "name": "Standards Book",
+          "status": "working"
+        },
+        {
+          "name": "Ops Manager - Trained",
+          "status": "working"
+        }
+      ]
     },
     {
       "dept": "Marketing",
