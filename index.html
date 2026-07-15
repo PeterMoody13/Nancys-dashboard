@@ -8,7 +8,7 @@
   /* ============================================================
      NANCY SPAINS — OFFICE WALL (auto-rotating + tap/swipe, LIVE)
      Reads data.json. Rotation: Overview -> each department's
-     pillars, looping. Status-based (no percentages / ranking).
+     quarterly rock + pillars, looping. Status-based (no % / rank).
      ============================================================ */
   :root{
     --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
@@ -41,8 +41,9 @@
   .ov-sum .none{ color:var(--muted); font-style:italic; }
 
   /* department detail */
-  .dept-name{ font-size:7vh; font-weight:bold; color:var(--gold); margin:2vh 0 .4vh; }
-  .dept-sub{ font-size:2vh; color:var(--muted); font-style:italic; margin-bottom:2vh; }
+  .dept-name{ font-size:6vh; font-weight:bold; color:var(--gold); margin:1.6vh 0 .2vh; }
+  .dept-rock{ font-size:3.2vh; color:var(--cream); margin:0 0 .3vh; }
+  .dept-sub{ font-size:1.9vh; color:var(--muted); font-style:italic; margin-bottom:1.8vh; }
   .pillars{ flex:1; display:flex; flex-direction:column; justify-content:flex-start; gap:1.4vh; }
   .pillar{ display:flex; align-items:center; gap:1.4vw; padding:1.6vh 1.4vw;
     background:var(--green-panel); border-radius:1.2vh; }
@@ -80,6 +81,12 @@ const DWELL_OV = 18000, DWELL_DEPT = 12000;
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK, dwells = [];
 
+function cleanRock(name, dept){
+  /* hide the placeholder text until a real rock title is set */
+  if(!name) return '';
+  if(/add title here/i.test(name)) return 'Quarterly rock — to be set';
+  return name;
+}
 function topBar(mainRight, subRight){
   return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
     <div class="rt"><h1>${mainRight}</h1><div class="sub">${subRight}</div></div></div>`;
@@ -114,8 +121,9 @@ function deptSlide(d,i,total,q){
         return `<div class="pillar"><span class="dot" style="color:${s.colour};background:${s.colour}"></span>
           <span class="nm">${p.name}</span><span class="st-pill" style="color:${s.colour}">${s.label}</span></div>`;}).join('')
     : `<div class="empty">No pillars added yet.</div>`;
-  return `<div class="slide">${topBar(q.label+' · '+q.sub,'Quarterly rock')}
+  return `<div class="slide">${topBar(q.label, q.sub)}
     <div class="dept-name">${d.dept}</div>
+    <div class="dept-rock">${cleanRock(d.rock, d.dept)}</div>
     <div class="dept-sub">${done} of ${(d.pillars||[]).length} pillars done</div>
     <div class="pillars">${body}</div>${foot(i,total)}</div>`;
 }
@@ -142,7 +150,7 @@ function show(n){
   clearTimeout(iv); iv=setTimeout(next, dw);
 }
 function next(){ show(idx+1); }
-function go(n){ show(n); }   /* show() also restarts the timer */
+function go(n){ show(n); }
 
 async function load(){
   try{ const res=await fetch('data.json?t='+Date.now(),{cache:'no-store'});
@@ -154,7 +162,7 @@ load();
 setInterval(load, 5*60*1000);
 setTimeout(()=>location.reload(), 6*60*60*1000);
 
-/* manual control — tap/click, swipe, arrow keys (same as the tracker) */
+/* manual control — tap/click, swipe, arrow keys */
 stage.addEventListener('click', ()=>go(idx+1));
 document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
 let x0=null;
