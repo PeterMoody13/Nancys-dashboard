@@ -1,21 +1,17 @@
 /* ============================================================
    Nancy Spains — Monday + Outlook reader
    Writes TWO files:
-     • data.json      -> the office TV leaderboard (wall)
-     • personal.json  -> your iPad Personal Tracker (pillars, flags,
-                         to-dos, and today's calendar)
-   Read-only. Needs env: MONDAY_TOKEN, and (optional) ICS_URL for
-   the calendar (your published Outlook calendar link).
+     • data.json      -> office TV: leaderboard + per-department pillars
+     • personal.json  -> your iPad: pillars, flags, to-dos, today's calendar
+   Read-only. env: MONDAY_TOKEN, and (optional) ICS_URL for the calendar.
    ============================================================ */
 
 const TOKEN = process.env.MONDAY_TOKEN;
-const ICS_URL = process.env.ICS_URL;   // published Outlook calendar (optional)
+const ICS_URL = process.env.ICS_URL;
 
-/* ---- Goals & Rocks board ---- */
 const GOALS_BOARD = 5099940269;
 const G_DEPT = "color_mm57e8mc", G_PERIOD = "color_mm5738b3", G_SUBSTATUS = "status";
 
-/* ---- Personal Tracker board ---- */
 const PERS_BOARD = 5100315281;
 const P_FOR = "color_mm58ee2b", P_PRIO = "color_mm58203f", P_STATE = "color_mm58grkm";
 const P_GROUP_TODOS = "topics", P_GROUP_FLAGS = "group_mm58t22c";
@@ -32,7 +28,6 @@ function currentQuarter(d = new Date()) {
   return { label:`Q${q} ${y}`, sub:`${mon[sm]} – ${mon[sm+2]} ${y}`,
     start: iso(new Date(Date.UTC(y, sm, 1))), end: iso(new Date(Date.UTC(y, sm + 3, 0))) };
 }
-
 async function monday(query) {
   const res = await fetch("https://api.monday.com/v2", {
     method: "POST",
@@ -43,7 +38,6 @@ async function monday(query) {
   if (json.errors) throw new Error(JSON.stringify(json.errors));
   return json.data;
 }
-
 function stamp() {
   return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day:"numeric", month:"short",
     year:"numeric", hour:"2-digit", minute:"2-digit" }).format(new Date());
@@ -54,19 +48,17 @@ function pillarStatus(t){ t=(t||"").trim().toLowerCase();
 function priority(t){ t=(t||"").toLowerCase();
   return t.includes("high")?"High":t.includes("low")?"Low":"Medium"; }
 
-/* ---- calendar helpers ---- */
+/* ---- calendar ---- */
 function tzOffsetMs(date, tz){
   const p = new Intl.DateTimeFormat("en-US",{ timeZone:tz, hour12:false,
     year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit" })
     .formatToParts(date).reduce((a,x)=>(a[x.type]=x.value,a),{});
-  const asUTC = Date.UTC(+p.year, +p.month-1, +p.day, +p.hour, +p.minute, +p.second);
-  return asUTC - date.getTime();
+  return Date.UTC(+p.year, +p.month-1, +p.day, +p.hour, +p.minute, +p.second) - date.getTime();
 }
 function todayFromICS(icsText){
   const ical = require("node-ical");
   const data = ical.parseICS(icsText);
-  const now = new Date();
-  const off = tzOffsetMs(now, TZ);
+  const now = new Date(), off = tzOffsetMs(now, TZ);
   const ymd = new Intl.DateTimeFormat("en-CA",{ timeZone:TZ }).format(now);
   const dayStart = new Date(new Date(ymd+"T00:00:00Z").getTime() - off);
   const dayEnd = new Date(dayStart.getTime() + 24*3600*1000);
@@ -75,32 +67,24 @@ function todayFromICS(icsText){
   const add = (startD, ev) => {
     const durMs = (ev.end && ev.start) ? (new Date(ev.end) - new Date(ev.start)) : 30*60000;
     const endD = new Date(startD.getTime() + durMs);
-    if (startD < dayEnd && endD > dayStart) {
-      const allDay = ev.datetype === "date";
-      out.push({ sort:startD.getTime(), time: allDay ? "All day" : fmt(startD),
+    if (startD < dayEnd && endD > dayStart)
+      out.push({ sort:startD.getTime(), time: ev.datetype==="date" ? "All day" : fmt(startD),
         title: (ev.summary || "(no title)").toString().trim() });
-    }
   };
   for (const k in data) {
     const ev = data[k];
     if (!ev || ev.type !== "VEVENT") continue;
     if (ev.rrule) {
-      const occ = ev.rrule.between(new Date(dayStart.getTime()-36*3600*1000), dayEnd, true);
-      occ.forEach(d => {
+      ev.rrule.between(new Date(dayStart.getTime()-36*3600*1000), dayEnd, true).forEach(d => {
         const dd = new Date(d);
-        if (ev.exdate) {
-          const hit = Object.values(ev.exdate).some(x => new Date(x).toDateString() === dd.toDateString());
-          if (hit) return;
-        }
+        if (ev.exdate && Object.values(ev.exdate).some(x => new Date(x).toDateString() === dd.toDateString())) return;
         if (ev.recurrences) {
           const ov = Object.values(ev.recurrences).find(r => new Date(r.recurrenceid).toDateString() === dd.toDateString());
           if (ov) { add(new Date(ov.start), ov); return; }
         }
         add(dd, ev);
       });
-    } else if (ev.start) {
-      add(new Date(ev.start), ev);
-    }
+    } else if (ev.start) add(new Date(ev.start), ev);
   }
   out.sort((a,b)=>a.sort-b.sort);
   return out.map(e => ({ time:e.time, title:e.title }));
@@ -116,11 +100,16 @@ function todayFromICS(icsText){
       subitems { name column_values(ids: ["${G_SUBSTATUS}"]) { text } } } } } }`);
   const rocks = g.boards[0].items_page.items.filter(it => col(it, G_PERIOD) === quarter.label);
 
+  /* data.json: leaderboard number + the pillar detail for each department */
   const wallDepartments = rocks.map(it => {
     const subs = it.subitems || [];
     const done = subs.filter(s => ((s.column_values[0] || {}).text || "").trim() === "Done").length;
-    return { dept: col(it, G_DEPT) || "—", rock: it.name,
-      progress: subs.length ? Math.round((done / subs.length) * 100) : 0, subtasks: subs.length };
+    return {
+      dept: col(it, G_DEPT) || "—", rock: it.name,
+      progress: subs.length ? Math.round((done / subs.length) * 100) : 0,
+      subtasks: subs.length,
+      pillars: subs.map(s => ({ name: s.name, status: pillarStatus((s.column_values[0] || {}).text) }))
+    };
   });
 
   /* ----- Personal Tracker ----- */
@@ -144,22 +133,19 @@ function todayFromICS(icsText){
     return { dept, pillars, flags: flagsByDept[dept] || [] };
   });
 
-  /* ----- Today's calendar (optional) ----- */
+  /* ----- Today's calendar ----- */
   let today = [];
   if (ICS_URL) {
-    try {
-      const ics = await (await fetch(ICS_URL)).text();
-      today = todayFromICS(ics);
-    } catch (e) { console.error("Calendar read failed:", e.message); }
+    try { today = todayFromICS(await (await fetch(ICS_URL)).text()); }
+    catch (e) { console.error("Calendar read failed:", e.message); }
   }
   const todayLabel = new Intl.DateTimeFormat("en-GB",
     { timeZone: TZ, weekday:"long", day:"numeric", month:"long" }).format(new Date());
 
-  /* ----- write ----- */
   const fs = require("fs");
   fs.writeFileSync("data.json", JSON.stringify(
     { quarter, updated: stamp(), departments: wallDepartments }, null, 2));
   fs.writeFileSync("personal.json", JSON.stringify(
     { quarter, updated: stamp(), departments: persDepartments, todos, today, todayLabel }, null, 2));
-  console.log("Wrote data.json and personal.json (today:", today.length, "events)");
+  console.log("Wrote data.json + personal.json (today:", today.length, "events)");
 })().catch(err => { console.error(err); process.exit(1); });
