@@ -5,13 +5,17 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 13:18",
+  "updated": "15 Jul 2026, 13:21",
   "departments": [
     {
       "dept": "Finance",
       "pillars": [
         {
-          "name": "Heineken funding",
+          "name": "Funding - NatWest",
+          "status": "done"
+        },
+        {
+          "name": "Heineken Funding",
           "status": "working"
         }
       ],
