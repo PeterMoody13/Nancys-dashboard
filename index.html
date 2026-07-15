@@ -6,7 +6,7 @@
 <title>Nancy Spains — Department Progress</title>
 <style>
   /* ============================================================
-     NANCY SPAINS — OFFICE WALL (auto-rotating, LIVE)
+     NANCY SPAINS — OFFICE WALL (auto-rotating + tap/swipe, LIVE)
      Reads data.json. Rotation: Overview -> each department's
      pillars, looping. Status-based (no percentages / ranking).
      ============================================================ */
@@ -18,8 +18,7 @@
   *{ box-sizing:border-box; margin:0; padding:0; }
   html,body{ height:100%; background:var(--green-deep); color:var(--white);
     font-family:Georgia,'Times New Roman',serif; overflow:hidden; }
-  .stage{ position:relative; height:100vh; width:100vw; }
-  /* only the active slide is rendered at all -> no overlap ever */
+  .stage{ position:relative; height:100vh; width:100vw; cursor:pointer; }
   .slide{ display:none; position:absolute; inset:0; flex-direction:column; padding:4vh 4vw; }
   .slide.active{ display:flex; animation:fade .5s ease; }
   @keyframes fade{ from{opacity:0} to{opacity:1} }
@@ -33,8 +32,7 @@
 
   /* overview */
   .board{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:2.2vh; }
-  .ov-row{ display:grid; grid-template-columns:20vw 1fr auto; align-items:center; gap:2vw;
-    padding:1.2vh 1vw; }
+  .ov-row{ display:grid; grid-template-columns:20vw 1fr auto; align-items:center; gap:2vw; padding:1.2vh 1vw; }
   .ov-name{ font-size:3.4vh; font-weight:bold; color:var(--gold); }
   .ov-bar{ display:flex; height:2.6vh; border-radius:2vh; overflow:hidden; gap:3px; background:var(--track); }
   .ov-seg{ flex:1; }
@@ -44,8 +42,8 @@
 
   /* department detail */
   .dept-name{ font-size:7vh; font-weight:bold; color:var(--gold); margin:2vh 0 .4vh; }
-  .dept-sub{ font-size:2vh; color:var(--muted); font-style:italic; margin-bottom:1.6vh; }
-  .pillars{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:1.2vh; }
+  .dept-sub{ font-size:2vh; color:var(--muted); font-style:italic; margin-bottom:2vh; }
+  .pillars{ flex:1; display:flex; flex-direction:column; justify-content:flex-start; gap:1.4vh; }
   .pillar{ display:flex; align-items:center; gap:1.4vw; padding:1.6vh 1.4vw;
     background:var(--green-panel); border-radius:1.2vh; }
   .pillar .dot{ width:1.8vh; height:1.8vh; border-radius:50%; flex:none; box-shadow:0 0 1.2vh currentColor; }
@@ -94,9 +92,7 @@ function foot(i,total){
 function summary(pillars){
   const c={done:0,working:0,stuck:0,notstart:0};
   pillars.forEach(p=> c[p.status]!==undefined ? c[p.status]++ : c.notstart++);
-  const order=['done','working','stuck','notstart'];
-  const parts=order.filter(k=>c[k]>0).map(k=>`${c[k]} ${PSTATUS[k].word}`);
-  return parts.join('  ·  ');
+  return ['done','working','stuck','notstart'].filter(k=>c[k]>0).map(k=>`${c[k]} ${PSTATUS[k].word}`).join('  ·  ');
 }
 function overviewSlide(deps,total,q){
   const rows = deps.map(d=>{
@@ -146,6 +142,7 @@ function show(n){
   clearTimeout(iv); iv=setTimeout(next, dw);
 }
 function next(){ show(idx+1); }
+function go(n){ show(n); }   /* show() also restarts the timer */
 
 async function load(){
   try{ const res=await fetch('data.json?t='+Date.now(),{cache:'no-store'});
@@ -156,6 +153,14 @@ async function load(){
 load();
 setInterval(load, 5*60*1000);
 setTimeout(()=>location.reload(), 6*60*60*1000);
+
+/* manual control — tap/click, swipe, arrow keys (same as the tracker) */
+stage.addEventListener('click', ()=>go(idx+1));
+document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
+let x0=null;
+stage.addEventListener('touchstart', e=>x0=e.touches[0].clientX, {passive:true});
+stage.addEventListener('touchend', e=>{ if(x0===null)return; const dx=e.changedTouches[0].clientX-x0;
+  if(Math.abs(dx)>40) go(idx+(dx<0?1:-1)); x0=null; });
 </script>
 </body>
 </html>
