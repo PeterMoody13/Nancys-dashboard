@@ -37,15 +37,19 @@
       "pillars": [
         {
           "name": "Systems - Workforce",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Recruitment Project",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Internal Training",
-          "status": "notstart"
+          "status": "working"
+        },
+        {
+          "name": "Apprenticeship Scheme",
+          "status": "working"
         }
       ],
       "flags": [
