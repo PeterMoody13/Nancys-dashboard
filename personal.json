@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 12:38",
+  "updated": "15 Jul 2026, 12:41",
   "departments": [
     {
       "dept": "Finance",
@@ -34,7 +34,20 @@
     },
     {
       "dept": "People",
-      "pillars": [],
+      "pillars": [
+        {
+          "name": "Systems - Workforce",
+          "status": "notstart"
+        },
+        {
+          "name": "Recruitment Project",
+          "status": "notstart"
+        },
+        {
+          "name": "Internal Training",
+          "status": "notstart"
+        }
+      ],
       "flags": [
         {
           "text": "Monitor training enrolment",

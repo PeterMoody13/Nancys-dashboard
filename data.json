@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Jul 2026, 12:38",
+  "updated": "15 Jul 2026, 12:41",
   "departments": [
     {
       "dept": "Finance",
@@ -27,9 +27,9 @@
     },
     {
       "dept": "People",
-      "rock": "People — Q3 rock (add title here)",
+      "rock": "People — Q3 rock: Develop people systems.",
       "progress": 0,
-      "subtasks": 0
+      "subtasks": 3
     }
   ]
 }
