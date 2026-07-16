@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Jul 2026, 13:46",
+  "updated": "16 Jul 2026, 13:48",
   "departments": [
     {
       "dept": "Finance",
@@ -123,11 +123,6 @@
       "text": "Manchester trial shifts and interview.",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Mural photos for Brendan",
-      "priority": "Low",
-      "state": "Open"
     },
     {
       "text": "Brief for recruitment and salaries",
