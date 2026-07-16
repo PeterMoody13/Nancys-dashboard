@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Jul 2026, 13:08",
+  "updated": "16 Jul 2026, 13:11",
   "departments": [
     {
       "dept": "Finance",
@@ -146,6 +146,11 @@
     },
     {
       "text": "Zac to digitise photos",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Workforce messaging function",
       "priority": "Medium",
       "state": "Open"
     }
