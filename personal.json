@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Jul 2026, 00:58",
+  "updated": "16 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -157,12 +157,8 @@
   ],
   "today": [
     {
-      "time": "08:30",
-      "title": "Board Meeting"
-    },
-    {
-      "time": "10:15",
-      "title": "Nancy Spains x HUK: Trade Agreement"
+      "time": "10:00",
+      "title": "PM x POH Weekly Meeting"
     }
   ],
   "todayLabel": "Thursday 16 July"
