@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Jul 2026, 10:16",
+  "updated": "16 Jul 2026, 10:18",
   "departments": [
     {
       "dept": "Finance",
@@ -137,7 +137,7 @@
     {
       "text": "Create recruitment email",
       "priority": "High",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Uniform template for docs",
