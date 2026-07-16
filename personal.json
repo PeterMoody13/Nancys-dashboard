@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Jul 2026, 09:36",
+  "updated": "16 Jul 2026, 09:38",
   "departments": [
     {
       "dept": "Finance",
@@ -157,7 +157,7 @@
   ],
   "today": [
     {
-      "time": "10:00",
+      "time": "12:30",
       "title": "PM x POH Weekly Meeting"
     }
   ],
