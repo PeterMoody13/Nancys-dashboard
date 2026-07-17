@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Jul 2026, 00:58",
+  "updated": "17 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -172,8 +172,12 @@
   ],
   "today": [
     {
-      "time": "12:30",
-      "title": "PM x POH Weekly Meeting"
+      "time": "14:00",
+      "title": "Tangerine x Nancy Spains - Program Draft Review"
+    },
+    {
+      "time": "18:30",
+      "title": "Interview with Joe in Manchester"
     }
   ],
   "todayLabel": "Friday 17 July"
