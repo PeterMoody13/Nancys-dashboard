@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "19 Jul 2026, 00:58",
+  "updated": "19 Jul 2026, 01:02",
   "departments": [
     {
       "dept": "Finance",
@@ -170,11 +170,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "14:00",
-      "title": "2pm RG BBQ"
-    }
-  ],
+  "today": [],
   "todayLabel": "Sunday 19 July"
 }
