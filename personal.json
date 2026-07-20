@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "20 Jul 2026, 10:34",
+  "updated": "20 Jul 2026, 10:36",
   "departments": [
     {
       "dept": "Finance",
@@ -33,16 +33,20 @@
       "dept": "Operations",
       "pillars": [
         {
-          "name": "Systems Automation",
+          "name": "Systems improvement and automation",
           "status": "working"
         },
         {
-          "name": "Standards Book",
+          "name": "Handbooks - Standards and SOPs",
           "status": "working"
         },
         {
           "name": "Ops Manager - Trained",
           "status": "working"
+        },
+        {
+          "name": "Facilities management service",
+          "status": "done"
         }
       ],
       "flags": []
