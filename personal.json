@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "20 Jul 2026, 10:44",
+  "updated": "20 Jul 2026, 10:46",
   "departments": [
     {
       "dept": "Finance",
@@ -108,11 +108,6 @@
   ],
   "todos": [
     {
-      "text": "Dingle promotion",
-      "priority": "High",
-      "state": "Doing"
-    },
-    {
       "text": "Setup Bi-weekly meetings",
       "priority": "Medium",
       "state": "Open"
@@ -124,7 +119,7 @@
     },
     {
       "text": "Weekly digest due Friday",
-      "priority": "High",
+      "priority": "Medium",
       "state": "Open"
     },
     {
