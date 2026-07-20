@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "20 Jul 2026, 10:38",
+  "updated": "20 Jul 2026, 10:40",
   "departments": [
     {
       "dept": "Finance",
@@ -33,7 +33,7 @@
       "dept": "Operations",
       "pillars": [
         {
-          "name": "Systems improvement and automation",
+          "name": "Systems Improvement and Automation",
           "status": "working"
         },
         {
@@ -45,11 +45,11 @@
           "status": "working"
         },
         {
-          "name": "Facilities management service",
+          "name": "Facilities Management Service",
           "status": "done"
         },
         {
-          "name": "Openings playbook",
+          "name": "Openings Playbook",
           "status": "notstart"
         }
       ],
@@ -82,7 +82,7 @@
       "dept": "People",
       "pillars": [
         {
-          "name": "Systems - Workforce",
+          "name": "Implement New HR System",
           "status": "working"
         },
         {
@@ -90,7 +90,7 @@
           "status": "working"
         },
         {
-          "name": "Internal Training",
+          "name": "Internal Training - Tangerine",
           "status": "working"
         },
         {
