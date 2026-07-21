@@ -1,0 +1,9 @@
+{
+  "quarter": { "label": "Q3 2026", "sub": "Jul – Sep 2026", "start": "2026-07-01", "end": "2026-09-30" },
+  "updated": "awaiting first sync",
+  "managers": [
+    { "role": "Training Manager", "dept": "People", "rock": "", "pillars": [], "deptRock": null },
+    { "role": "Ops Manager", "dept": "Operations", "rock": "", "pillars": [], "deptRock": null },
+    { "role": "Marketing Exec", "dept": "Marketing", "rock": "", "pillars": [], "deptRock": null }
+  ]
+}

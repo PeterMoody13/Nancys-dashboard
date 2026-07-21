@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nancy Spains — Manager Progress</title>
+<style>
+  /* ============================================================
+     NANCY SPAINS — REPORTING-STAFF WALL (auto-rotating + tap/swipe)
+     Reads managers.json. Rotation: comparative overview -> each
+     manager (rock + pillars + their department's rock) -> Mission.
+     ============================================================ */
+  :root{
+    --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
+    --cream:#f2e6c7; --white:#fff; --muted:#8fa8a0; --track:#0e352d;
+    --done:#3aa64a; --working:#e0a02e; --stuck:#d0342c; --notstart:#556b64;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; background:var(--green-deep); color:var(--white);
+    font-family:Georgia,'Times New Roman',serif; overflow:hidden; }
+  .stage{ position:relative; height:100vh; width:100vw; cursor:pointer; }
+  .slide{ display:none; position:absolute; inset:0; flex-direction:column; padding:4vh 4vw; }
+  .slide.active{ display:flex; animation:fade .5s ease; }
+  @keyframes fade{ from{opacity:0} to{opacity:1} }
+
+  .top{ display:flex; align-items:flex-end; justify-content:space-between;
+    border-bottom:2px solid var(--gold); padding-bottom:1.6vh; }
+  .top .logo{ height:7.5vh; width:auto; display:block; }
+  .top .rt{ text-align:right; }
+  .top .rt h1{ font-size:4.2vh; color:var(--cream); font-weight:bold; }
+  .top .rt .sub{ font-size:2.0vh; color:var(--muted); margin-top:.4vh; font-style:italic; }
+
+  /* overview */
+  .board{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:2.6vh; }
+  .ov-row{ display:grid; grid-template-columns:22vw 1fr auto; align-items:center; gap:2vw; padding:1.2vh 1vw; }
+  .ov-name{ font-size:3.4vh; font-weight:bold; color:var(--gold); }
+  .ov-name small{ display:block; font-size:1.6vh; color:var(--muted); font-weight:normal; font-style:italic; }
+  .ov-bar{ display:flex; height:2.6vh; border-radius:2vh; overflow:hidden; gap:3px; background:var(--track); }
+  .ov-seg{ flex:1; }
+  .ov-empty{ flex:1; }
+  .ov-sum{ font-size:1.9vh; color:var(--cream); white-space:nowrap; text-align:right; }
+  .ov-sum .none{ color:var(--muted); font-style:italic; }
+
+  /* manager detail */
+  .dept-name{ font-size:6vh; font-weight:bold; color:var(--gold); margin:1.4vh 0 .2vh; }
+  .dept-rock{ font-size:3.2vh; color:var(--cream); margin:0 0 .3vh; }
+  .dept-sub{ font-size:1.9vh; color:var(--muted); font-style:italic; margin-bottom:1.6vh; }
+  .pillars{ flex:1; display:flex; flex-direction:column; justify-content:flex-start; gap:1.2vh; }
+  .pillar{ display:flex; align-items:center; gap:1.4vw; padding:1.4vh 1.4vw;
+    background:var(--green-panel); border-radius:1.2vh; }
+  .pillar .dot{ width:1.7vh; height:1.7vh; border-radius:50%; flex:none; box-shadow:0 0 1.2vh currentColor; }
+  .pillar .nm{ flex:1; font-size:2.8vh; color:var(--cream); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .st-pill{ flex:none; font-size:1.7vh; font-weight:bold; padding:.6vh 1.3vw; border-radius:5vh; border:2px solid currentColor; }
+  .empty{ color:var(--muted); font-style:italic; font-size:2.4vh; }
+
+  /* department-rock context panel */
+  .ctx{ margin-top:1.6vh; background:rgba(198,153,71,.08); border:1px solid rgba(198,153,71,.35);
+    border-radius:1.2vh; padding:1.4vh 1.6vw; display:flex; align-items:baseline; gap:1.2vw; flex-wrap:wrap; }
+  .ctx .lbl{ font-size:1.5vh; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); flex:none; }
+  .ctx .nm{ font-size:2.2vh; color:var(--cream); flex:1; min-width:40%; }
+  .ctx .sum{ font-size:1.7vh; color:var(--muted); font-style:italic; }
+
+  /* mission */
+  .mission{ flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:3vh; }
+  .mission .mt{ font-size:2.4vh; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
+  .mission .mtext{ font-size:4.4vh; color:var(--cream); max-width:80%; line-height:1.35; font-style:italic; }
+  .mission .vals{ display:flex; gap:2.4vw; flex-wrap:wrap; justify-content:center; }
+  .mission .val{ font-size:2.6vh; font-weight:bold; color:var(--gold-soft); }
+  .mission .val::before{ content:"◆ "; color:var(--gold); font-size:1.6vh; vertical-align:middle; }
+
+  .foot{ display:flex; align-items:center; justify-content:space-between;
+    margin-top:1.4vh; padding-top:1.4vh; border-top:2px solid var(--gold); }
+  .values{ font-style:italic; font-size:2vh; color:var(--gold-soft); }
+  .dots{ display:flex; gap:8px; }
+  .dots span{ width:10px; height:10px; border-radius:50%; background:var(--track); }
+  .dots span.on{ background:var(--gold); }
+  .updated{ font-size:1.6vh; color:var(--muted); }
+  .updated b{ color:var(--gold-soft); font-weight:normal; }
+  .timer{ position:absolute; left:0; top:0; height:4px; background:var(--gold); width:0; z-index:5; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage"><div class="timer" id="timer"></div></div>
+
+<script>
+/* ---- editable ---- */
+const VALUES = ["Ambition","Energy","Ownership","Hard Work"];
+/* Mission statement — placeholder until finalised. Edit this one line. */
+const MISSION = "Our mission statement will go here once finalised.";
+
+const FALLBACK = { quarter:{label:"Q3 2026",sub:"Jul – Sep 2026"}, updated:"offline", managers:[] };
+const LOGO = "https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png";
+const PSTATUS = {
+  notstart:{label:"Not Started",colour:"#8fa8a0",seg:"#556b64",word:"to start"},
+  working:{label:"Working on it",colour:"#e0a02e",seg:"#e0a02e",word:"in progress"},
+  stuck:{label:"Stuck",colour:"#d0342c",seg:"#d0342c",word:"stuck"},
+  done:{label:"Done",colour:"#3aa64a",seg:"#3aa64a",word:"done"}
+};
+const DWELL_OV = 18000, DWELL_MGR = 14000, DWELL_MISSION = 12000;
+
+const stage = document.getElementById('stage');
+let idx = 0, iv = null, DATA = FALLBACK, dwells = [];
+
+function cleanRock(name){ if(!name) return ''; return /add title here/i.test(name) ? 'Rock — to be set' : name; }
+function topBar(mainRight, subRight){
+  return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
+    <div class="rt"><h1>${mainRight}</h1><div class="sub">${subRight}</div></div></div>`;
+}
+function foot(i,total){
+  let dots=''; for(let k=0;k<total;k++) dots+=`<span class="${k===i?'on':''}"></span>`;
+  return `<div class="foot"><div class="values">${VALUES.join('   ·   ')}</div>
+    <div class="dots">${dots}</div><div class="updated">Updated <b>${DATA.updated||'—'}</b></div></div>`;
+}
+function summary(pillars){
+  const c={done:0,working:0,stuck:0,notstart:0};
+  pillars.forEach(p=> c[p.status]!==undefined ? c[p.status]++ : c.notstart++);
+  return ['done','working','stuck','notstart'].filter(k=>c[k]>0).map(k=>`${c[k]} ${PSTATUS[k].word}`).join('  ·  ');
+}
+function overviewSlide(mgrs,total,q){
+  const rows = mgrs.map(mm=>{
+    const pillars=mm.pillars||[];
+    const bar = pillars.length
+      ? pillars.map(p=>`<div class="ov-seg" style="background:${(PSTATUS[p.status]||PSTATUS.notstart).seg}"></div>`).join('')
+      : `<div class="ov-empty"></div>`;
+    const sum = pillars.length ? summary(pillars) : `<span class="none">No pillars yet</span>`;
+    return `<div class="ov-row"><div class="ov-name">${mm.role}<small>under ${mm.dept}</small></div>
+      <div class="ov-bar">${bar}</div><div class="ov-sum">${sum}</div></div>`;
+  }).join('');
+  return `<div class="slide">${topBar('Manager Progress', q.label+' · '+q.sub)}
+    <div class="board">${rows}</div>${foot(0,total)}</div>`;
+}
+function mgrSlide(mm,i,total,q){
+  const pillars=mm.pillars||[];
+  const done=pillars.filter(p=>p.status==='done').length;
+  const body=pillars.length
+    ? pillars.map(p=>{const s=PSTATUS[p.status]||PSTATUS.notstart;
+        return `<div class="pillar"><span class="dot" style="color:${s.colour};background:${s.colour}"></span>
+          <span class="nm">${p.name}</span><span class="st-pill" style="color:${s.colour}">${s.label}</span></div>`;}).join('')
+    : `<div class="empty">No pillars added yet.</div>`;
+  const ctx = mm.deptRock
+    ? `<div class="ctx"><span class="lbl">${mm.dept} department rock</span>
+        <span class="nm">${cleanRock(mm.deptRock.name)}</span>
+        <span class="sum">${mm.deptRock.summary||''}</span></div>`
+    : '';
+  return `<div class="slide">${topBar(q.label, q.sub)}
+    <div class="dept-name">${mm.role}</div>
+    <div class="dept-rock">${cleanRock(mm.rock)}</div>
+    <div class="dept-sub">${done} of ${pillars.length} pillars done · reports into ${mm.dept}</div>
+    <div class="pillars">${body}</div>
+    ${ctx}${foot(i,total)}</div>`;
+}
+function missionSlide(i,total,q){
+  const vals = VALUES.map(v=>`<span class="val">${v}</span>`).join('');
+  return `<div class="slide">${topBar('Mission & Values', q.label+' · '+q.sub)}
+    <div class="mission"><div class="mt">Our Mission</div>
+      <div class="mtext">${MISSION}</div>
+      <div class="vals">${vals}</div></div>${foot(i,total)}</div>`;
+}
+function build(){
+  const q=DATA.quarter||FALLBACK.quarter;
+  const mgrs=(DATA.managers||[]);
+  const total=mgrs.length+2;   /* overview + managers + mission */
+  dwells=[DWELL_OV].concat(mgrs.map(()=>DWELL_MGR)).concat([DWELL_MISSION]);
+  let html='<div class="timer" id="timer"></div>';
+  html+=overviewSlide(mgrs,total,q);
+  mgrs.forEach((mm,i)=> html+=mgrSlide(mm,i+1,total,q));
+  html+=missionSlide(total-1,total,q);
+  stage.innerHTML=html;
+  if(idx>=total) idx=0;
+  show(idx);
+}
+function slides(){ return [...stage.querySelectorAll('.slide')]; }
+function show(n){
+  const S=slides(); if(!S.length) return;
+  idx=(n+S.length)%S.length;
+  S.forEach((s,i)=>s.classList.toggle('active', i===idx));
+  const timer=document.getElementById('timer'), dw=dwells[idx]||DWELL_MGR;
+  if(timer){ timer.style.transition='none'; timer.style.width='0';
+    requestAnimationFrame(()=>{ timer.style.transition=`width ${dw}ms linear`; timer.style.width='100%'; }); }
+  clearTimeout(iv); iv=setTimeout(next, dw);
+}
+function next(){ show(idx+1); }
+function go(n){ show(n); }
+
+async function load(){
+  try{ const res=await fetch('managers.json?t='+Date.now(),{cache:'no-store'});
+    if(!res.ok) throw 0; const j=await res.json(); if(j&&j.managers) DATA=j;
+  }catch(e){}
+  build();
+}
+load();
+setInterval(load, 5*60*1000);
+setTimeout(()=>location.reload(), 6*60*60*1000);
+
+stage.addEventListener('click', ()=>go(idx+1));
+document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
+let x0=null;
+stage.addEventListener('touchstart', e=>x0=e.touches[0].clientX, {passive:true});
+stage.addEventListener('touchend', e=>{ if(x0===null)return; const dx=e.changedTouches[0].clientX-x0;
+  if(Math.abs(dx)>40) go(idx+(dx<0?1:-1)); x0=null; });
+</script>
+</body>
+</html>
