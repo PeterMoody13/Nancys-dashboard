@@ -2,7 +2,7 @@ name: Update dashboard data
 
 on:
   schedule:
-    - cron: "*/2 * * * *"    # every 2 minutes (cron-job.org also pings this)
+    - cron: "*/2 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name  "dashboard-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data.json personal.json
+          git add data.json personal.json managers.json
           git commit -m "Update dashboard data" || echo "No change"
           git push
