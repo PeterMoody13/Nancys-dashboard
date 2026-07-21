@@ -115,7 +115,7 @@ function todayFromICS(icsText){
       subitems { name column_values(ids: ["${G_SUBSTATUS}"]) { id text } } } } } }`);
   const rocks = g.boards[0].items_page.items.filter(it => col(it, G_PERIOD) === quarter.label);
 
-  const deptRockMap = {};   /* dept -> { name, pillars } */
+  const deptRockMap = {};
   const wallDepartments = rocks.map(it => {
     const pillars = pillarsOf(it, G_SUBSTATUS);
     const done = pillars.filter(p => p.status === "done").length;
