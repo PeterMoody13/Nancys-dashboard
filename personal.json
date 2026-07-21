@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Jul 2026, 16:34",
+  "updated": "21 Jul 2026, 16:36",
   "departments": [
     {
       "dept": "Finance",
@@ -68,7 +68,7 @@
         },
         {
           "name": "Social Media Strategy",
-          "status": "notstart"
+          "status": "working"
         }
       ],
       "flags": [
