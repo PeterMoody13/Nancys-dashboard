@@ -1,9 +1,60 @@
 {
-  "quarter": { "label": "Q3 2026", "sub": "Jul – Sep 2026", "start": "2026-07-01", "end": "2026-09-30" },
-  "updated": "awaiting first sync",
+  "quarter": {
+    "label": "Q3 2026",
+    "sub": "Jul – Sep 2026",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "updated": "21 Jul 2026, 10:58",
   "managers": [
-    { "role": "Training Manager", "dept": "People", "rock": "", "pillars": [], "deptRock": null },
-    { "role": "Ops Manager", "dept": "Operations", "rock": "", "pillars": [], "deptRock": null },
-    { "role": "Marketing Exec", "dept": "Marketing", "rock": "", "pillars": [], "deptRock": null }
+    {
+      "role": "Training Manager",
+      "dept": "People",
+      "rock": "Training Manager — Q3 rock (add title here)",
+      "pillars": [
+        {
+          "name": "Test Run",
+          "status": "working"
+        },
+        {
+          "name": "Test Run 2",
+          "status": "working"
+        }
+      ],
+      "deptRock": {
+        "name": "People — Q3 rock: Develop people systems.",
+        "summary": "4 in progress"
+      }
+    },
+    {
+      "role": "Ops Manager",
+      "dept": "Operations",
+      "rock": "Operations Manager — Q3 rock (add title here)",
+      "pillars": [
+        {
+          "name": "First pillar — rename me",
+          "status": "notstart"
+        }
+      ],
+      "deptRock": {
+        "name": "Operations — Q3 rock: Preparing systems for growth",
+        "summary": "1 done  ·  3 in progress  ·  1 to start"
+      }
+    },
+    {
+      "role": "Marketing Exec",
+      "dept": "Marketing",
+      "rock": "Marketing Executive — Q3 rock (add title here)",
+      "pillars": [
+        {
+          "name": "First pillar — rename me",
+          "status": "notstart"
+        }
+      ],
+      "deptRock": {
+        "name": "Marketing — Q3 rock: Marketing strategy",
+        "summary": "1 in progress  ·  2 to start"
+      }
+    }
   ]
 }
