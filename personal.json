@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Jul 2026, 12:10",
+  "updated": "21 Jul 2026, 12:12",
   "departments": [
     {
       "dept": "Finance",
@@ -171,6 +171,11 @@
       "text": "Create presentation for apprenticeship launch",
       "priority": "Medium",
       "state": "Doing"
+    },
+    {
+      "text": "Accountability and responsibility document",
+      "priority": "Medium",
+      "state": "Open"
     }
   ],
   "today": [
