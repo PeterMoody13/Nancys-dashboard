@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "22 Jul 2026, 00:58",
+  "updated": "22 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -180,8 +180,12 @@
   ],
   "today": [
     {
-      "time": "15:30",
-      "title": "Culture Deck Sit Down"
+      "time": "14:00",
+      "title": "Bi-weekly head office catch-up"
+    },
+    {
+      "time": "15:00",
+      "title": "Organic Recruitment - Brief Internal Discussion"
     }
   ],
   "todayLabel": "Wednesday 22 July"
