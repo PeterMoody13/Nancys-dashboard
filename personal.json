@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "22 Jul 2026, 10:24",
+  "updated": "22 Jul 2026, 10:26",
   "departments": [
     {
       "dept": "Finance",
@@ -133,18 +133,8 @@
       "state": "Open"
     },
     {
-      "text": "Create recruitment email",
-      "priority": "High",
-      "state": "Doing"
-    },
-    {
       "text": "Uniform template for docs",
       "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Zac to digitise photos",
-      "priority": "High",
       "state": "Open"
     },
     {
@@ -161,16 +151,6 @@
       "text": "Get rid of automatic review replies",
       "priority": "Medium",
       "state": "Open"
-    },
-    {
-      "text": "SNOW radios, all venues",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Create presentation for apprenticeship launch",
-      "priority": "Medium",
-      "state": "Doing"
     },
     {
       "text": "Accountability and responsibility document",
