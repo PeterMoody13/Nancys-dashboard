@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "22 Jul 2026, 10:18",
+  "updated": "22 Jul 2026, 10:20",
   "departments": [
     {
       "dept": "Finance",
@@ -179,6 +179,10 @@
     }
   ],
   "today": [
+    {
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
     {
       "time": "14:00",
       "title": "Bi-weekly head office catch-up"
