@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 11:28",
+  "updated": "23 Jul 2026, 11:30",
   "departments": [
     {
       "dept": "Finance",
@@ -160,12 +160,12 @@
   ],
   "today": [
     {
-      "time": "10:00",
-      "title": "PM x POH Weekly Meeting"
-    },
-    {
       "time": "13:30",
       "title": "COO - Quarterly Rocks"
+    },
+    {
+      "time": "14:30",
+      "title": "PM x POH Weekly Meeting"
     }
   ],
   "todayLabel": "Thursday 23 July"
