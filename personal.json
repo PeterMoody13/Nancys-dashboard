@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 12:24",
+  "updated": "23 Jul 2026, 12:26",
   "departments": [
     {
       "dept": "Finance",
@@ -149,6 +149,11 @@
     },
     {
       "text": "Rian keycard",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Liz to remind Rian to put holiday on ConnectTeam",
       "priority": "Medium",
       "state": "Open"
     }
