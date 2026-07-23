@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 12:14",
+  "updated": "23 Jul 2026, 12:16",
   "departments": [
     {
       "dept": "Finance",
@@ -154,6 +154,10 @@
     }
   ],
   "today": [
+    {
+      "time": "13:00",
+      "title": "Liz x PM"
+    },
     {
       "time": "13:30",
       "title": "COO - Quarterly Rocks"
