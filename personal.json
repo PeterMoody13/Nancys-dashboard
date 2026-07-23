@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 16:18",
+  "updated": "23 Jul 2026, 16:20",
   "departments": [
     {
       "dept": "Finance",
@@ -20,7 +20,7 @@
         },
         {
           "name": "Budget review and implementation",
-          "status": "done"
+          "status": "working"
         },
         {
           "name": "Payroll - system revision and outsourcing",
@@ -171,6 +171,11 @@
     {
       "text": "Create deck for CMO",
       "priority": "High",
+      "state": "Open"
+    },
+    {
+      "text": "Weekly PnL - add to Sheila's Rock",
+      "priority": "Medium",
       "state": "Open"
     }
   ],
