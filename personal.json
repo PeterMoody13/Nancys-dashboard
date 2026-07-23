@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 17:40",
+  "updated": "23 Jul 2026, 17:42",
   "departments": [
     {
       "dept": "Finance",
@@ -176,6 +176,11 @@
     {
       "text": "Minimum 11 hours between shifts",
       "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Docusign, paid account",
+      "priority": "High",
       "state": "Open"
     }
   ],
