@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 15:42",
+  "updated": "23 Jul 2026, 15:44",
   "departments": [
     {
       "dept": "Finance",
@@ -166,6 +166,21 @@
     {
       "text": "Paint MS and Values on the pubs",
       "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Leaderboard for Dingle competition",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rian to spread Org chart and responsibilities to venue staff",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Communication Channels",
+      "priority": "High",
       "state": "Open"
     }
   ],
