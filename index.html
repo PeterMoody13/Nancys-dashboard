@@ -8,7 +8,7 @@
   /* ============================================================
      NANCY SPAINS — OFFICE WALL (auto-rotating + tap/swipe, LIVE)
      Reads data.json. Rotation: Overview -> each department's
-     quarterly rock + pillars, looping. Status-based (no % / rank).
+     rock + pillars -> Mission & Values. Status-based (no %).
      ============================================================ */
   :root{
     --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
@@ -37,7 +37,7 @@
   .ov-bar{ display:flex; height:2.6vh; border-radius:2vh; overflow:hidden; gap:3px; background:var(--track); }
   .ov-seg{ flex:1; }
   .ov-empty{ flex:1; }
-  .ov-sum{ font-size:1.9vh; color:var(--cream); white-space:nowrap; text-align:right; font-variant-numeric:tabular-nums; }
+  .ov-sum{ font-size:1.9vh; color:var(--cream); white-space:nowrap; text-align:right; }
   .ov-sum .none{ color:var(--muted); font-style:italic; }
 
   /* department detail */
@@ -51,6 +51,14 @@
   .pillar .nm{ flex:1; font-size:3vh; color:var(--cream); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .st-pill{ flex:none; font-size:1.8vh; font-weight:bold; padding:.7vh 1.4vw; border-radius:5vh; border:2px solid currentColor; }
   .empty{ color:var(--muted); font-style:italic; font-size:2.6vh; }
+
+  /* mission */
+  .mission{ flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:3vh; }
+  .mission .mt{ font-size:2.4vh; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
+  .mission .mtext{ font-size:4.4vh; color:var(--cream); max-width:80%; line-height:1.35; font-style:italic; }
+  .mission .vals{ display:flex; gap:1.8vw; flex-wrap:wrap; justify-content:center; align-items:center; }
+  .mission .val{ font-size:2.6vh; font-weight:bold; color:var(--gold-soft); }
+  .mission .sep{ color:var(--gold); font-size:1.4vh; line-height:1; }
 
   .foot{ display:flex; align-items:center; justify-content:space-between;
     margin-top:1.4vh; padding-top:1.4vh; border-top:2px solid var(--gold); }
@@ -67,7 +75,11 @@
 <div class="stage" id="stage"><div class="timer" id="timer"></div></div>
 
 <script>
+/* ---- editable: company values (footer + Mission slide) ---- */
 const VALUES = ["Be an owner", "Superpumped", "Relentless ambition", "Earn your pint", "Customer obsessed"];
+/* Mission statement — placeholder until finalised. Edit this one line. */
+const MISSION = "Our mission statement will go here once finalised.";
+
 const FALLBACK = { quarter:{label:"Q3 2026",sub:"Jul – Sep 2026"}, updated:"offline", departments:[] };
 const LOGO = "https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png";
 const PSTATUS = {
@@ -76,17 +88,12 @@ const PSTATUS = {
   stuck:{label:"Stuck",colour:"#d0342c",seg:"#d0342c",word:"stuck"},
   done:{label:"Done",colour:"#3aa64a",seg:"#3aa64a",word:"done"}
 };
-const DWELL_OV = 18000, DWELL_DEPT = 12000;
+const DWELL_OV = 18000, DWELL_DEPT = 12000, DWELL_MISSION = 12000;
 
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK, dwells = [];
 
-function cleanRock(name, dept){
-  /* hide the placeholder text until a real rock title is set */
-  if(!name) return '';
-  if(/add title here/i.test(name)) return 'Quarterly rock — to be set';
-  return name;
-}
+function cleanRock(name){ if(!name) return ''; return /add title here/i.test(name) ? 'Quarterly rock — to be set' : name; }
 function topBar(mainRight, subRight){
   return `<div class="top"><img class="logo" src="${LOGO}" alt="Nancy Spains">
     <div class="rt"><h1>${mainRight}</h1><div class="sub">${subRight}</div></div></div>`;
@@ -123,18 +130,26 @@ function deptSlide(d,i,total,q){
     : `<div class="empty">No pillars added yet.</div>`;
   return `<div class="slide">${topBar(q.label, q.sub)}
     <div class="dept-name">${d.dept}</div>
-    <div class="dept-rock">${cleanRock(d.rock, d.dept)}</div>
+    <div class="dept-rock">${cleanRock(d.rock)}</div>
     <div class="dept-sub">${done} of ${(d.pillars||[]).length} pillars done</div>
     <div class="pillars">${body}</div>${foot(i,total)}</div>`;
+}
+function missionSlide(i,total,q){
+  const vals = VALUES.map(v=>`<span class="val">${v}</span>`).join('<span class="sep">◆</span>');
+  return `<div class="slide">${topBar('Mission & Values', q.label+' · '+q.sub)}
+    <div class="mission"><div class="mt">Our Mission</div>
+      <div class="mtext">${MISSION}</div>
+      <div class="vals">${vals}</div></div>${foot(i,total)}</div>`;
 }
 function build(){
   const q=DATA.quarter||FALLBACK.quarter;
   const deps=(DATA.departments||[]);
-  const total=deps.length+1;
-  dwells=[DWELL_OV].concat(deps.map(()=>DWELL_DEPT));
+  const total=deps.length+2;   /* overview + departments + mission */
+  dwells=[DWELL_OV].concat(deps.map(()=>DWELL_DEPT)).concat([DWELL_MISSION]);
   let html='<div class="timer" id="timer"></div>';
   html+=overviewSlide(deps,total,q);
   deps.forEach((d,i)=> html+=deptSlide(d,i+1,total,q));
+  html+=missionSlide(total-1,total,q);
   stage.innerHTML=html;
   if(idx>=total) idx=0;
   show(idx);
@@ -162,7 +177,6 @@ load();
 setInterval(load, 5*60*1000);
 setTimeout(()=>location.reload(), 6*60*60*1000);
 
-/* manual control — tap/click, swipe, arrow keys */
 stage.addEventListener('click', ()=>go(idx+1));
 document.addEventListener('keydown', e=>{ if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1); });
 let x0=null;
