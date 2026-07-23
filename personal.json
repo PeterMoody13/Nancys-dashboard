@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 13:46",
+  "updated": "23 Jul 2026, 13:48",
   "departments": [
     {
       "dept": "Finance",
@@ -153,7 +153,12 @@
       "state": "Open"
     },
     {
-      "text": "Liz to remind Rian to put holiday on ConnectTeam",
+      "text": "Nick Rocks",
+      "priority": "High",
+      "state": "Open"
+    },
+    {
+      "text": "Sale competitions and incentives.",
       "priority": "Medium",
       "state": "Open"
     }
