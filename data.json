@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 13:50",
+  "updated": "23 Jul 2026, 13:52",
   "departments": [
     {
       "dept": "Finance",
@@ -22,7 +22,7 @@
           "status": "done"
         },
         {
-          "name": "Budget Review and Implementation",
+          "name": "Budget review and implementation",
           "status": "done"
         },
         {
@@ -34,28 +34,24 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock: Preparing systems for growth",
-      "progress": 20,
-      "subtasks": 5,
+      "progress": 25,
+      "subtasks": 4,
       "pillars": [
         {
-          "name": "Systems overhaul",
+          "name": "Systems overhaul - integration and automation",
           "status": "working"
         },
         {
-          "name": "Handbooks - Standards and SOPs",
+          "name": "Handbooks - standards and SOPs",
           "status": "working"
         },
         {
-          "name": "Ops Manager - Trained",
+          "name": "Ops Manager - training and preparing a template for future Ops Manager",
           "status": "working"
         },
         {
-          "name": "Facilities Management Service",
+          "name": "Facilities management service",
           "status": "done"
-        },
-        {
-          "name": "Openings Playbook",
-          "status": "notstart"
         }
       ]
     },

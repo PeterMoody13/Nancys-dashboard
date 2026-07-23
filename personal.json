@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 13:50",
+  "updated": "23 Jul 2026, 13:52",
   "departments": [
     {
       "dept": "Finance",
@@ -19,7 +19,7 @@
           "status": "done"
         },
         {
-          "name": "Budget Review and Implementation",
+          "name": "Budget review and implementation",
           "status": "done"
         },
         {
@@ -33,24 +33,20 @@
       "dept": "Operations",
       "pillars": [
         {
-          "name": "Systems overhaul",
+          "name": "Systems overhaul - integration and automation",
           "status": "working"
         },
         {
-          "name": "Handbooks - Standards and SOPs",
+          "name": "Handbooks - standards and SOPs",
           "status": "working"
         },
         {
-          "name": "Ops Manager - Trained",
+          "name": "Ops Manager - training and preparing a template for future Ops Manager",
           "status": "working"
         },
         {
-          "name": "Facilities Management Service",
+          "name": "Facilities management service",
           "status": "done"
-        },
-        {
-          "name": "Openings Playbook",
-          "status": "notstart"
         }
       ],
       "flags": []
