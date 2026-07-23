@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 16:22",
+  "updated": "23 Jul 2026, 16:26",
   "departments": [
     {
       "dept": "Finance",
@@ -58,12 +58,12 @@
     {
       "dept": "Marketing",
       "rock": "Marketing — Q3 rock: Marketing strategy",
-      "progress": 0,
+      "progress": 33,
       "subtasks": 3,
       "pillars": [
         {
           "name": "CMO Hired",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Openings Strategy",
