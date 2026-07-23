@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 00:58",
+  "updated": "23 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -155,16 +155,8 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
-    },
-    {
-      "time": "14:00",
-      "title": "Bi-weekly head office catch-up"
-    },
-    {
-      "time": "15:00",
-      "title": "Organic Recruitment - Brief Internal Discussion"
+      "time": "10:00",
+      "title": "PM x POH Weekly Meeting"
     }
   ],
   "todayLabel": "Thursday 23 July"
