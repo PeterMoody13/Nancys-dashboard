@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 15:48",
+  "updated": "23 Jul 2026, 15:50",
   "departments": [
     {
       "dept": "Finance",
@@ -131,7 +131,7 @@
     {
       "text": "Sale competitions and incentives.",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Directors to create Rocks with Reports",
@@ -166,6 +166,11 @@
     {
       "text": "Walk through financials of new sites with POH",
       "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Create deck for CMO",
+      "priority": "High",
       "state": "Open"
     }
   ],
