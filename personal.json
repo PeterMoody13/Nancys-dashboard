@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "23 Jul 2026, 11:46",
+  "updated": "23 Jul 2026, 11:48",
   "departments": [
     {
       "dept": "Finance",
@@ -108,11 +108,6 @@
   ],
   "todos": [
     {
-      "text": "Setup Bi-weekly meetings",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Personal licences for AGMs",
       "priority": "Medium",
       "state": "Doing"
@@ -151,11 +146,6 @@
       "text": "Accountability and responsibility document",
       "priority": "High",
       "state": "Doing"
-    },
-    {
-      "text": "Respond to Joe",
-      "priority": "High",
-      "state": "Open"
     },
     {
       "text": "Rian keycard",
