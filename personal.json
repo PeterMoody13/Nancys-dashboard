@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "24 Jul 2026, 14:42",
+  "updated": "24 Jul 2026, 14:44",
   "departments": [
     {
       "dept": "Finance",
@@ -208,6 +208,10 @@
     {
       "time": "11:00",
       "title": "Marketing Catch-up"
+    },
+    {
+      "time": "16:00",
+      "title": "Tangerine x Nancy Spains"
     }
   ],
   "todayLabel": "Friday 24 July"
