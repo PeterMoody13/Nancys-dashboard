@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "24 Jul 2026, 09:24",
+  "updated": "24 Jul 2026, 09:26",
   "departments": [
     {
       "dept": "Finance",
@@ -190,6 +190,11 @@
     },
     {
       "text": "Rian to send Bryony Katie training",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Setup rules for subscription invoices to be sent to accounts.",
       "priority": "Medium",
       "state": "Open"
     }
