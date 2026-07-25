@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "25 Jul 2026, 14:48",
+  "updated": "25 Jul 2026, 14:50",
   "departments": [
     {
       "dept": "Finance",
@@ -200,6 +200,11 @@
     },
     {
       "text": "Dingle Whiskey on new supplier list, get rid.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "McMullen & Sons AGM positions",
       "priority": "Medium",
       "state": "Open"
     }
