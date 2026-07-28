@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Jul 2026, 00:58",
+  "updated": "28 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -223,6 +223,22 @@
     {
       "time": "All day",
       "title": "Time Off"
+    },
+    {
+      "time": "09:30",
+      "title": "Music Catch-Up"
+    },
+    {
+      "time": "11:00",
+      "title": "Nancy Spains - 'Nancy's Journey' London Launch"
+    },
+    {
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    },
+    {
+      "time": "14:45",
+      "title": "Nancy Spains X Organic"
     }
   ],
   "todayLabel": "Tuesday 28 July"
