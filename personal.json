@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Jul 2026, 10:18",
+  "updated": "28 Jul 2026, 10:20",
   "departments": [
     {
       "dept": "Finance",
@@ -195,11 +195,6 @@
     },
     {
       "text": "Setup rules for subscription invoices to be sent to accounts.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Dingle Whiskey on new supplier list, get rid.",
       "priority": "Medium",
       "state": "Open"
     },
