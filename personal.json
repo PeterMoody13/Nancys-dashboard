@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 00:01",
+  "updated": "29 Jul 2026, 00:02",
   "departments": [
     {
       "dept": "Finance",
@@ -229,6 +229,27 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "All day",
+      "title": "Time Off"
+    },
+    {
+      "time": "09:30",
+      "title": "Music Catch-Up"
+    },
+    {
+      "time": "11:00",
+      "title": "Nancy Spains - 'Nancy's Journey' London Launch"
+    },
+    {
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    },
+    {
+      "time": "14:45",
+      "title": "Nancy Spains X Organic"
+    }
+  ],
   "todayLabel": "Wednesday 29 July"
 }
