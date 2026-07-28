@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Jul 2026, 10:08",
+  "updated": "28 Jul 2026, 10:10",
   "departments": [
     {
       "dept": "Finance",
@@ -205,6 +205,11 @@
     },
     {
       "text": "McMullen & Sons AGM positions",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Liz to create strict schedule for Rian",
       "priority": "Medium",
       "state": "Open"
     },
