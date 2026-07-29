@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 11:22",
+  "updated": "29 Jul 2026, 11:24",
   "departments": [
     {
       "dept": "Finance",
@@ -62,7 +62,7 @@
       "subtasks": 3,
       "pillars": [
         {
-          "name": "CMO Hired",
+          "name": "Refine and tighten the existing strategy decks",
           "status": "done"
         },
         {
