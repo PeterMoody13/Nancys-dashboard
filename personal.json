@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 11:24",
+  "updated": "29 Jul 2026, 11:26",
   "departments": [
     {
       "dept": "Finance",
@@ -56,15 +56,19 @@
       "pillars": [
         {
           "name": "Refine and tighten the existing strategy decks",
-          "status": "done"
+          "status": "notstart"
         },
         {
           "name": "Openings Strategy",
           "status": "notstart"
         },
         {
-          "name": "Social Media Strategy",
-          "status": "working"
+          "name": "Develop relationship with venue teams",
+          "status": "notstart"
+        },
+        {
+          "name": "Fully integrate Izzy into Marketing Exec. role",
+          "status": "notstart"
         }
       ],
       "flags": [

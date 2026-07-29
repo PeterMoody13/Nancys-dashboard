@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 11:24",
+  "updated": "29 Jul 2026, 11:26",
   "managers": [
     {
       "role": "Training Manager",
@@ -53,7 +53,7 @@
       ],
       "deptRock": {
         "name": "Marketing — Q3 rock: Marketing strategy",
-        "summary": "1 done  ·  1 in progress  ·  1 to start"
+        "summary": "4 to start"
       }
     }
   ]
