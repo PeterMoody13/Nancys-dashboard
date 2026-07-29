@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 13:34",
+  "updated": "29 Jul 2026, 13:36",
   "departments": [
     {
       "dept": "Finance",
@@ -200,6 +200,11 @@
     {
       "text": "Create Indeed account",
       "priority": "High",
+      "state": "Open"
+    },
+    {
+      "text": "Fractional staff holidays?",
+      "priority": "Medium",
       "state": "Open"
     }
   ],
