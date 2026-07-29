@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 15:31",
+  "updated": "29 Jul 2026, 15:32",
   "departments": [
     {
       "dept": "Finance",
@@ -130,7 +130,7 @@
     {
       "text": "Directors to create Rocks with Reports",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Paint MS and Values on the pubs",
@@ -178,14 +178,9 @@
       "state": "Open"
     },
     {
-      "text": "Black shirts on Saturdays",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Headline KPIs",
       "priority": "High",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "End of month group beers/food in Soho",
@@ -195,12 +190,7 @@
     {
       "text": "HIT Training enrolment",
       "priority": "High",
-      "state": "Open"
-    },
-    {
-      "text": "Create Indeed account",
-      "priority": "High",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Fractional staff holidays?",
@@ -208,13 +198,8 @@
       "state": "Open"
     },
     {
-      "text": "Posh Cockney Materials",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Music brief, then weekly music reports from GMs",
-      "priority": "Medium",
+      "priority": "High",
       "state": "Open"
     }
   ],
