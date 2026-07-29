@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 14:54",
+  "updated": "29 Jul 2026, 14:56",
   "departments": [
     {
       "dept": "Finance",
@@ -209,6 +209,11 @@
     },
     {
       "text": "Izzy out of office email.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Posh Cockney Materials",
       "priority": "Medium",
       "state": "Open"
     }
