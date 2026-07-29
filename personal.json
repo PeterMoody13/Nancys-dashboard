@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 09:06",
+  "updated": "29 Jul 2026, 09:08",
   "departments": [
     {
       "dept": "Finance",
@@ -104,11 +104,6 @@
   ],
   "todos": [
     {
-      "text": "Personal licences for AGMs",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
       "text": "Weekly digest due Friday",
       "priority": "Medium",
       "state": "Open"
@@ -122,11 +117,6 @@
       "text": "Accountability and responsibility document",
       "priority": "High",
       "state": "Doing"
-    },
-    {
-      "text": "Rian keycard",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Sale competitions and incentives.",
@@ -164,23 +154,8 @@
       "state": "Open"
     },
     {
-      "text": "Create deck for CMO",
-      "priority": "High",
-      "state": "Open"
-    },
-    {
       "text": "Weekly PnL - add to Sheila's Rock",
       "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Minimum 11 hours between shifts",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Docusign, paid account",
-      "priority": "High",
       "state": "Open"
     },
     {
@@ -189,17 +164,7 @@
       "state": "Open"
     },
     {
-      "text": "Rian to send Bryony Katie training",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Setup rules for subscription invoices to be sent to accounts.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "McMullen & Sons AGM positions",
       "priority": "Medium",
       "state": "Open"
     },
@@ -219,13 +184,13 @@
       "state": "Open"
     },
     {
-      "text": "Playlists - Rian",
+      "text": "End of month group beers/food in Soho",
       "priority": "Medium",
       "state": "Open"
     },
     {
-      "text": "End of month group beers/food in Soho",
-      "priority": "Medium",
+      "text": "HIT Training enrolment",
+      "priority": "High",
       "state": "Open"
     }
   ],
