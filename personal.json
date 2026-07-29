@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 15:02",
+  "updated": "29 Jul 2026, 15:04",
   "departments": [
     {
       "dept": "Finance",
@@ -230,6 +230,10 @@
     {
       "time": "14:00",
       "title": "Sam x Peter - Nancy Spains Head Office"
+    },
+    {
+      "time": "15:30",
+      "title": "Sheila x PM x POH"
     }
   ],
   "todayLabel": "Wednesday 29 July"
