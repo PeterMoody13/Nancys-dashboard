@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "29 Jul 2026, 15:28",
+  "updated": "29 Jul 2026, 15:31",
   "departments": [
     {
       "dept": "Finance",
@@ -213,7 +213,7 @@
       "state": "Open"
     },
     {
-      "text": "Music",
+      "text": "Music brief, then weekly music reports from GMs",
       "priority": "Medium",
       "state": "Open"
     }
