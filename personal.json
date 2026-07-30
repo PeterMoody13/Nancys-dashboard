@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "30 Jul 2026, 15:36",
+  "updated": "30 Jul 2026, 15:38",
   "departments": [
     {
       "dept": "Finance",
@@ -219,6 +219,11 @@
     },
     {
       "text": "Summer party",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Mission statement to email banner",
       "priority": "Medium",
       "state": "Open"
     }
