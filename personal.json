@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "30 Jul 2026, 08:58",
+  "updated": "30 Jul 2026, 08:59",
   "departments": [
     {
       "dept": "Finance",
@@ -213,15 +213,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "10:30",
-      "title": "Sheila x PM x POH"
-    },
-    {
-      "time": "11:30",
-      "title": "PM x NOH - Ops Director 1:1"
-    }
-  ],
+  "today": [],
   "todayLabel": "Thursday 30 July"
 }
