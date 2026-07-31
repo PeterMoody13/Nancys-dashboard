@@ -62,14 +62,18 @@
   .bhag{ text-align:center; padding:1.4vh 0 2.2vh; border-bottom:2px solid rgba(198,153,71,.4); margin-bottom:2.4vh; }
   .bhag .lbl{ font-size:1.8vh; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); }
   .bhag .txt{ font-size:3.8vh; color:var(--cream); font-style:italic; line-height:1.3; margin-top:1vh; }
-  .csf-head{ font-size:2.6vh; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); text-align:center; margin-bottom:1.8vh; }
-  .csf-list{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:2vh; }
-  .csf{ background:var(--green-panel); border-left:6px solid var(--gold); border-radius:1.2vh;
-    padding:2.2vh 2vw; display:flex; align-items:baseline; justify-content:space-between; gap:2vw; }
-  .csf .factor{ font-size:3.4vh; color:var(--cream); font-weight:bold; }
-  .csf .sponsor{ font-size:2.1vh; color:var(--gold-soft); font-style:italic; white-space:nowrap; }
-  .csf .sponsor b{ color:var(--gold); font-weight:normal; font-style:normal; letter-spacing:.08em;
-    text-transform:uppercase; font-size:1.5vh; margin-right:.6vw; }
+  .csf-head{ text-align:center; margin-bottom:2vh; }
+  .csf-head .h{ font-size:2.8vh; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); }
+  .csf-head .s{ display:block; font-size:2vh; color:var(--muted); font-style:italic; margin-top:.6vh; }
+  .csf-list{ flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:2vw; }
+  .csf{ background:var(--green-panel); border-top:6px solid var(--gold); border-radius:1.4vh;
+    padding:2.6vh 1.6vw; display:flex; flex-direction:column; align-items:center; text-align:center; }
+  .csf .num{ font-size:4.6vh; font-weight:bold; color:var(--gold); line-height:1; }
+  .csf .factor{ flex:1; display:flex; align-items:center; justify-content:center;
+    font-size:3vh; color:var(--cream); font-weight:bold; line-height:1.32; margin:1.4vh 0; }
+  .csf .sponsor{ width:100%; padding-top:1.6vh; border-top:1px solid rgba(198,153,71,.3); }
+  .csf .sponsor .slabel{ display:block; font-size:1.4vh; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:.4vh; }
+  .csf .sponsor .sname{ font-size:2.3vh; color:var(--gold-soft); }
 
   /* mission */
   .mission{ flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:3vh; }
@@ -99,7 +103,7 @@ const VALUES = ["Be an owner", "Superpumped", "Relentless ambition", "Earn your 
 const MISSION = "Bringing the craic, one tune, one pint, one city at a time.";
 const BHAG = "Nancy Spains will become the number one brand for Irish pubs and live music in the world!";
 const CSFS = [
-  { factor:"A limitless flow of great people.", sponsor:"Liz" },
+  { factor:"A limitless flow of great people.", sponsor:"Liz Jones" },
   { factor:"Every year bigger; every year better.", sponsor:"Nick O'Halloran" },
   { factor:"Turn every punter into a lifelong fan.", sponsor:"Peter O'Halloran" }
 ];
@@ -166,12 +170,14 @@ function mgrSlide(mm,i,total,q){
     ${ctx}${foot(i,total)}</div>`;
 }
 function csfSlide(i,total,q){
-  const rows = CSFS.map(c=>`<div class="csf">
-      <span class="factor">${c.factor}</span>
-      <span class="sponsor"><b>Board sponsor</b>${c.sponsor}</span></div>`).join('');
+  const rows = CSFS.map((c,n)=>`<div class="csf">
+      <div class="num">${n+1}</div>
+      <div class="factor">${c.factor}</div>
+      <div class="sponsor"><span class="slabel">Board sponsor</span><span class="sname">${c.sponsor}</span></div>
+    </div>`).join('');
   return `<div class="slide">${topBar('Critical Success Factors', q.label+' · '+q.sub)}
     <div class="bhag"><div class="lbl">Our Big Hairy Audacious Goal</div><div class="txt">${BHAG}</div></div>
-    <div class="csf-head">Critical Success Factors</div>
+    <div class="csf-head"><span class="h">Critical Success Factors</span><span class="s">The three things that will get us there</span></div>
     <div class="csf-list">${rows}</div>${foot(i,total)}</div>`;
 }
 function missionSlide(i,total,q){
