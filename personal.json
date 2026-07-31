@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Jul 2026, 00:58",
+  "updated": "31 Jul 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -240,12 +240,12 @@
   ],
   "today": [
     {
-      "time": "10:30",
-      "title": "Sheila x PM x POH"
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
     },
     {
-      "time": "11:30",
-      "title": "PM x NOH - Ops Director 1:1"
+      "time": "12:00",
+      "title": "Posh Cockney x Nancy Spains - Richard Intro"
     }
   ],
   "todayLabel": "Friday 31 July"
