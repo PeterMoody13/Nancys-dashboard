@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Jul 2026, 11:46",
+  "updated": "31 Jul 2026, 11:48",
   "departments": [
     {
       "dept": "Finance",
@@ -224,6 +224,11 @@
     },
     {
       "text": "Brief for incentive program",
+      "priority": "High",
+      "state": "Open"
+    },
+    {
+      "text": "Katie's pay to be moved up.",
       "priority": "High",
       "state": "Open"
     }
