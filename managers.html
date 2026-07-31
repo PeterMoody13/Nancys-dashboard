@@ -170,14 +170,13 @@ function mgrSlide(mm,i,total,q){
     ${ctx}${foot(i,total)}</div>`;
 }
 function csfSlide(i,total,q){
-  const rows = CSFS.map((c,n)=>`<div class="csf">
-      <div class="num">${n+1}</div>
+  const rows = CSFS.map(c=>`<div class="csf">
       <div class="factor">${c.factor}</div>
       <div class="sponsor"><span class="slabel">Board sponsor</span><span class="sname">${c.sponsor}</span></div>
     </div>`).join('');
   return `<div class="slide">${topBar('Critical Success Factors', q.label+' · '+q.sub)}
     <div class="bhag"><div class="lbl">Our Big Hairy Audacious Goal</div><div class="txt">${BHAG}</div></div>
-    <div class="csf-head"><span class="h">Critical Success Factors</span><span class="s">The three things that will get us there</span></div>
+    <div class="csf-head"><span class="h">Critical Success Factors</span></div>
     <div class="csf-list">${rows}</div>${foot(i,total)}</div>`;
 }
 function missionSlide(i,total,q){
