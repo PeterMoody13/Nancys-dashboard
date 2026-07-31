@@ -7,8 +7,8 @@
 <style>
   /* ============================================================
      NANCY SPAINS — OFFICE WALL (auto-rotating + tap/swipe, LIVE)
-     Reads data.json. Rotation: Overview -> each department's
-     rock + pillars -> Mission & Values. Status-based (no %).
+     Reads data.json. Rotation: Overview -> each department ->
+     Critical Success Factors -> Mission & Values.
      ============================================================ */
   :root{
     --green-deep:#02231f; --green-panel:#063029; --gold:#c69947; --gold-soft:#d8b978;
@@ -52,6 +52,18 @@
   .st-pill{ flex:none; font-size:1.8vh; font-weight:bold; padding:.7vh 1.4vw; border-radius:5vh; border:2px solid currentColor; }
   .empty{ color:var(--muted); font-style:italic; font-size:2.6vh; }
 
+  /* critical success factors */
+  .bhag{ text-align:center; padding:1.4vh 0 2.2vh; border-bottom:2px solid rgba(198,153,71,.4); margin-bottom:2.4vh; }
+  .bhag .lbl{ font-size:1.8vh; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); }
+  .bhag .txt{ font-size:3.8vh; color:var(--cream); font-style:italic; line-height:1.3; margin-top:1vh; }
+  .csf-list{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:2vh; }
+  .csf{ background:var(--green-panel); border-left:6px solid var(--gold); border-radius:1.2vh;
+    padding:2.2vh 2vw; display:flex; align-items:baseline; justify-content:space-between; gap:2vw; }
+  .csf .factor{ font-size:3.4vh; color:var(--cream); font-weight:bold; }
+  .csf .sponsor{ font-size:2.1vh; color:var(--gold-soft); font-style:italic; white-space:nowrap; }
+  .csf .sponsor b{ color:var(--gold); font-weight:normal; font-style:normal; letter-spacing:.08em;
+    text-transform:uppercase; font-size:1.5vh; margin-right:.6vw; }
+
   /* mission */
   .mission{ flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:3vh; }
   .mission .mt{ font-size:2.4vh; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
@@ -77,8 +89,15 @@
 <script>
 /* ---- editable: company values (footer + Mission slide) ---- */
 const VALUES = ["Be an owner", "Superpumped", "Relentless ambition", "Earn your pint", "Customer obsessed"];
-/* Mission statement — placeholder until finalised. Edit this one line. */
+/* Mission statement */
 const MISSION = "Bringing the craic, one tune, one pint, one city at a time.";
+/* Big Hairy Audacious Goal + Critical Success Factors (edit here) */
+const BHAG = "Nancy Spains will become the number one brand for Irish pubs and live music in the world!";
+const CSFS = [
+  { factor:"A limitless flow of great people", sponsor:"Liz" },
+  { factor:"Every year bigger; every year better.", sponsor:"Nick O'Halloran" },
+  { factor:"Turn every punter into a lifelong fan", sponsor:"Peter O'Halloran" }
+];
 
 const FALLBACK = { quarter:{label:"Q3 2026",sub:"Jul – Sep 2026"}, updated:"offline", departments:[] };
 const LOGO = "https://nancyspains.co.uk/wp-content/uploads/2025/01/Logo-Landscape-Gold-1.png";
@@ -88,7 +107,7 @@ const PSTATUS = {
   stuck:{label:"Stuck",colour:"#d0342c",seg:"#d0342c",word:"stuck"},
   done:{label:"Done",colour:"#3aa64a",seg:"#3aa64a",word:"done"}
 };
-const DWELL_OV = 25000, DWELL_DEPT = 20000, DWELL_MISSION = 20000;
+const DWELL_OV = 36000, DWELL_DEPT = 24000, DWELL_CSF = 24000, DWELL_MISSION = 24000;
 
 const stage = document.getElementById('stage');
 let idx = 0, iv = null, DATA = FALLBACK, dwells = [];
@@ -134,6 +153,14 @@ function deptSlide(d,i,total,q){
     <div class="dept-sub">${done} of ${(d.pillars||[]).length} pillars done</div>
     <div class="pillars">${body}</div>${foot(i,total)}</div>`;
 }
+function csfSlide(i,total,q){
+  const rows = CSFS.map(c=>`<div class="csf">
+      <span class="factor">${c.factor}</span>
+      <span class="sponsor"><b>Board sponsor</b>${c.sponsor}</span></div>`).join('');
+  return `<div class="slide">${topBar('Critical Success Factors', q.label+' · '+q.sub)}
+    <div class="bhag"><div class="lbl">Our Big Hairy Audacious Goal</div><div class="txt">${BHAG}</div></div>
+    <div class="csf-list">${rows}</div>${foot(i,total)}</div>`;
+}
 function missionSlide(i,total,q){
   const vals = VALUES.map(v=>`<span class="val">${v}</span>`).join('<span class="sep">◆</span>');
   return `<div class="slide">${topBar('Mission & Values', q.label+' · '+q.sub)}
@@ -144,11 +171,12 @@ function missionSlide(i,total,q){
 function build(){
   const q=DATA.quarter||FALLBACK.quarter;
   const deps=(DATA.departments||[]);
-  const total=deps.length+2;   /* overview + departments + mission */
-  dwells=[DWELL_OV].concat(deps.map(()=>DWELL_DEPT)).concat([DWELL_MISSION]);
+  const total=deps.length+3;   /* overview + departments + CSF + mission */
+  dwells=[DWELL_OV].concat(deps.map(()=>DWELL_DEPT)).concat([DWELL_CSF, DWELL_MISSION]);
   let html='<div class="timer" id="timer"></div>';
   html+=overviewSlide(deps,total,q);
   deps.forEach((d,i)=> html+=deptSlide(d,i+1,total,q));
+  html+=csfSlide(total-2,total,q);
   html+=missionSlide(total-1,total,q);
   stage.innerHTML=html;
   if(idx>=total) idx=0;
