@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Jul 2026, 11:38",
+  "updated": "31 Jul 2026, 11:40",
   "departments": [
     {
       "dept": "Finance",
@@ -71,12 +71,7 @@
           "status": "notstart"
         }
       ],
-      "flags": [
-        {
-          "text": "CMO role still vacant",
-          "priority": "High"
-        }
-      ]
+      "flags": []
     },
     {
       "dept": "People",
