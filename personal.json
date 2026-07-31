@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Jul 2026, 10:08",
+  "updated": "31 Jul 2026, 10:10",
   "departments": [
     {
       "dept": "Finance",
@@ -191,11 +191,6 @@
       "text": "HIT Training enrolment",
       "priority": "High",
       "state": "Doing"
-    },
-    {
-      "text": "Fractional staff holidays?",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Music brief, then weekly music reports from GMs",
