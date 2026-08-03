@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 12:14",
+  "updated": "3 Aug 2026, 12:17",
   "departments": [
     {
       "dept": "Finance",
@@ -191,21 +191,6 @@
       "text": "Music brief, then weekly music reports from GMs",
       "priority": "High",
       "state": "Doing"
-    },
-    {
-      "text": "NDA for rich",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Add critical success factors to dashboards",
-      "priority": "High",
-      "state": "Open"
-    },
-    {
-      "text": "Nik making staff clock out then stay to do quizzes",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Summer party",
