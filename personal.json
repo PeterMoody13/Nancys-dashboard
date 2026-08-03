@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 13:28",
+  "updated": "3 Aug 2026, 13:31",
   "departments": [
     {
       "dept": "Finance",
@@ -224,6 +224,11 @@
     },
     {
       "text": "Manchester Irish candidate",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rian schedule",
       "priority": "Medium",
       "state": "Open"
     }
