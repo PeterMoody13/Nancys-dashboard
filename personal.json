@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 13:38",
+  "updated": "3 Aug 2026, 13:40",
   "departments": [
     {
       "dept": "Finance",
@@ -178,7 +178,7 @@
       "state": "Doing"
     },
     {
-      "text": "End of month group beers/food in Soho",
+      "text": "Head Office Outing",
       "priority": "Medium",
       "state": "Open"
     },
@@ -199,11 +199,6 @@
     },
     {
       "text": "Mission statement to email banner",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Schedule meeting",
       "priority": "Medium",
       "state": "Open"
     },
