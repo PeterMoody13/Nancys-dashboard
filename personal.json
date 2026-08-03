@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 13:34",
+  "updated": "3 Aug 2026, 13:36",
   "departments": [
     {
       "dept": "Finance",
@@ -241,6 +241,10 @@
     {
       "time": "15:00",
       "title": "Karl Barry - Nancy Spains Bristol Interview"
+    },
+    {
+      "time": "16:00",
+      "title": "Charlie x PM Catch-up"
     }
   ],
   "todayLabel": "Monday 3 August"
