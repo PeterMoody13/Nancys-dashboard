@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 12:12",
+  "updated": "3 Aug 2026, 12:14",
   "departments": [
     {
       "dept": "Finance",
@@ -236,13 +236,14 @@
       "text": "Iseult move to monument?",
       "priority": "Medium",
       "state": "Open"
+    },
+    {
+      "text": "Manchester Irish candidate",
+      "priority": "Medium",
+      "state": "Open"
     }
   ],
   "today": [
-    {
-      "time": "09:30",
-      "title": "Critical Success Factors and Rocks"
-    },
     {
       "time": "14:00",
       "title": "Graeme Brown - Nancy Spains NQ Interview"
