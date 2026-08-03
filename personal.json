@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Aug 2026, 00:58",
+  "updated": "3 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -233,6 +233,19 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "09:30",
+      "title": "Critical Success Factors and Rocks"
+    },
+    {
+      "time": "14:00",
+      "title": "Graeme Brown - Nancy Spains NQ Interview"
+    },
+    {
+      "time": "15:00",
+      "title": "Karl Barry - Nancy Spains Bristol Interview"
+    }
+  ],
   "todayLabel": "Monday 3 August"
 }
