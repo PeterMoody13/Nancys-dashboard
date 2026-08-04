@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "4 Aug 2026, 11:18",
+  "updated": "4 Aug 2026, 11:20",
   "departments": [
     {
       "dept": "Finance",
@@ -149,11 +149,6 @@
     },
     {
       "text": "Walk through financials of new sites with POH",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Weekly PnL - add to Sheila's Rock",
       "priority": "Medium",
       "state": "Open"
     },
