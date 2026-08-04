@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "4 Aug 2026, 00:58",
+  "updated": "4 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -225,16 +225,20 @@
   ],
   "today": [
     {
-      "time": "14:00",
-      "title": "Graeme Brown - Nancy Spains NQ Interview"
+      "time": "10:00",
+      "title": "Sheila x PM 1:1"
     },
     {
-      "time": "15:00",
-      "title": "Karl Barry - Nancy Spains Bristol Interview"
+      "time": "10:30",
+      "title": "Rich x Peter catch up"
     },
     {
-      "time": "16:00",
-      "title": "Charlie x PM Catch-up"
+      "time": "14:30",
+      "title": "Critical Success Factors and Rocks"
+    },
+    {
+      "time": "16:30",
+      "title": "Tangerine Debrief"
     }
   ],
   "todayLabel": "Tuesday 4 August"
