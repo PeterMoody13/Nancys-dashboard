@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:28",
+  "updated": "5 Aug 2026, 16:30",
   "departments": [
     {
       "dept": "Finance",
@@ -179,6 +179,11 @@
     },
     {
       "text": "Culture Deck",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Music Guides",
       "priority": "Medium",
       "state": "Open"
     }
