@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:06",
+  "updated": "5 Aug 2026, 16:08",
   "departments": [
     {
       "dept": "Finance",
@@ -105,10 +105,23 @@
     },
     {
       "dept": "CEO",
-      "rock": "CEO — Q3 rock:",
-      "progress": 0,
-      "subtasks": 0,
-      "pillars": []
+      "rock": "CEO — Q3 rock: Create a scalable music strategy—brief, scoring, scouting.",
+      "progress": 67,
+      "subtasks": 3,
+      "pillars": [
+        {
+          "name": "Create musician brief",
+          "status": "done"
+        },
+        {
+          "name": "Implement weekly musician reports",
+          "status": "done"
+        },
+        {
+          "name": "Create system for scouting in new cities",
+          "status": "working"
+        }
+      ]
     }
   ]
 }
