@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:18",
+  "updated": "5 Aug 2026, 16:20",
   "departments": [
     {
       "dept": "Finance",
@@ -106,8 +106,8 @@
     {
       "dept": "CEO",
       "rock": "CEO — Q3 rock: Create a scalable music strategy—brief, scoring, scouting.",
-      "progress": 50,
-      "subtasks": 4,
+      "progress": 33,
+      "subtasks": 6,
       "pillars": [
         {
           "name": "Create musician brief",
@@ -118,12 +118,20 @@
           "status": "done"
         },
         {
-          "name": "Create system for scouting in new cities",
+          "name": "System for scouting in new cities",
           "status": "working"
         },
         {
-          "name": "Shower",
-          "status": "notstart"
+          "name": "Musician grading platform",
+          "status": "working"
+        },
+        {
+          "name": "New monthly music schedule",
+          "status": "working"
+        },
+        {
+          "name": "Create Nancy's music guides",
+          "status": "working"
         }
       ]
     }
