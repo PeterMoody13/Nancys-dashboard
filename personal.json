@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 00:58",
+  "updated": "5 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -221,15 +221,15 @@
   "today": [
     {
       "time": "10:00",
-      "title": "Sheila x PM 1:1"
+      "title": "Critical Success Factors and Rocks"
     },
     {
-      "time": "10:30",
-      "title": "Rich x Peter catch up"
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
     },
     {
-      "time": "16:30",
-      "title": "Tangerine Debrief"
+      "time": "14:00",
+      "title": "Joe Curran - Nancy Spains NQ Interview"
     }
   ],
   "todayLabel": "Wednesday 5 August"
