@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 18:40",
+  "updated": "5 Aug 2026, 18:42",
   "departments": [
     {
       "dept": "Finance",
@@ -193,6 +193,19 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "10:00",
+      "title": "Critical Success Factors and Rocks"
+    },
+    {
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "14:00",
+      "title": "Joe Curran - Nancy Spains NQ Interview"
+    }
+  ],
   "todayLabel": "Wednesday 5 August"
 }
