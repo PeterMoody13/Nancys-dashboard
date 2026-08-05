@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:20",
+  "updated": "5 Aug 2026, 16:22",
   "departments": [
     {
       "dept": "Finance",
@@ -130,7 +130,7 @@
           "status": "working"
         },
         {
-          "name": "Create Nancy's music guides",
+          "name": "Nancy's music guides",
           "status": "working"
         }
       ]

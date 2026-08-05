@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:20",
+  "updated": "5 Aug 2026, 16:22",
   "departments": [
     {
       "dept": "Finance",
@@ -118,19 +118,9 @@
       "state": "Doing"
     },
     {
-      "text": "Sale competitions and incentives.",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
       "text": "Directors to create Rocks with Reports",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Paint MS and Values on the pubs",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Leaderboard for Dingle competition",
