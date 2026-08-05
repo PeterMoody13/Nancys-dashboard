@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Aug 2026, 16:22",
+  "updated": "5 Aug 2026, 16:24",
   "departments": [
     {
       "dept": "Finance",
@@ -123,16 +123,6 @@
       "state": "Doing"
     },
     {
-      "text": "Leaderboard for Dingle competition",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Rian to spread Org chart and responsibilities to venue staff",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Communication Channels",
       "priority": "High",
       "state": "Open"
@@ -144,11 +134,6 @@
     },
     {
       "text": "Setup rules for subscription invoices to be sent to accounts.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Liz to create strict schedule for Rian",
       "priority": "Medium",
       "state": "Open"
     },
@@ -173,11 +158,6 @@
       "state": "Open"
     },
     {
-      "text": "Mission statement to email banner",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Brief for incentive program",
       "priority": "High",
       "state": "Open"
@@ -185,16 +165,6 @@
     {
       "text": "Katie's pay to be moved up.",
       "priority": "High",
-      "state": "Open"
-    },
-    {
-      "text": "Iseult move to monument?",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Manchester Irish candidate",
-      "priority": "Medium",
       "state": "Open"
     },
     {
