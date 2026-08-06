@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "6 Aug 2026, 13:16",
+  "updated": "6 Aug 2026, 13:18",
   "departments": [
     {
       "dept": "Finance",
@@ -158,18 +158,8 @@
       "state": "Open"
     },
     {
-      "text": "Brief for incentive program",
-      "priority": "High",
-      "state": "Open"
-    },
-    {
       "text": "Katie's pay to be moved up.",
       "priority": "High",
-      "state": "Open"
-    },
-    {
-      "text": "Rian schedule",
-      "priority": "Medium",
       "state": "Open"
     },
     {
@@ -179,11 +169,6 @@
     },
     {
       "text": "Culture Deck",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Music Guides",
       "priority": "Medium",
       "state": "Open"
     },
