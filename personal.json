@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "6 Aug 2026, 00:58",
+  "updated": "6 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -195,16 +195,20 @@
   ],
   "today": [
     {
-      "time": "10:00",
-      "title": "Critical Success Factors and Rocks"
+      "time": "11:30",
+      "title": "PM x NOH - Ops Director 1:1"
     },
     {
       "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
+      "title": "Bi-weekly head office catch-up"
     },
     {
       "time": "14:00",
-      "title": "Joe Curran - Nancy Spains NQ Interview"
+      "title": "Danny Fyles - Nancy Spains Interview"
+    },
+    {
+      "time": "19:00",
+      "title": "Karl Barry / Nancy Spains, Monument / Interview"
     }
   ],
   "todayLabel": "Thursday 6 August"
