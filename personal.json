@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 10:52",
+  "updated": "7 Aug 2026, 10:54",
   "departments": [
     {
       "dept": "Finance",
@@ -173,12 +173,7 @@
       "state": "Open"
     },
     {
-      "text": "Fleadh festival - good places",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Openings 'budget'",
+      "text": "Openings systems",
       "priority": "Medium",
       "state": "Open"
     },
