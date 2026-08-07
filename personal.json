@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 10:50",
+  "updated": "7 Aug 2026, 10:52",
   "departments": [
     {
       "dept": "Finance",
@@ -194,6 +194,11 @@
     },
     {
       "text": "Stolt cleaners briefing",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Bookings Manager",
       "priority": "Medium",
       "state": "Open"
     }
