@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 10:06",
+  "updated": "7 Aug 2026, 10:08",
   "departments": [
     {
       "dept": "Finance",
@@ -173,7 +173,22 @@
       "state": "Open"
     },
     {
-      "text": "Matthew Nolan JD",
+      "text": "Fleadh festival - good places",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Openings 'budget'",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Timeline for Access implementation",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "All in-person twice a month",
       "priority": "Medium",
       "state": "Open"
     }
