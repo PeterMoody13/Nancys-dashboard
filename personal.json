@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 15:20",
+  "updated": "7 Aug 2026, 15:22",
   "departments": [
     {
       "dept": "Finance",
@@ -194,6 +194,11 @@
     },
     {
       "text": "Bookings Manager",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Apprentices to spend 2 hours a week in office for coursework",
       "priority": "Medium",
       "state": "Open"
     }
