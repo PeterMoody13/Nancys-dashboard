@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 10:08",
+  "updated": "7 Aug 2026, 10:12",
   "departments": [
     {
       "dept": "Finance",
@@ -189,6 +189,11 @@
     },
     {
       "text": "All in-person twice a month",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Stolt cleaners briefing",
       "priority": "Medium",
       "state": "Open"
     }
