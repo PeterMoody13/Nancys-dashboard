@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 16:24",
+  "updated": "7 Aug 2026, 16:26",
   "departments": [
     {
       "dept": "Finance",
@@ -184,6 +184,11 @@
     },
     {
       "text": "Apprentices to spend 2 hours a week in office for coursework",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Charlie to meet Bryony and Nik for lunch",
       "priority": "Medium",
       "state": "Open"
     }
