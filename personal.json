@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 00:58",
+  "updated": "7 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -180,20 +180,8 @@
   ],
   "today": [
     {
-      "time": "11:30",
-      "title": "PM x NOH - Ops Director 1:1"
-    },
-    {
-      "time": "12:00",
-      "title": "Bi-weekly head office catch-up"
-    },
-    {
-      "time": "14:00",
-      "title": "Danny Fyles - Nancy Spains Interview"
-    },
-    {
-      "time": "19:00",
-      "title": "Karl Barry / Nancy Spains, Monument / Interview"
+      "time": "09:00",
+      "title": "PM x POH Weekly Meeting"
     }
   ],
   "todayLabel": "Friday 7 August"
