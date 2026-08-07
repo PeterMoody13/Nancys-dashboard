@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Aug 2026, 15:22",
+  "updated": "7 Aug 2026, 15:24",
   "departments": [
     {
       "dept": "Finance",
@@ -148,22 +148,7 @@
       "state": "Open"
     },
     {
-      "text": "HIT Training enrolment",
-      "priority": "High",
-      "state": "Doing"
-    },
-    {
       "text": "Summer party",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Katie's pay to be moved up.",
-      "priority": "High",
-      "state": "Open"
-    },
-    {
-      "text": "Add peter's rock to directors dashboard",
       "priority": "Medium",
       "state": "Open"
     },
@@ -183,7 +168,7 @@
       "state": "Open"
     },
     {
-      "text": "All in-person twice a month",
+      "text": "All in person twice a month",
       "priority": "Medium",
       "state": "Open"
     },
