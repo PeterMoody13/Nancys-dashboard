@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 10:30",
+  "updated": "10 Aug 2026, 10:32",
   "departments": [
     {
       "dept": "Finance",
@@ -189,6 +189,11 @@
     },
     {
       "text": "Liz to draft email launching new pay levels",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Izzy merch designs",
       "priority": "Medium",
       "state": "Open"
     }
