@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 08:56",
+  "updated": "10 Aug 2026, 08:58",
   "departments": [
     {
       "dept": "Finance",
@@ -123,11 +123,6 @@
       "state": "Doing"
     },
     {
-      "text": "Communication Channels",
-      "priority": "High",
-      "state": "Open"
-    },
-    {
       "text": "Walk through financials of new sites with POH",
       "priority": "Medium",
       "state": "Open"
@@ -141,11 +136,6 @@
       "text": "Headline KPIs",
       "priority": "High",
       "state": "Doing"
-    },
-    {
-      "text": "Head Office Outing",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Summer party",
