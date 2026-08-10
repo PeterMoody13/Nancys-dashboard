@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 14:48",
+  "updated": "10 Aug 2026, 14:50",
   "departments": [
     {
       "dept": "Finance",
@@ -146,11 +146,6 @@
       "text": "Openings systems",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Timeline for Access implementation",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "All in person twice a month",
