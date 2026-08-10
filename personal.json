@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 08:58",
+  "updated": "10 Aug 2026, 09:01",
   "departments": [
     {
       "dept": "Finance",
@@ -189,6 +189,11 @@
     },
     {
       "text": "Rugby tops merch",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Liz to draft email launching new pay levels",
       "priority": "Medium",
       "state": "Open"
     }
