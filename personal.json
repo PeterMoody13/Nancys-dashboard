@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 09:10",
+  "updated": "10 Aug 2026, 09:12",
   "departments": [
     {
       "dept": "Finance",
@@ -124,11 +124,6 @@
     },
     {
       "text": "Walk through financials of new sites with POH",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Setup rules for subscription invoices to be sent to accounts.",
       "priority": "Medium",
       "state": "Open"
     },
