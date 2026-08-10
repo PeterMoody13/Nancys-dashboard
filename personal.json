@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "10 Aug 2026, 00:58",
+  "updated": "10 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -203,6 +203,11 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "11:00",
+      "title": "Ashley Salisbury - Nancy Spains NQ Interview"
+    }
+  ],
   "todayLabel": "Monday 10 August"
 }
