@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "11 Aug 2026, 02:04",
+  "updated": "11 Aug 2026, 02:06",
   "departments": [
     {
       "dept": "Finance",
@@ -198,31 +198,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "10:00",
-      "title": "Sheila x PM 1:1"
-    },
-    {
-      "time": "11:30",
-      "title": "Ashley Salisbury / Nancy Spains / Interview"
-    },
-    {
-      "time": "12:00",
-      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
-    },
-    {
-      "time": "12:30",
-      "title": "Rachael Clewett / Nancy Spains / Interview"
-    },
-    {
-      "time": "14:00",
-      "title": "Apprentice Recruitment Introduction - Nancy spains"
-    },
-    {
-      "time": "15:00",
-      "title": "Nancy Spains Manchester - Rachael Clewett Interview"
-    }
-  ],
+  "today": [],
   "todayLabel": "Tuesday 11 August"
 }
