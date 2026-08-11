@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "11 Aug 2026, 09:04",
+  "updated": "11 Aug 2026, 09:06",
   "departments": [
     {
       "dept": "Finance",
@@ -199,10 +199,6 @@
     }
   ],
   "today": [
-    {
-      "time": "10:00",
-      "title": "Sheila x PM 1:1"
-    },
     {
       "time": "11:30",
       "title": "Ashley Salisbury / Nancy Spains / Interview"
