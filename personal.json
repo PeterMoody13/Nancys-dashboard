@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "12 Aug 2026, 13:26",
+  "updated": "12 Aug 2026, 13:28",
   "departments": [
     {
       "dept": "Finance",
@@ -189,16 +189,6 @@
     },
     {
       "text": "Izzy merch designs",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Two receipts from whites.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Get Rian off website email list",
       "priority": "Medium",
       "state": "Open"
     },
