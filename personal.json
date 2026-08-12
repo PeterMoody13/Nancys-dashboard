@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "12 Aug 2026, 09:16",
+  "updated": "12 Aug 2026, 09:18",
   "departments": [
     {
       "dept": "Finance",
@@ -214,6 +214,10 @@
     }
   ],
   "today": [
+    {
+      "time": "10:00",
+      "title": "Izzy x PM"
+    },
     {
       "time": "12:00",
       "title": "Weekly Catch-Up - HR"
