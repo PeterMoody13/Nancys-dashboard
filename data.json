@@ -5,12 +5,12 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "12 Aug 2026, 12:42",
+  "updated": "12 Aug 2026, 12:44",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance — Q3 rock: Financial systems",
-      "progress": 25,
+      "progress": 50,
       "subtasks": 4,
       "pillars": [
         {
@@ -23,7 +23,7 @@
         },
         {
           "name": "Budget review and implementation",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Payroll - system revision and outsourcing",
