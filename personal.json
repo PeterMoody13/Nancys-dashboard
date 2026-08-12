@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "12 Aug 2026, 13:48",
+  "updated": "12 Aug 2026, 13:50",
   "departments": [
     {
       "dept": "Finance",
@@ -188,11 +188,6 @@
     },
     {
       "text": "Izzy merch designs",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Get rid of ‘path to termination’",
       "priority": "Medium",
       "state": "Open"
     },
