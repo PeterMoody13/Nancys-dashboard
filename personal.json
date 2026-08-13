@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "13 Aug 2026, 17:36",
+  "updated": "13 Aug 2026, 17:38",
   "departments": [
     {
       "dept": "Finance",
@@ -193,6 +193,11 @@
     },
     {
       "text": "Crabbies?",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Windsor sites",
       "priority": "Medium",
       "state": "Open"
     }
