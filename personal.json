@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "13 Aug 2026, 00:58",
+  "updated": "13 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -194,20 +194,8 @@
   ],
   "today": [
     {
-      "time": "10:00",
-      "title": "Izzy x PM"
-    },
-    {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
-    },
-    {
-      "time": "14:00",
-      "title": "Sheila x PM 1:1"
-    },
-    {
-      "time": "15:00",
-      "title": "PM x POH"
+      "time": "11:30",
+      "title": "PM x NOH - Ops Director 1:1"
     }
   ],
   "todayLabel": "Thursday 13 August"
