@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "13 Aug 2026, 15:06",
+  "updated": "13 Aug 2026, 15:08",
   "departments": [
     {
       "dept": "Finance",
@@ -188,11 +188,6 @@
     },
     {
       "text": "Bryony to get skills assessment",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Tell Harry why no music report in EOW",
       "priority": "Medium",
       "state": "Open"
     }
