@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Aug 2026, 20:58",
+  "updated": "14 Aug 2026, 21:01",
   "departments": [
     {
       "dept": "Finance",
@@ -207,7 +207,17 @@
       "state": "Open"
     },
     {
+      "text": "Review granola notes from POH and LJ",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
       "text": "Nancy Spains glasses for soho",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rian to send assessment to POH, LJ, and myself",
       "priority": "Medium",
       "state": "Open"
     }
