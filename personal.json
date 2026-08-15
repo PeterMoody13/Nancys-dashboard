@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Aug 2026, 00:32",
+  "updated": "16 Aug 2026, 00:34",
   "departments": [
     {
       "dept": "Finance",
@@ -218,6 +218,11 @@
     },
     {
       "text": "Rian to send assessment to POH, LJ, and myself",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Update Venus/heineken sheets",
       "priority": "Medium",
       "state": "Open"
     }
