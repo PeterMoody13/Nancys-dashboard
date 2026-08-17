@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 11:42",
+  "updated": "17 Aug 2026, 11:44",
   "departments": [
     {
       "dept": "Finance",
@@ -212,11 +212,6 @@
       "state": "Open"
     },
     {
-      "text": "Rian to send assessment to POH, LJ, and myself",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Update Venus/heineken sheets",
       "priority": "Medium",
       "state": "Open"
@@ -253,11 +248,6 @@
     },
     {
       "text": "Restart Dingle competition, lanyards for staff.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Send Rian's AGM assessment docs",
       "priority": "Medium",
       "state": "Open"
     },
