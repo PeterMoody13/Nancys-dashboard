@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 08:48",
+  "updated": "17 Aug 2026, 08:50",
   "departments": [
     {
       "dept": "Finance",
@@ -207,11 +207,6 @@
       "state": "Open"
     },
     {
-      "text": "Review granola notes from POH and LJ",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Nancy Spains glasses for soho",
       "priority": "Medium",
       "state": "Open"
@@ -228,6 +223,41 @@
     },
     {
       "text": "Send KPI/Salary bands document to Liz",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Board Reports",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Schedule call with liz for talent review",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Joint meeting with CMO and CFO to discuss budget",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Deadline for WBS ending August",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Get merch designs from izzy, send over.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Restart Dingle competition, lanyards for staff.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Send Rian's AGM assessment docs",
       "priority": "Medium",
       "state": "Open"
     }
