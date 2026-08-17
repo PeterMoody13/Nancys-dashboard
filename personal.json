@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 11:44",
+  "updated": "17 Aug 2026, 11:46",
   "departments": [
     {
       "dept": "Finance",
@@ -213,11 +213,6 @@
     },
     {
       "text": "Update Venus/heineken sheets",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Send KPI/Salary bands document to Liz",
       "priority": "Medium",
       "state": "Open"
     },
