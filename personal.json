@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 13:36",
+  "updated": "17 Aug 2026, 13:38",
   "departments": [
     {
       "dept": "Finance",
@@ -198,16 +198,6 @@
     },
     {
       "text": "Nancy Spains glasses for soho",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Update Venus/heineken sheets",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Board Reports",
       "priority": "Medium",
       "state": "Open"
     },
