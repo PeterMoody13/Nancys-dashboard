@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 10:24",
+  "updated": "17 Aug 2026, 10:26",
   "departments": [
     {
       "dept": "Finance",
@@ -263,6 +263,11 @@
     },
     {
       "text": "Write up meeting rhythm and send to POH.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Save up correct music brief to sharepoint",
       "priority": "Medium",
       "state": "Open"
     }
