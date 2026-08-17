@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 15:06",
+  "updated": "17 Aug 2026, 15:08",
   "departments": [
     {
       "dept": "Finance",
@@ -152,11 +152,6 @@
       "state": "Open"
     },
     {
-      "text": "Bookings Manager",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Apprentices to spend 2 hours a week in office for coursework",
       "priority": "Medium",
       "state": "Open"
@@ -167,22 +162,7 @@
       "state": "Open"
     },
     {
-      "text": "Uniform for stolt cleaners",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "New Merchandise",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Liz to draft email launching new pay levels",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Izzy merch designs",
       "priority": "Medium",
       "state": "Open"
     },
