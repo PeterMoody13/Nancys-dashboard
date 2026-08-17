@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 09:10",
+  "updated": "17 Aug 2026, 09:12",
   "departments": [
     {
       "dept": "Finance",
@@ -258,6 +258,11 @@
     },
     {
       "text": "Send Rian's AGM assessment docs",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Write up meeting rhythm and send to POH.",
       "priority": "Medium",
       "state": "Open"
     }
