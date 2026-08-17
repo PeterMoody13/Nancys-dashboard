@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 11:36",
+  "updated": "17 Aug 2026, 11:38",
   "departments": [
     {
       "dept": "Finance",
@@ -263,6 +263,11 @@
     },
     {
       "text": "Save up correct music brief to sharepoint",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Heineken marketing budget for GAA kits",
       "priority": "Medium",
       "state": "Open"
     }
