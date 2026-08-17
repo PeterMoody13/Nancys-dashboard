@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 12:36",
+  "updated": "17 Aug 2026, 12:38",
   "departments": [
     {
       "dept": "Finance",
@@ -258,6 +258,11 @@
     },
     {
       "text": "Ensure people are ready to work Thursday at Monument.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "This is Manchester awards",
       "priority": "Medium",
       "state": "Open"
     }
