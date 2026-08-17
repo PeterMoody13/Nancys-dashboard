@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "17 Aug 2026, 16:40",
+  "updated": "17 Aug 2026, 16:42",
   "departments": [
     {
       "dept": "Finance",
@@ -110,7 +110,7 @@
     {
       "dept": "CEO",
       "rock": "CEO — Q3 rock: Create a scalable music strategy—brief, scoring, scouting.",
-      "progress": 33,
+      "progress": 67,
       "subtasks": 3,
       "pillars": [
         {
@@ -119,10 +119,10 @@
         },
         {
           "name": "Playlist Strategy",
-          "status": "working"
+          "status": "done"
         },
         {
-          "name": "Staff Training on Music",
+          "name": "Music Training Programme for Teams",
           "status": "working"
         }
       ]
