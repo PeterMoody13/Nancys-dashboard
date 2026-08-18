@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 16:57",
+  "updated": "18 Aug 2026, 16:58",
   "departments": [
     {
       "dept": "Finance",
@@ -42,7 +42,7 @@
         },
         {
           "name": "Handbooks - standards and SOPs",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",
@@ -237,7 +237,7 @@
       "state": "Open"
     },
     {
-      "text": "Video to music briefs for staff",
+      "text": "Music brief revisions",
       "priority": "Medium",
       "state": "Open"
     },
