@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 10:42",
+  "updated": "18 Aug 2026, 10:44",
   "departments": [
     {
       "dept": "Finance",
@@ -46,7 +46,7 @@
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Facilities management service",
@@ -64,7 +64,7 @@
         },
         {
           "name": "Openings Strategy",
-          "status": "notstart"
+          "status": "done"
         },
         {
           "name": "Develop relationship with venue teams",

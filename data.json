@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 10:42",
+  "updated": "18 Aug 2026, 10:44",
   "departments": [
     {
       "dept": "Finance",
@@ -38,7 +38,7 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock: Preparing systems for growth",
-      "progress": 25,
+      "progress": 50,
       "subtasks": 4,
       "pillars": [
         {
@@ -51,7 +51,7 @@
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Facilities management service",
@@ -62,7 +62,7 @@
     {
       "dept": "Marketing",
       "rock": "Marketing — Q3 rock: Marketing strategy",
-      "progress": 0,
+      "progress": 25,
       "subtasks": 4,
       "pillars": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "name": "Openings Strategy",
-          "status": "notstart"
+          "status": "done"
         },
         {
           "name": "Develop relationship with venue teams",
