@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 16:46",
+  "updated": "18 Aug 2026, 16:48",
   "departments": [
     {
       "dept": "Finance",
@@ -223,11 +223,6 @@
     },
     {
       "text": "Combine soundtrack and musician guidelines into one brief for staff",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Get master key from Izzy",
       "priority": "Medium",
       "state": "Open"
     },
