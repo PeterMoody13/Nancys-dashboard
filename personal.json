@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 08:54",
+  "updated": "18 Aug 2026, 08:56",
   "departments": [
     {
       "dept": "Finance",
@@ -140,11 +140,6 @@
       "text": "Openings systems",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "All in person twice a month",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Apprentices to spend 2 hours a week in office for coursework",
