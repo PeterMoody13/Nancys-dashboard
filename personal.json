@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 16:38",
+  "updated": "18 Aug 2026, 16:40",
   "departments": [
     {
       "dept": "Finance",
@@ -248,6 +248,11 @@
     },
     {
       "text": "Takeover from Izzy on bookings from Monday",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Music brief to be added to training programme by Rian",
       "priority": "Medium",
       "state": "Open"
     }
