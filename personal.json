@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 09:30",
+  "updated": "18 Aug 2026, 09:32",
   "departments": [
     {
       "dept": "Finance",
@@ -213,6 +213,11 @@
     },
     {
       "text": "Confirm Charlie meeting Bryony",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Recruitment inquiries from website to Recruitment email",
       "priority": "Medium",
       "state": "Open"
     }
