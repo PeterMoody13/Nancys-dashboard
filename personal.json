@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 15:26",
+  "updated": "18 Aug 2026, 15:28",
   "departments": [
     {
       "dept": "Finance",
@@ -208,11 +208,6 @@
     },
     {
       "text": "This is Manchester awards",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Confirm Charlie meeting Bryony",
       "priority": "Medium",
       "state": "Open"
     },
