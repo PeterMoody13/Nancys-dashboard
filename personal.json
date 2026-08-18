@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 10:16",
+  "updated": "18 Aug 2026, 10:18",
   "departments": [
     {
       "dept": "Finance",
@@ -218,6 +218,16 @@
     },
     {
       "text": "Recruitment inquiries from website to Recruitment email",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Speak to Matthew",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Combine soundtrack and musician guidelines into one brief for staff",
       "priority": "Medium",
       "state": "Open"
     }
