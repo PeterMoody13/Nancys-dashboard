@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "18 Aug 2026, 16:30",
+  "updated": "18 Aug 2026, 16:32",
   "departments": [
     {
       "dept": "Finance",
@@ -233,6 +233,16 @@
     },
     {
       "text": "Bookings email",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Shoreditch refurb handover",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Video to music briefs for staff",
       "priority": "Medium",
       "state": "Open"
     }
