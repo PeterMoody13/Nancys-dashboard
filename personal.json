@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "19 Aug 2026, 15:06",
+  "updated": "19 Aug 2026, 15:08",
   "departments": [
     {
       "dept": "Finance",
@@ -177,11 +177,6 @@
       "state": "Open"
     },
     {
-      "text": "Joint meeting with CMO and CFO to discuss budget",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Deadline for WBS ending August",
       "priority": "Medium",
       "state": "Open"
@@ -202,27 +197,12 @@
       "state": "Open"
     },
     {
-      "text": "Ensure people are ready to work Thursday at Monument.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "This is Manchester awards",
       "priority": "Medium",
       "state": "Open"
     },
     {
       "text": "Recruitment inquiries from website to Recruitment email",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Speak to Matthew",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Combine soundtrack and musician guidelines into one brief for staff",
       "priority": "Medium",
       "state": "Open"
     },
