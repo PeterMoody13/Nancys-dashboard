@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "19 Aug 2026, 16:28",
+  "updated": "19 Aug 2026, 16:30",
   "departments": [
     {
       "dept": "Finance",
@@ -233,6 +233,11 @@
     },
     {
       "text": "Send out invites for future Boards, also in control of Agenda",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Liz to pick up with Sheila on Bryony receiving raise later.",
       "priority": "Medium",
       "state": "Open"
     }
