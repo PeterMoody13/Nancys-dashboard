@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "19 Aug 2026, 00:58",
+  "updated": "19 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -254,8 +254,28 @@
   ],
   "today": [
     {
-      "time": "10:00",
-      "title": "Sheila x PM 1:1"
+      "time": "08:30",
+      "title": "BOARD Nancy Spains"
+    },
+    {
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "12:30",
+      "title": "PM x MN"
+    },
+    {
+      "time": "14:00",
+      "title": "Bi-weekly head office catch-up"
+    },
+    {
+      "time": "16:00",
+      "title": "Keeley - Nancy Spains Monument"
+    },
+    {
+      "time": "18:00",
+      "title": "Nancy Spains Head Office - August Outing @ Baráki by Pyro"
     }
   ],
   "todayLabel": "Wednesday 19 August"
