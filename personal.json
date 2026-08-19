@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "19 Aug 2026, 17:44",
+  "updated": "19 Aug 2026, 17:46",
   "departments": [
     {
       "dept": "Finance",
@@ -238,6 +238,11 @@
     },
     {
       "text": "Liz to pick up with Sheila on Bryony receiving raise later.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Speak to ops on AGM KPIs",
       "priority": "Medium",
       "state": "Open"
     }
