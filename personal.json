@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "20 Aug 2026, 11:14",
+  "updated": "20 Aug 2026, 11:16",
   "departments": [
     {
       "dept": "Finance",
@@ -248,10 +248,6 @@
     }
   ],
   "today": [
-    {
-      "time": "11:30",
-      "title": "PM x NOH - Ops Director 1:1"
-    },
     {
       "time": "13:00",
       "title": "Charlie x GMs - Flat Iron Shoreditch"
