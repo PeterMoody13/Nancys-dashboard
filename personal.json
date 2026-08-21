@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 14:36",
+  "updated": "21 Aug 2026, 14:38",
   "departments": [
     {
       "dept": "Finance",
@@ -197,11 +197,6 @@
       "state": "Open"
     },
     {
-      "text": "This is Manchester awards",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Recruitment inquiries from website to Recruitment email",
       "priority": "Medium",
       "state": "Open"
@@ -242,9 +237,9 @@
       "state": "Doing"
     },
     {
-      "text": "Follow up with S-K on website.",
+      "text": "WBS Website",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Rian to send training programme to all today",
@@ -259,7 +254,7 @@
     {
       "text": "GigPig",
       "priority": "Medium",
-      "state": "Awaiting response"
+      "state": "Doing"
     },
     {
       "text": "Speak with Harry Monday to take over from Izzy",
