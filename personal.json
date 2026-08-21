@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 11:40",
+  "updated": "21 Aug 2026, 11:42",
   "departments": [
     {
       "dept": "Finance",
@@ -229,17 +229,17 @@
     {
       "text": "AC service contract",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Handed off"
     },
     {
       "text": "Shoreditch Handover",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Awaiting response"
     },
     {
       "text": "Set Matthew up on soundtrak for full handover by Wednesday",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Follow up with S-K on website.",
