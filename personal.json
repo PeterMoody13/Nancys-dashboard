@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 11:28",
+  "updated": "21 Aug 2026, 11:30",
   "departments": [
     {
       "dept": "Finance",
@@ -212,11 +212,6 @@
       "state": "Open"
     },
     {
-      "text": "Shoreditch refurb handover",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Send out invites for future Boards, also in control of Agenda",
       "priority": "Medium",
       "state": "Open"
@@ -237,7 +232,7 @@
       "state": "Open"
     },
     {
-      "text": "Confirm prices for Ricky and Paul for Shoreditch",
+      "text": "Shoreditch Handover",
       "priority": "Medium",
       "state": "Open"
     },
