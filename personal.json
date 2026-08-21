@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 13:58",
+  "updated": "21 Aug 2026, 14:01",
   "departments": [
     {
       "dept": "Finance",
@@ -248,11 +248,6 @@
     },
     {
       "text": "Rian to send training programme to all today",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Schedule a call with Rich this morning",
       "priority": "Medium",
       "state": "Open"
     },
