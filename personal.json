@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 00:58",
+  "updated": "21 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -249,12 +249,8 @@
   ],
   "today": [
     {
-      "time": "13:00",
-      "title": "Charlie x GMs - Flat Iron Shoreditch"
-    },
-    {
-      "time": "17:00",
-      "title": "Keeley interview - Monument"
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
     }
   ],
   "todayLabel": "Friday 21 August"
