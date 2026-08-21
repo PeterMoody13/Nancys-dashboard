@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 10:48",
+  "updated": "21 Aug 2026, 10:50",
   "departments": [
     {
       "dept": "Finance",
@@ -217,21 +217,6 @@
       "state": "Open"
     },
     {
-      "text": "Music brief revisions",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Takeover from Izzy on bookings from Monday",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Music brief to be added to training programme by Rian",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Send out invites for future Boards, also in control of Agenda",
       "priority": "Medium",
       "state": "Open"
@@ -263,6 +248,26 @@
     },
     {
       "text": "Follow up with S-K on website.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Send recap email to Rich and Izzy",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rian to send training programme to all today",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Schedule a call with Rich this morning",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Shoreditch Wednesday licence",
       "priority": "Medium",
       "state": "Open"
     }
