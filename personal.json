@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 10:46",
+  "updated": "21 Aug 2026, 10:48",
   "departments": [
     {
       "dept": "Finance",
@@ -243,6 +243,26 @@
     },
     {
       "text": "Speak to ops on AGM KPIs",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "AC service contract",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Confirm prices for Ricky and Paul for Shoreditch",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Set Matthew up on soundtrak for full handover by Wednesday",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Follow up with S-K on website.",
       "priority": "Medium",
       "state": "Open"
     }
