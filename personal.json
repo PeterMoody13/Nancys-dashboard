@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 14:38",
+  "updated": "21 Aug 2026, 14:40",
   "departments": [
     {
       "dept": "Finance",
@@ -117,11 +117,6 @@
       "state": "Open"
     },
     {
-      "text": "Accountability and responsibility document",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
       "text": "Walk through financials of new sites with POH",
       "priority": "Medium",
       "state": "Open"
@@ -147,42 +142,7 @@
       "state": "Open"
     },
     {
-      "text": "Charlie to meet Bryony and Nik for lunch",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Liz to draft email launching new pay levels",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Bryony to get skills assessment",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Bookings speak to Rich",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Nancy Spains glasses for soho",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Schedule call with liz for talent review",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Deadline for WBS ending August",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Get merch designs from izzy, send over.",
       "priority": "Medium",
       "state": "Open"
     },
@@ -193,16 +153,6 @@
     },
     {
       "text": "Heineken marketing budget for GAA kits",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Recruitment inquiries from website to Recruitment email",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Bookings email",
       "priority": "Medium",
       "state": "Open"
     },
