@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 14:30",
+  "updated": "21 Aug 2026, 14:32",
   "departments": [
     {
       "dept": "Finance",
@@ -262,7 +262,7 @@
       "state": "Awaiting response"
     },
     {
-      "text": "Speak with Harry Monday",
+      "text": "Speak with Harry Monday to take over from Izzy",
       "priority": "Medium",
       "state": "Open"
     },
