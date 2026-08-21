@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 12:34",
+  "updated": "21 Aug 2026, 12:36",
   "departments": [
     {
       "dept": "Finance",
@@ -268,6 +268,11 @@
     },
     {
       "text": "Speak with Harry Monday",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Website redesign",
       "priority": "Medium",
       "state": "Open"
     }
