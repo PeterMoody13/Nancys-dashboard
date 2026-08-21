@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "21 Aug 2026, 20:46",
+  "updated": "21 Aug 2026, 20:48",
   "departments": [
     {
       "dept": "Finance",
@@ -215,6 +215,11 @@
       "text": "Website redesign",
       "priority": "Medium",
       "state": "Doing"
+    },
+    {
+      "text": "Matthew to send email of intro to GMs",
+      "priority": "Medium",
+      "state": "Open"
     }
   ],
   "today": [
