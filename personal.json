@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "22 Aug 2026, 21:52",
+  "updated": "22 Aug 2026, 21:54",
   "departments": [
     {
       "dept": "Finance",
@@ -218,6 +218,11 @@
     },
     {
       "text": "Matthew to send email of intro to GMs",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rian rhythm at nights",
       "priority": "Medium",
       "state": "Open"
     }
