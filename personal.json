@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "22 Aug 2026, 00:58",
+  "updated": "22 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -222,11 +222,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "09:30",
-      "title": "PM x POH Weekly Meeting"
-    }
-  ],
+  "today": [],
   "todayLabel": "Saturday 22 August"
 }
