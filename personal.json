@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "24 Aug 2026, 16:40",
+  "updated": "24 Aug 2026, 16:42",
   "departments": [
     {
       "dept": "Finance",
@@ -238,11 +238,6 @@
     },
     {
       "text": "Liv to take over from Nik",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Harry to tell Nik to open only downstairs on Saturdays",
       "priority": "Medium",
       "state": "Open"
     }
