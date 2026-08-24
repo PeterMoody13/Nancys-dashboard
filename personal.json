@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "24 Aug 2026, 00:58",
+  "updated": "24 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -227,6 +227,11 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "14:00",
+      "title": "Nancy Spains x GigPig"
+    }
+  ],
   "todayLabel": "Monday 24 August"
 }
