@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "24 Aug 2026, 09:44",
+  "updated": "24 Aug 2026, 09:46",
   "departments": [
     {
       "dept": "Finance",
@@ -223,6 +223,11 @@
     },
     {
       "text": "Rian rhythm at nights",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Marketing Phone £500",
       "priority": "Medium",
       "state": "Open"
     }
