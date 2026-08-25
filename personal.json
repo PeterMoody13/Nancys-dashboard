@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "25 Aug 2026, 16:14",
+  "updated": "25 Aug 2026, 16:16",
   "departments": [
     {
       "dept": "Finance",
@@ -255,6 +255,10 @@
     {
       "time": "15:00",
       "title": "Tangerine Training - Internal Review"
+    },
+    {
+      "time": "16:30",
+      "title": "Rich x PM"
     }
   ],
   "todayLabel": "Tuesday 25 August"
