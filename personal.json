@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 14:44",
+  "updated": "26 Aug 2026, 14:46",
   "departments": [
     {
       "dept": "Finance",
@@ -43,6 +43,10 @@
         {
           "name": "Handbooks - standards and SOPs",
           "status": "working"
+        },
+        {
+          "name": "New Item",
+          "status": "notstart"
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",

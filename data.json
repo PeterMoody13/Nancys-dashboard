@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 14:44",
+  "updated": "26 Aug 2026, 14:46",
   "departments": [
     {
       "dept": "Finance",
@@ -38,8 +38,8 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock: Preparing systems for growth",
-      "progress": 50,
-      "subtasks": 4,
+      "progress": 40,
+      "subtasks": 5,
       "pillars": [
         {
           "name": "Systems overhaul - integration and automation",
@@ -48,6 +48,10 @@
         {
           "name": "Handbooks - standards and SOPs",
           "status": "working"
+        },
+        {
+          "name": "New Item",
+          "status": "notstart"
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",
