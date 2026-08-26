@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 15:04",
+  "updated": "26 Aug 2026, 15:06",
   "departments": [
     {
       "dept": "Finance",
@@ -146,24 +146,9 @@
       "state": "Open"
     },
     {
-      "text": "Bryony to get skills assessment",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Send out invites for future Boards, also in control of Agenda",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Speak to ops on AGM KPIs",
       "priority": "Medium",
       "state": "Open"
-    },
-    {
-      "text": "AC service contract",
-      "priority": "Medium",
-      "state": "Handed off"
     },
     {
       "text": "Shoreditch Handover",
@@ -192,26 +177,6 @@
     },
     {
       "text": "Matthew to send email of intro to GMs",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Rian rhythm at nights",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Marketing Phone £500",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
-      "text": "Shoreditch Licence Wednesday 2am",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
-      "text": "Liv to take over from Nik",
       "priority": "Medium",
       "state": "Open"
     },
