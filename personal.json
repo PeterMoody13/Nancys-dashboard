@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 15:06",
+  "updated": "26 Aug 2026, 15:08",
   "departments": [
     {
       "dept": "Finance",
@@ -111,21 +111,6 @@
   ],
   "todos": [
     {
-      "text": "Weekly digest due Friday",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Uniform template for docs",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Walk through financials of new sites with POH",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Summer party",
       "priority": "Medium",
       "state": "Open"
@@ -146,27 +131,7 @@
       "state": "Open"
     },
     {
-      "text": "Speak to ops on AGM KPIs",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Shoreditch Handover",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
       "text": "Set Matthew up on soundtrak for full handover by Wednesday",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Shoreditch Wednesday licence",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "GigPig",
       "priority": "Medium",
       "state": "Doing"
     },
@@ -176,7 +141,7 @@
       "state": "Doing"
     },
     {
-      "text": "Matthew to send email of intro to GMs",
+      "text": "Matthew",
       "priority": "Medium",
       "state": "Open"
     },
