@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 09:24",
+  "updated": "26 Aug 2026, 09:26",
   "departments": [
     {
       "dept": "Finance",
@@ -256,6 +256,10 @@
     {
       "time": "12:00",
       "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "15:30",
+      "title": "Nnacy Spains Events"
     },
     {
       "time": "16:30",
