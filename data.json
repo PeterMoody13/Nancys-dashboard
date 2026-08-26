@@ -5,13 +5,13 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 12:50",
+  "updated": "26 Aug 2026, 12:52",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance — Q3 rock: Financial systems",
-      "progress": 20,
-      "subtasks": 5,
+      "progress": 50,
+      "subtasks": 4,
       "pillars": [
         {
           "name": "Systems improvement and automation",
@@ -27,11 +27,7 @@
         },
         {
           "name": "Payroll - system revision and outsourcing",
-          "status": "working"
-        },
-        {
-          "name": "Tax review for EMI scheme",
-          "status": "working"
+          "status": "done"
         }
       ]
     },
