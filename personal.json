@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "26 Aug 2026, 13:16",
+  "updated": "26 Aug 2026, 13:18",
   "departments": [
     {
       "dept": "Finance",
@@ -187,16 +187,6 @@
       "state": "Doing"
     },
     {
-      "text": "WBS Website",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Rian to send training programme to all today",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Shoreditch Wednesday licence",
       "priority": "Medium",
       "state": "Open"
@@ -205,11 +195,6 @@
       "text": "GigPig",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Speak with Harry Monday to take over from Izzy",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Website redesign",
@@ -229,12 +214,12 @@
     {
       "text": "Marketing Phone £500",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Awaiting response"
     },
     {
       "text": "Shoreditch Licence Wednesday 2am",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Awaiting response"
     },
     {
       "text": "Liv to take over from Nik",
