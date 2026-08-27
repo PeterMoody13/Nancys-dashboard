@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "27 Aug 2026, 12:02",
+  "updated": "27 Aug 2026, 12:04",
   "departments": [
     {
       "dept": "Finance",
@@ -167,6 +167,11 @@
     },
     {
       "text": "speak to Nell's pizza",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "GigPig",
       "priority": "Medium",
       "state": "Open"
     }
