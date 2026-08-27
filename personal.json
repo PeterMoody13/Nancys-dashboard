@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "27 Aug 2026, 00:58",
+  "updated": "27 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -163,16 +163,16 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
+      "time": "11:00",
+      "title": "MN x PM - Soundtrak"
     },
     {
-      "time": "14:30",
-      "title": "Nnacy Spains Events"
+      "time": "16:00",
+      "title": "Meeting - Partnership between Camino and Nancy Spains"
     },
     {
-      "time": "16:30",
-      "title": "Training Programme Presentation"
+      "time": "19:30",
+      "title": "Jack Gibert / Nancy Spains / London Trial"
     }
   ],
   "todayLabel": "Thursday 27 August"
