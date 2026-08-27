@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "27 Aug 2026, 08:56",
+  "updated": "27 Aug 2026, 08:58",
   "departments": [
     {
       "dept": "Finance",
@@ -165,6 +165,10 @@
     {
       "time": "11:00",
       "title": "MN x PM - Soundtrak"
+    },
+    {
+      "time": "14:00",
+      "title": "RM x PM"
     },
     {
       "time": "16:00",
