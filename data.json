@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Aug 2026, 14:26",
+  "updated": "28 Aug 2026, 14:28",
   "departments": [
     {
       "dept": "Finance",
@@ -90,7 +90,7 @@
     {
       "dept": "People",
       "rock": "People — Q3 rock: Develop people systems.",
-      "progress": 0,
+      "progress": 25,
       "subtasks": 4,
       "pillars": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "name": "Recruitment Project - Organic Recruitment",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Internal Training - Tangerine",
