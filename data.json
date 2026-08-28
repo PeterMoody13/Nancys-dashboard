@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Aug 2026, 11:08",
+  "updated": "28 Aug 2026, 11:10",
   "departments": [
     {
       "dept": "Finance",
@@ -38,7 +38,7 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q3 rock: Preparing systems for growth",
-      "progress": 60,
+      "progress": 80,
       "subtasks": 5,
       "pillars": [
         {
@@ -51,7 +51,7 @@
         },
         {
           "name": "Handbooks - standards and SOPs",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Ops Manager - training and preparing a template for future Ops Manager",
