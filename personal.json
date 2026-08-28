@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Aug 2026, 00:58",
+  "updated": "28 Aug 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -176,23 +176,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "11:00",
-      "title": "MN x PM - Soundtrak"
-    },
-    {
-      "time": "14:00",
-      "title": "RM x PM"
-    },
-    {
-      "time": "16:00",
-      "title": "Meeting - Partnership between Camino and Nancy Spains"
-    },
-    {
-      "time": "19:30",
-      "title": "Jack Gibert / Nancy Spains / London Trial"
-    }
-  ],
+  "today": [],
   "todayLabel": "Friday 28 August"
 }
