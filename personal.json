@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "28 Aug 2026, 17:48",
+  "updated": "28 Aug 2026, 17:50",
   "departments": [
     {
       "dept": "Finance",
@@ -182,6 +182,11 @@
     },
     {
       "text": "Painter to paint mission statement and values in Shoreditch office",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Reach out to fuse - iPads, bookings",
       "priority": "Medium",
       "state": "Open"
     }
