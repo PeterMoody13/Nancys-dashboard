@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Aug 2026, 11:40",
+  "updated": "31 Aug 2026, 11:42",
   "departments": [
     {
       "dept": "Finance",
@@ -156,11 +156,6 @@
       "state": "Open"
     },
     {
-      "text": "Arrange delivery with Aldo",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "speak to Nell's pizza",
       "priority": "Medium",
       "state": "Open"
@@ -181,12 +176,12 @@
       "state": "Open"
     },
     {
-      "text": "Reach out to fuse - iPads, bookings",
+      "text": "Staff engagement and feedback to GMs Saturdays",
       "priority": "Medium",
       "state": "Open"
     },
     {
-      "text": "Staff engagement and feedback to GMs Saturdays",
+      "text": "Apprenticeships, see what is happening on our side",
       "priority": "Medium",
       "state": "Open"
     }
