@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "31 Aug 2026, 11:16",
+  "updated": "31 Aug 2026, 11:18",
   "departments": [
     {
       "dept": "Finance",
@@ -139,11 +139,6 @@
       "text": "Website redesign",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Matthew",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Festivals",
