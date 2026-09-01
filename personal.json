@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "1 Sept 2026, 14:58",
+  "updated": "1 Sept 2026, 15:01",
   "departments": [
     {
       "dept": "Finance",
@@ -137,11 +137,6 @@
     },
     {
       "text": "Festivals",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Investigate bookings contact from Rich",
       "priority": "Medium",
       "state": "Open"
     },
