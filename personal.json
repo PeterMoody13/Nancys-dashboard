@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "1 Sept 2026, 10:02",
+  "updated": "1 Sept 2026, 10:04",
   "departments": [
     {
       "dept": "Finance",
@@ -157,11 +157,6 @@
     },
     {
       "text": "GigPig",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Update music report to include playlist feedback",
       "priority": "Medium",
       "state": "Open"
     },
