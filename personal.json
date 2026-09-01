@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "1 Sept 2026, 06:54",
+  "updated": "1 Sept 2026, 06:56",
   "departments": [
     {
       "dept": "Finance",
@@ -186,6 +186,11 @@
       "state": "Awaiting response"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "11:00",
+      "title": "PM x POH weekly"
+    }
+  ],
   "todayLabel": "Tuesday 1 September"
 }
