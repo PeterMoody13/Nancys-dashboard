@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "1 Sept 2026, 16:36",
+  "updated": "1 Sept 2026, 16:38",
   "departments": [
     {
       "dept": "Finance",
@@ -192,6 +192,11 @@
     },
     {
       "text": "Christmas ads - Google",
+      "priority": "Medium",
+      "state": "Awaiting response"
+    },
+    {
+      "text": "Stained glass",
       "priority": "Medium",
       "state": "Open"
     }
