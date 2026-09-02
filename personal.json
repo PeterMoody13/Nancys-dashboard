@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "2 Sept 2026, 10:02",
+  "updated": "2 Sept 2026, 10:04",
   "departments": [
     {
       "dept": "Finance",
@@ -206,19 +206,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
-    },
-    {
-      "time": "14:00",
-      "title": "Bi-weekly head office catch-up"
-    },
-    {
-      "time": "14:45",
-      "title": "Training Day 1 Review"
-    }
-  ],
+  "today": [],
   "todayLabel": "Wednesday 2 September"
 }
