@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "2 Sept 2026, 09:46",
+  "updated": "2 Sept 2026, 09:48",
   "departments": [
     {
       "dept": "Finance",
@@ -197,6 +197,11 @@
     },
     {
       "text": "Stained glass",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "London pizza",
       "priority": "Medium",
       "state": "Open"
     }
