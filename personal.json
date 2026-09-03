@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Sept 2026, 19:13",
+  "updated": "3 Sept 2026, 19:14",
   "departments": [
     {
       "dept": "Finance",
@@ -189,6 +189,11 @@
       "text": "QR codes for London TOPTEN",
       "priority": "Medium",
       "state": "Doing"
+    },
+    {
+      "text": "Talk to Anndrea, everybody has already sent GCSEs and degrees",
+      "priority": "Medium",
+      "state": "Open"
     }
   ],
   "today": [
