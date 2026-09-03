@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Sept 2026, 14:52",
+  "updated": "3 Sept 2026, 14:54",
   "departments": [
     {
       "dept": "Finance",
@@ -141,11 +141,6 @@
       "state": "Open"
     },
     {
-      "text": "add to bookings playbook",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "speak to Nell's pizza",
       "priority": "Medium",
       "state": "Open"
@@ -188,12 +183,12 @@
     {
       "text": "Set up call with Ollie for spirits.",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Awaiting response"
     },
     {
       "text": "QR codes for London TOPTEN",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     }
   ],
   "today": [
