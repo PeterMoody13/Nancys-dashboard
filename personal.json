@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "3 Sept 2026, 00:58",
+  "updated": "3 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -193,12 +193,16 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
+      "time": "11:00",
+      "title": "Shoreditch Paddy’s Festival - Site Visit"
     },
     {
-      "time": "14:45",
-      "title": "Canceled: Training Day 1 Review"
+      "time": "15:00",
+      "title": "Nancy Spains / Newmark: Introduction"
+    },
+    {
+      "time": "19:30",
+      "title": "Felix Shephard / Nancy Spains / London Trial"
     }
   ],
   "todayLabel": "Thursday 3 September"
