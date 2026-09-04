@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "4 Sept 2026, 00:58",
+  "updated": "4 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -204,15 +204,19 @@
   "today": [
     {
       "time": "11:00",
-      "title": "Shoreditch Paddy’s Festival - Site Visit"
+      "title": "Ellie Howe / Nancy Spains / Video Interview"
     },
     {
-      "time": "15:00",
-      "title": "Nancy Spains / Newmark: Introduction"
+      "time": "11:30",
+      "title": "Jack Gibert / Nancy Spains / Video call"
     },
     {
-      "time": "19:30",
-      "title": "Felix Shephard / Nancy Spains / London Trial"
+      "time": "12:00",
+      "title": "Training Day 2 & First 30 Days Review"
+    },
+    {
+      "time": "17:00",
+      "title": "Office Padel"
     }
   ],
   "todayLabel": "Friday 4 September"
