@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "5 Sept 2026, 00:58",
+  "updated": "5 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -201,19 +201,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "11:00",
-      "title": "Ellie Howe / Nancy Spains / Video Interview"
-    },
-    {
-      "time": "11:30",
-      "title": "Jack Gibert / Nancy Spains / Video call"
-    },
-    {
-      "time": "17:00",
-      "title": "Office Padel"
-    }
-  ],
+  "today": [],
   "todayLabel": "Saturday 5 September"
 }
