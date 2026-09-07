@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "7 Sept 2026, 18:52",
+  "updated": "7 Sept 2026, 18:54",
   "departments": [
     {
       "dept": "Finance",
@@ -181,16 +181,6 @@
       "state": "Open"
     },
     {
-      "text": "Set up call with Ollie for spirits.",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
-      "text": "QR codes for London TOPTEN",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
       "text": "Talk to Anndrea, everybody has already sent GCSEs and degrees",
       "priority": "Medium",
       "state": "Open"
@@ -201,17 +191,17 @@
       "state": "Open"
     },
     {
-      "text": "M2 team call with us and paul haffey today",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Rachael tickets to London and plan",
       "priority": "Medium",
       "state": "Open"
     },
     {
       "text": "More vintage Coasters",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rick to speak to floor guy about doing bar",
       "priority": "Medium",
       "state": "Open"
     }
