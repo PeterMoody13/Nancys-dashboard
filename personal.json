@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "8 Sept 2026, 10:38",
+  "updated": "8 Sept 2026, 10:40",
   "departments": [
     {
       "dept": "Finance",
@@ -192,11 +192,6 @@
     },
     {
       "text": "More vintage Coasters",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Rick to speak to floor guy about doing bar",
       "priority": "Medium",
       "state": "Open"
     },
