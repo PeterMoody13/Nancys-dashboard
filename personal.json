@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "8 Sept 2026, 13:42",
+  "updated": "8 Sept 2026, 13:44",
   "departments": [
     {
       "dept": "Finance",
@@ -186,16 +186,6 @@
       "state": "Open"
     },
     {
-      "text": "Dan miles",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "materials for quarterly planning",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Stained glass measurements",
       "priority": "Medium",
       "state": "Open"
@@ -206,12 +196,12 @@
       "state": "Open"
     },
     {
-      "text": "Chas",
+      "text": "Training programme",
       "priority": "Medium",
       "state": "Open"
     },
     {
-      "text": "Training programme",
+      "text": "Dates from Damian",
       "priority": "Medium",
       "state": "Open"
     }
