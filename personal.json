@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "8 Sept 2026, 21:44",
+  "updated": "8 Sept 2026, 21:46",
   "departments": [
     {
       "dept": "Finance",
@@ -216,6 +216,19 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "09:30",
+      "title": "Re: UK Expansion & Business Rates: Nancy Spain's / Newmark"
+    },
+    {
+      "time": "11:00",
+      "title": "Heineken x Nancy Spains - Softs, Spirits, Wines"
+    },
+    {
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    }
+  ],
   "todayLabel": "Tuesday 8 September"
 }
