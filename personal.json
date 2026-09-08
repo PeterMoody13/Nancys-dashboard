@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "8 Sept 2026, 10:34",
+  "updated": "8 Sept 2026, 10:36",
   "departments": [
     {
       "dept": "Finance",
@@ -157,11 +157,6 @@
     },
     {
       "text": "CG cleaning/washing",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Three-month review presentation - looking forward.",
       "priority": "Medium",
       "state": "Open"
     },
