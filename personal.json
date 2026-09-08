@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "8 Sept 2026, 16:36",
+  "updated": "8 Sept 2026, 16:38",
   "departments": [
     {
       "dept": "Finance",
@@ -186,34 +186,29 @@
       "state": "Open"
     },
     {
-      "text": "Stained glass measurements",
+      "text": "Stained glass",
       "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Paul",
-      "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Training programme",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Dates from Damian",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Awaiting response"
     },
     {
       "text": "Shoreditch ivy",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     },
     {
       "text": "Newmark",
       "priority": "Medium",
-      "state": "Open"
+      "state": "Doing"
     }
   ],
   "today": [
