@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "9 Sept 2026, 00:58",
+  "updated": "9 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -218,16 +218,16 @@
   ],
   "today": [
     {
-      "time": "09:30",
-      "title": "Re: UK Expansion & Business Rates: Nancy Spain's / Newmark"
-    },
-    {
-      "time": "11:00",
-      "title": "Heineken x Nancy Spains - Softs, Spirits, Wines"
-    },
-    {
       "time": "12:00",
-      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "13:00",
+      "title": "Nancy Spains X GigPig - Onboarding"
+    },
+    {
+      "time": "14:00",
+      "title": "Shoreditch Festival Site - Meeting with James @ NS Monument"
     }
   ],
   "todayLabel": "Wednesday 9 September"
