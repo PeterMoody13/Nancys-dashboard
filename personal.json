@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "9 Sept 2026, 13:24",
+  "updated": "9 Sept 2026, 13:26",
   "departments": [
     {
       "dept": "Finance",
@@ -196,24 +196,9 @@
       "state": "Doing"
     },
     {
-      "text": "Dates from Damian",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
-      "text": "Shoreditch ivy",
-      "priority": "Medium",
-      "state": "Handed off"
-    },
-    {
       "text": "Newmark",
       "priority": "Medium",
       "state": "Doing"
-    },
-    {
-      "text": "Coat hooks in design place across the street from Shoreditch",
-      "priority": "Medium",
-      "state": "Open"
     },
     {
       "text": "Heineken forecasts for soft spirits wines",
