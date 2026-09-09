@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "9 Sept 2026, 10:20",
+  "updated": "9 Sept 2026, 10:22",
   "departments": [
     {
       "dept": "Finance",
@@ -233,6 +233,10 @@
     {
       "time": "14:00",
       "title": "Shoreditch Festival Site - Meeting with James @ NS Monument"
+    },
+    {
+      "time": "16:45",
+      "title": "Book Uber Courier"
     }
   ],
   "todayLabel": "Wednesday 9 September"
