@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "9 Sept 2026, 21:50",
+  "updated": "9 Sept 2026, 21:52",
   "departments": [
     {
       "dept": "Finance",
@@ -207,6 +207,16 @@
     },
     {
       "text": "Check Monday.com",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Rick to pull end sleeper out and push cables through.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Light bulbs E27",
       "priority": "Medium",
       "state": "Open"
     }
