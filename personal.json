@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "9 Sept 2026, 10:24",
+  "updated": "9 Sept 2026, 10:26",
   "departments": [
     {
       "dept": "Finance",
@@ -188,7 +188,7 @@
     {
       "text": "Stained glass",
       "priority": "Medium",
-      "state": "Doing"
+      "state": "Awaiting response"
     },
     {
       "text": "Training programme",
@@ -203,7 +203,7 @@
     {
       "text": "Shoreditch ivy",
       "priority": "Medium",
-      "state": "Doing"
+      "state": "Handed off"
     },
     {
       "text": "Newmark",
