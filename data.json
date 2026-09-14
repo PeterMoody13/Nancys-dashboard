@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "14 Sept 2026, 14:42",
+  "updated": "14 Sept 2026, 14:44",
   "departments": [
     {
       "dept": "Finance",
@@ -66,7 +66,7 @@
     {
       "dept": "Marketing",
       "rock": "Marketing — Q3 rock: Marketing strategy",
-      "progress": 50,
+      "progress": 75,
       "subtasks": 4,
       "pillars": [
         {
@@ -83,7 +83,7 @@
         },
         {
           "name": "Fully integrate Izzy into Marketing Exec. role",
-          "status": "working"
+          "status": "done"
         }
       ]
     },
