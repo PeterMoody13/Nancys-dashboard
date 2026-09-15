@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Sept 2026, 12:32",
+  "updated": "15 Sept 2026, 12:34",
   "departments": [
     {
       "dept": "Finance",
@@ -181,11 +181,6 @@
       "state": "Open"
     },
     {
-      "text": "Rachael tickets to London and plan",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Stained glass",
       "priority": "Medium",
       "state": "Awaiting response"
@@ -206,27 +201,7 @@
       "state": "Open"
     },
     {
-      "text": "Check Monday.com",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Rick to pull end sleeper out and push cables through.",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Light bulbs E27",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "Talk to Rich about shadow behind gold lettering",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Harry to get keys for stock take Shoreditch",
       "priority": "Medium",
       "state": "Open"
     }
