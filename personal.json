@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "15 Sept 2026, 08:54",
+  "updated": "15 Sept 2026, 08:56",
   "departments": [
     {
       "dept": "Finance",
@@ -232,6 +232,10 @@
     }
   ],
   "today": [
+    {
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
+    },
     {
       "time": "15:00",
       "title": "Libby x Peter"
