@@ -10,7 +10,13 @@
 const TOKEN = process.env.MONDAY_TOKEN;
 const ICS_URL = process.env.ICS_URL;
 
-const GOALS_BOARD = 5099940269;
+/* ---- Quarter override ----
+   Leave "" to follow today's date automatically.
+   Set to e.g. "Q4 2026" to FORCE all screens to that quarter early.
+   Remember to set it back to "" once the real quarter has caught up. */
+const QUARTER_OVERRIDE = "Q4 2026";
+
+const GOALS_BOARD = 5099940269;   /* "Quarterly Rocks" board */
 const G_DEPT = "color_mm57e8mc", G_PERIOD = "color_mm5738b3", G_SUBSTATUS = "status";
 
 const PERS_BOARD = 5100315281;
@@ -21,18 +27,27 @@ const MGR_BOARD = 5100761169;
 const M_DEPT = "color_mm5fy9vv", M_ROLE = "text_mm5fvdv5", M_PERIOD = "color_mm5fe93e", M_SUBSTATUS = "status";
 
 const DEPT_ORDER = ["Finance", "Operations", "Marketing", "People"];
-const MGR_ORDER = ["People", "Operations", "Marketing"];   /* Training, Ops, Marketing Exec */
+const MGR_ORDER = ["People", "Operations", "Marketing"];
 const TZ = "Europe/London";
 
 if (!TOKEN) { console.error("Missing MONDAY_TOKEN"); process.exit(1); }
 
-function currentQuarter(d = new Date()) {
-  const y = d.getFullYear(), q = Math.floor(d.getMonth() / 3) + 1, sm = (q - 1) * 3;
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function quarterObj(q, y) {
+  const sm = (q - 1) * 3;
   const iso = x => x.toISOString().slice(0, 10);
-  const mon = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  return { label:`Q${q} ${y}`, sub:`${mon[sm]} – ${mon[sm+2]} ${y}`,
+  return { label:`Q${q} ${y}`, sub:`${MON[sm]} – ${MON[sm+2]} ${y}`,
     start: iso(new Date(Date.UTC(y, sm, 1))), end: iso(new Date(Date.UTC(y, sm + 3, 0))) };
 }
+function currentQuarter() {
+  if (QUARTER_OVERRIDE) {
+    const m = QUARTER_OVERRIDE.match(/Q([1-4])\s+(\d{4})/);
+    if (m) return quarterObj(+m[1], +m[2]);
+  }
+  const d = new Date();
+  return quarterObj(Math.floor(d.getMonth() / 3) + 1, d.getFullYear());
+}
+
 async function monday(query) {
   const res = await fetch("https://api.monday.com/v2", {
     method: "POST",
@@ -145,7 +160,7 @@ function todayFromICS(icsText){
     return { dept, pillars, flags: flagsByDept[dept] || [] };
   });
 
-  /* ----- Manager Rocks (reporting staff) ----- */
+  /* ----- Manager Rocks ----- */
   const m = await monday(`
     query { boards(ids: ${MGR_BOARD}) { items_page(limit: 200) { items {
       name column_values(ids: ["${M_DEPT}","${M_ROLE}","${M_PERIOD}"]) { id text }
@@ -155,11 +170,8 @@ function todayFromICS(icsText){
     const dept = col(it, M_DEPT) || "—";
     const pillars = pillarsOf(it, M_SUBSTATUS);
     const dr = deptRockMap[dept];
-    return {
-      role: col(it, M_ROLE) || dept + " Manager",
-      dept, rock: it.name, pillars,
-      deptRock: dr ? { name: dr.name, summary: summarise(dr.pillars) } : null
-    };
+    return { role: col(it, M_ROLE) || dept + " Manager", dept, rock: it.name, pillars,
+      deptRock: dr ? { name: dr.name, summary: summarise(dr.pillars) } : null };
   }).sort((a,b)=> MGR_ORDER.indexOf(a.dept) - MGR_ORDER.indexOf(b.dept));
 
   /* ----- Today's calendar ----- */
@@ -178,5 +190,5 @@ function todayFromICS(icsText){
     { quarter, updated: stamp(), departments: persDepartments, todos, today, todayLabel }, null, 2));
   fs.writeFileSync("managers.json", JSON.stringify(
     { quarter, updated: stamp(), managers }, null, 2));
-  console.log("Wrote data.json, personal.json, managers.json (managers:", managers.length, ")");
+  console.log(`Wrote 3 files for ${quarter.label} (rocks: ${wallDepartments.length}, managers: ${managers.length})`);
 })().catch(err => { console.error(err); process.exit(1); });
