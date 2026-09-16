@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Sept 2026, 11:41",
+  "updated": "16 Sept 2026, 11:43",
   "departments": [
     {
       "dept": "Finance",
@@ -128,82 +128,6 @@
         {
           "name": "Music Training Programme for Teams",
           "status": "working"
-        }
-      ]
-    },
-    {
-      "dept": "Operations",
-      "rock": "Operations — Q3 rock: Preparing systems for growth (copy)",
-      "progress": 80,
-      "subtasks": 5,
-      "pillars": [
-        {
-          "name": "New Systems Set Up & Integration",
-          "status": "working"
-        },
-        {
-          "name": "Sign & Complete Access Contracts",
-          "status": "done"
-        },
-        {
-          "name": "Handbooks - standards and SOPs",
-          "status": "done"
-        },
-        {
-          "name": "Ops Manager - training and preparing a template for future Ops Manager",
-          "status": "done"
-        },
-        {
-          "name": "Facilities management service",
-          "status": "done"
-        }
-      ]
-    },
-    {
-      "dept": "Marketing",
-      "rock": "Marketing — Q3 rock: Marketing strategy (copy)",
-      "progress": 75,
-      "subtasks": 4,
-      "pillars": [
-        {
-          "name": "Refine and tighten the existing strategy decks",
-          "status": "done"
-        },
-        {
-          "name": "Openings Strategy",
-          "status": "done"
-        },
-        {
-          "name": "Develop relationship with venue teams",
-          "status": "working"
-        },
-        {
-          "name": "Fully integrate Izzy into Marketing Exec. role",
-          "status": "done"
-        }
-      ]
-    },
-    {
-      "dept": "People",
-      "rock": "People — Q3 rock: Develop people systems. (copy)",
-      "progress": 50,
-      "subtasks": 4,
-      "pillars": [
-        {
-          "name": "Implement New HR System",
-          "status": "working"
-        },
-        {
-          "name": "Recruitment Project - Organic Recruitment",
-          "status": "done"
-        },
-        {
-          "name": "Internal Training - Tangerine",
-          "status": "working"
-        },
-        {
-          "name": "Apprenticeship Scheme",
-          "status": "done"
         }
       ]
     }

@@ -5,7 +5,7 @@
     "start": "2026-07-01",
     "end": "2026-09-30"
   },
-  "updated": "16 Sept 2026, 11:41",
+  "updated": "16 Sept 2026, 11:43",
   "managers": [
     {
       "role": "Training Manager",
@@ -22,7 +22,7 @@
         }
       ],
       "deptRock": {
-        "name": "People — Q3 rock: Develop people systems. (copy)",
+        "name": "People — Q3 rock: Develop people systems.",
         "summary": "2 done  ·  2 in progress"
       }
     },
@@ -37,7 +37,7 @@
         }
       ],
       "deptRock": {
-        "name": "Operations — Q3 rock: Preparing systems for growth (copy)",
+        "name": "Operations — Q3 rock: Preparing systems for growth",
         "summary": "4 done  ·  1 in progress"
       }
     },
@@ -52,7 +52,7 @@
         }
       ],
       "deptRock": {
-        "name": "Marketing — Q3 rock: Marketing strategy (copy)",
+        "name": "Marketing — Q3 rock: Marketing strategy",
         "summary": "3 done  ·  1 in progress"
       }
     }
