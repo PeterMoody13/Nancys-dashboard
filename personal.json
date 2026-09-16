@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Sept 2026, 11:56",
+  "updated": "16 Sept 2026, 12:01",
   "departments": [
     {
       "dept": "Finance",
@@ -126,6 +126,11 @@
     },
     {
       "text": "Temple website designs",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Shoreditch pendant light",
       "priority": "Medium",
       "state": "Open"
     }
