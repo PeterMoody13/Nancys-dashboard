@@ -1,106 +1,30 @@
 {
   "quarter": {
-    "label": "Q3 2026",
-    "sub": "Jul – Sep 2026",
-    "start": "2026-07-01",
-    "end": "2026-09-30"
+    "label": "Q4 2026",
+    "sub": "Oct – Dec 2026",
+    "start": "2026-10-01",
+    "end": "2026-12-31"
   },
-  "updated": "16 Sept 2026, 11:46",
+  "updated": "16 Sept 2026, 11:47",
   "departments": [
     {
       "dept": "Finance",
-      "pillars": [
-        {
-          "name": "Systems improvement and automation",
-          "status": "working"
-        },
-        {
-          "name": "Funding - NatWest",
-          "status": "stuck"
-        },
-        {
-          "name": "Budget review and implementation",
-          "status": "done"
-        },
-        {
-          "name": "Payroll - system revision and outsourcing",
-          "status": "done"
-        },
-        {
-          "name": "Reporting for Board",
-          "status": "done"
-        }
-      ],
+      "pillars": [],
       "flags": []
     },
     {
       "dept": "Operations",
-      "pillars": [
-        {
-          "name": "New Systems Set Up & Integration",
-          "status": "working"
-        },
-        {
-          "name": "Sign & Complete Access Contracts",
-          "status": "done"
-        },
-        {
-          "name": "Handbooks - standards and SOPs",
-          "status": "done"
-        },
-        {
-          "name": "Ops Manager - training and preparing a template for future Ops Manager",
-          "status": "done"
-        },
-        {
-          "name": "Facilities management service",
-          "status": "done"
-        }
-      ],
+      "pillars": [],
       "flags": []
     },
     {
       "dept": "Marketing",
-      "pillars": [
-        {
-          "name": "Refine and tighten the existing strategy decks",
-          "status": "done"
-        },
-        {
-          "name": "Openings Strategy",
-          "status": "done"
-        },
-        {
-          "name": "Develop relationship with venue teams",
-          "status": "working"
-        },
-        {
-          "name": "Fully integrate Izzy into Marketing Exec. role",
-          "status": "done"
-        }
-      ],
+      "pillars": [],
       "flags": []
     },
     {
       "dept": "People",
-      "pillars": [
-        {
-          "name": "Implement New HR System",
-          "status": "working"
-        },
-        {
-          "name": "Recruitment Project - Organic Recruitment",
-          "status": "done"
-        },
-        {
-          "name": "Internal Training - Tangerine",
-          "status": "working"
-        },
-        {
-          "name": "Apprenticeship Scheme",
-          "status": "done"
-        }
-      ],
+      "pillars": [],
       "flags": [
         {
           "text": "Monitor training enrolment",

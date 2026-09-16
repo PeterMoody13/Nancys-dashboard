@@ -1,60 +1,10 @@
 {
   "quarter": {
-    "label": "Q3 2026",
-    "sub": "Jul – Sep 2026",
-    "start": "2026-07-01",
-    "end": "2026-09-30"
+    "label": "Q4 2026",
+    "sub": "Oct – Dec 2026",
+    "start": "2026-10-01",
+    "end": "2026-12-31"
   },
-  "updated": "16 Sept 2026, 11:46",
-  "managers": [
-    {
-      "role": "Training Manager",
-      "dept": "People",
-      "rock": "Training Manager — Q3 rock (add title here)",
-      "pillars": [
-        {
-          "name": "Test Run",
-          "status": "working"
-        },
-        {
-          "name": "Test Run 2",
-          "status": "working"
-        }
-      ],
-      "deptRock": {
-        "name": "People — Q3 rock: Develop people systems.",
-        "summary": "2 done  ·  2 in progress"
-      }
-    },
-    {
-      "role": "Ops Manager",
-      "dept": "Operations",
-      "rock": "Operations Manager — Q3 rock (add title here)",
-      "pillars": [
-        {
-          "name": "First pillar — rename me",
-          "status": "notstart"
-        }
-      ],
-      "deptRock": {
-        "name": "Operations — Q3 rock: Preparing systems for growth",
-        "summary": "4 done  ·  1 in progress"
-      }
-    },
-    {
-      "role": "Marketing Exec",
-      "dept": "Marketing",
-      "rock": "Marketing Executive — Q3 rock (add title here)",
-      "pillars": [
-        {
-          "name": "First pillar — rename me",
-          "status": "notstart"
-        }
-      ],
-      "deptRock": {
-        "name": "Marketing — Q3 rock: Marketing strategy",
-        "summary": "3 done  ·  1 in progress"
-      }
-    }
-  ]
+  "updated": "16 Sept 2026, 11:47",
+  "managers": []
 }

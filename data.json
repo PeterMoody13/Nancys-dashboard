@@ -1,135 +1,39 @@
 {
   "quarter": {
-    "label": "Q3 2026",
-    "sub": "Jul – Sep 2026",
-    "start": "2026-07-01",
-    "end": "2026-09-30"
+    "label": "Q4 2026",
+    "sub": "Oct – Dec 2026",
+    "start": "2026-10-01",
+    "end": "2026-12-31"
   },
-  "updated": "16 Sept 2026, 11:46",
+  "updated": "16 Sept 2026, 11:47",
   "departments": [
     {
       "dept": "Finance",
-      "rock": "Finance — Q3 rock: Financial systems",
-      "progress": 60,
-      "subtasks": 5,
-      "pillars": [
-        {
-          "name": "Systems improvement and automation",
-          "status": "working"
-        },
-        {
-          "name": "Funding - NatWest",
-          "status": "stuck"
-        },
-        {
-          "name": "Budget review and implementation",
-          "status": "done"
-        },
-        {
-          "name": "Payroll - system revision and outsourcing",
-          "status": "done"
-        },
-        {
-          "name": "Reporting for Board",
-          "status": "done"
-        }
-      ]
+      "rock": "Finance - Q4 rock: Implement new tech systems",
+      "progress": 0,
+      "subtasks": 0,
+      "pillars": []
     },
     {
       "dept": "Operations",
-      "rock": "Operations — Q3 rock: Preparing systems for growth",
-      "progress": 80,
-      "subtasks": 5,
-      "pillars": [
-        {
-          "name": "New Systems Set Up & Integration",
-          "status": "working"
-        },
-        {
-          "name": "Sign & Complete Access Contracts",
-          "status": "done"
-        },
-        {
-          "name": "Handbooks - standards and SOPs",
-          "status": "done"
-        },
-        {
-          "name": "Ops Manager - training and preparing a template for future Ops Manager",
-          "status": "done"
-        },
-        {
-          "name": "Facilities management service",
-          "status": "done"
-        }
-      ]
+      "rock": "Operations — Q3 rock: Implement new tech systems",
+      "progress": 0,
+      "subtasks": 0,
+      "pillars": []
     },
     {
       "dept": "Marketing",
-      "rock": "Marketing — Q3 rock: Marketing strategy",
-      "progress": 75,
-      "subtasks": 4,
-      "pillars": [
-        {
-          "name": "Refine and tighten the existing strategy decks",
-          "status": "done"
-        },
-        {
-          "name": "Openings Strategy",
-          "status": "done"
-        },
-        {
-          "name": "Develop relationship with venue teams",
-          "status": "working"
-        },
-        {
-          "name": "Fully integrate Izzy into Marketing Exec. role",
-          "status": "done"
-        }
-      ]
+      "rock": "Marketing — Q3 rock: Develop an in-house customer engagement system",
+      "progress": 0,
+      "subtasks": 0,
+      "pillars": []
     },
     {
       "dept": "People",
-      "rock": "People — Q3 rock: Develop people systems.",
-      "progress": 50,
-      "subtasks": 4,
-      "pillars": [
-        {
-          "name": "Implement New HR System",
-          "status": "working"
-        },
-        {
-          "name": "Recruitment Project - Organic Recruitment",
-          "status": "done"
-        },
-        {
-          "name": "Internal Training - Tangerine",
-          "status": "working"
-        },
-        {
-          "name": "Apprenticeship Scheme",
-          "status": "done"
-        }
-      ]
-    },
-    {
-      "dept": "CEO",
-      "rock": "CEO — Q3 rock: Create a scalable music strategy—brief, scoring, scouting.",
-      "progress": 67,
-      "subtasks": 3,
-      "pillars": [
-        {
-          "name": "Musician Strategy",
-          "status": "done"
-        },
-        {
-          "name": "Playlist Strategy",
-          "status": "done"
-        },
-        {
-          "name": "Music Training Programme for Teams",
-          "status": "working"
-        }
-      ]
+      "rock": "People — Q3 rock: Create a seamless HR system for scale",
+      "progress": 0,
+      "subtasks": 0,
+      "pillars": []
     }
   ]
 }
