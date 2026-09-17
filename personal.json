@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "17 Sept 2026, 10:02",
+  "updated": "17 Sept 2026, 10:04",
   "departments": [
     {
       "dept": "Finance",
@@ -136,6 +136,10 @@
     }
   ],
   "today": [
+    {
+      "time": "12:00",
+      "title": "Salvage discussion"
+    },
     {
       "time": "14:00",
       "title": "Rosemead / NS / M2 Salvage Review"
