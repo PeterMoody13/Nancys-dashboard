@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "17 Sept 2026, 16:36",
+  "updated": "17 Sept 2026, 16:38",
   "departments": [
     {
       "dept": "Finance",
@@ -131,11 +131,6 @@
     },
     {
       "text": "Shoreditch pendant light",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Ricky when going back in",
       "priority": "Medium",
       "state": "Open"
     },
