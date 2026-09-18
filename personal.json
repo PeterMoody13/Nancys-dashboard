@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "18 Sept 2026, 09:31",
+  "updated": "18 Sept 2026, 09:32",
   "departments": [
     {
       "dept": "Finance",
@@ -136,6 +136,11 @@
     },
     {
       "text": "Monument music Thursday to 6pm",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "GMs in London need to send per unit incentive.",
       "priority": "Medium",
       "state": "Open"
     }
