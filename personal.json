@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "18 Sept 2026, 00:58",
+  "updated": "18 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -152,16 +152,12 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Salvage discussion"
+      "time": "09:00",
+      "title": "Peter x Will"
     },
     {
-      "time": "14:00",
-      "title": "Rosemead / NS / M2 Salvage Review"
-    },
-    {
-      "time": "15:00",
-      "title": "Make Events x Nancy Spains Group VF catch up"
+      "time": "17:00",
+      "title": "Office Padel 🎾"
     }
   ],
   "todayLabel": "Friday 18 September"
