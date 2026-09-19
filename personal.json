@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "19 Sept 2026, 19:46",
+  "updated": "19 Sept 2026, 19:48",
   "departments": [
     {
       "dept": "Finance",
@@ -141,6 +141,11 @@
     },
     {
       "text": "GMs in London need to send per unit incentive.",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Shirts for AGMs",
       "priority": "Medium",
       "state": "Open"
     }
