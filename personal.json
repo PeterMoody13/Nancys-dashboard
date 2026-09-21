@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "21 Sept 2026, 09:36",
+  "updated": "21 Sept 2026, 09:38",
   "departments": [
     {
       "dept": "Finance",
@@ -151,6 +151,10 @@
     }
   ],
   "today": [
+    {
+      "time": "14:00",
+      "title": "MN x PM"
+    },
     {
       "time": "15:00",
       "title": "Music & Food Event"
