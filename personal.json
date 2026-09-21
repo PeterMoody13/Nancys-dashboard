@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "21 Sept 2026, 15:14",
+  "updated": "21 Sept 2026, 15:16",
   "departments": [
     {
       "dept": "Finance",
@@ -179,6 +179,10 @@
     {
       "time": "15:15",
       "title": "Cancelled: Music & Food Event"
+    },
+    {
+      "time": "15:15",
+      "title": "Event - Clapham Common"
     },
     {
       "time": "16:00",
