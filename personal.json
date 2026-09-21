@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "21 Sept 2026, 11:22",
+  "updated": "21 Sept 2026, 11:24",
   "departments": [
     {
       "dept": "Finance",
@@ -14,7 +14,24 @@
     },
     {
       "dept": "Operations",
-      "pillars": [],
+      "pillars": [
+        {
+          "name": "Set up Procure Wizard",
+          "status": "notstart"
+        },
+        {
+          "name": "Set up EPOS",
+          "status": "notstart"
+        },
+        {
+          "name": "Set up Rota Ready",
+          "status": "notstart"
+        },
+        {
+          "name": "Set up Trail",
+          "status": "notstart"
+        }
+      ],
       "flags": []
     },
     {
