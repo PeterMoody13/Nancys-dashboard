@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "22 Sept 2026, 14:58",
+  "updated": "22 Sept 2026, 15:01",
   "departments": [
     {
       "dept": "Finance",
@@ -204,6 +204,19 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
+    },
+    {
+      "time": "11:00",
+      "title": "Marketing Catch-Up"
+    },
+    {
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    }
+  ],
   "todayLabel": "Tuesday 22 September"
 }
