@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "22 Sept 2026, 00:59",
+  "updated": "22 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -173,20 +173,16 @@
   ],
   "today": [
     {
-      "time": "14:00",
-      "title": "MN x PM"
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
     },
     {
-      "time": "15:15",
-      "title": "Event - Clapham Common"
+      "time": "11:00",
+      "title": "Marketing Catch-Up"
     },
     {
-      "time": "15:15",
-      "title": "Cancelled: Music & Food Event"
-    },
-    {
-      "time": "16:00",
-      "title": "4pm - Nancy Spains & ACEs - St Patrick's Day Celebration, Bristol"
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
     }
   ],
   "todayLabel": "Tuesday 22 September"
