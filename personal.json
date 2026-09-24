@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "24 Sept 2026, 00:58",
+  "updated": "24 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -209,6 +209,11 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "12:00",
+      "title": "Mn x PM"
+    }
+  ],
   "todayLabel": "Thursday 24 September"
 }
