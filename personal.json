@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "25 Sept 2026, 09:16",
+  "updated": "25 Sept 2026, 09:18",
   "departments": [
     {
       "dept": "Finance",
@@ -213,6 +213,10 @@
     {
       "time": "09:00",
       "title": "Collect CG keys"
+    },
+    {
+      "time": "11:00",
+      "title": "Call with Peter NS & Ruckus training"
     },
     {
       "time": "13:00",
