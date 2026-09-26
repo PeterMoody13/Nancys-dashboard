@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "26 Sept 2026, 00:58",
+  "updated": "26 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -209,23 +209,6 @@
       "state": "Open"
     }
   ],
-  "today": [
-    {
-      "time": "09:00",
-      "title": "Collect CG keys"
-    },
-    {
-      "time": "11:00",
-      "title": "Call with Peter NS & Ruckus training"
-    },
-    {
-      "time": "13:00",
-      "title": "Meeting Dave (DiamonAV) at Monument"
-    },
-    {
-      "time": "17:00",
-      "title": "Office padel 🎾"
-    }
-  ],
+  "today": [],
   "todayLabel": "Saturday 26 September"
 }
