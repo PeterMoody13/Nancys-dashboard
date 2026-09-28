@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Sept 2026, 00:58",
+  "updated": "28 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -209,6 +209,15 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "08:45",
+      "title": "Covent Garden Sign-Off"
+    },
+    {
+      "time": "14:30",
+      "title": "Nick (Hop) | Peter"
+    }
+  ],
   "todayLabel": "Monday 28 September"
 }
