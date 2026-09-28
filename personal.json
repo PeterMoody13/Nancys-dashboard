@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Sept 2026, 10:32",
+  "updated": "28 Sept 2026, 10:34",
   "departments": [
     {
       "dept": "Finance",
@@ -124,39 +124,14 @@
       "state": "Open"
     },
     {
-      "text": "Staff engagement and feedback to GMs Saturdays",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
       "text": "CG cleaning/washing",
       "priority": "Medium",
       "state": "Open"
     },
     {
-      "text": "Christmas ads - Google",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
       "text": "London pizza",
       "priority": "Medium",
       "state": "Open"
-    },
-    {
-      "text": "Talk to Anndrea, everybody has already sent GCSEs and degrees",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Trial shifts to get culture deck and handbook",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Training programme",
-      "priority": "Medium",
-      "state": "Doing"
     },
     {
       "text": "Newmark",
@@ -165,11 +140,6 @@
     },
     {
       "text": "Talk to Rich about shadow behind gold lettering",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Temple website designs",
       "priority": "Medium",
       "state": "Open"
     },
@@ -185,16 +155,6 @@
     },
     {
       "text": "Covent Garden music schedule with Matthew",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Monument music Thursday to 6pm",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "GMs in London need to send per unit incentive.",
       "priority": "Medium",
       "state": "Open"
     },
