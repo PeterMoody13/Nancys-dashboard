@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Sept 2026, 16:38",
+  "updated": "28 Sept 2026, 16:40",
   "departments": [
     {
       "dept": "Finance",
@@ -175,6 +175,11 @@
     },
     {
       "text": "Staff satisfaction scores for Liz",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Bristol metre reading",
       "priority": "Medium",
       "state": "Open"
     }
