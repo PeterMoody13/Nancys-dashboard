@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Sept 2026, 11:16",
+  "updated": "28 Sept 2026, 11:19",
   "departments": [
     {
       "dept": "Finance",
@@ -170,6 +170,11 @@
     },
     {
       "text": "Ring bar fab",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Staff satisfaction scores for Liz",
       "priority": "Medium",
       "state": "Open"
     }
