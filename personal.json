@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "30 Sept 2026, 13:46",
+  "updated": "30 Sept 2026, 13:48",
   "departments": [
     {
       "dept": "Finance",
@@ -19,7 +19,7 @@
           "status": "notstart"
         },
         {
-          "name": "Scheduling back end",
+          "name": "Rota Scheduling back end",
           "status": "notstart"
         },
         {
