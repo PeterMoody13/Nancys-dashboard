@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "30 Sept 2026, 12:01",
+  "updated": "30 Sept 2026, 12:02",
   "departments": [
     {
       "dept": "Finance",
@@ -190,6 +190,11 @@
     },
     {
       "text": "Branding pack to Paul",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Will day rate and time tracking",
       "priority": "Medium",
       "state": "Open"
     }
