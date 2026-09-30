@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "30 Sept 2026, 00:58",
+  "updated": "30 Sept 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -196,20 +196,32 @@
   ],
   "today": [
     {
-      "time": "09:30",
-      "title": "PM x POH Weekly Meeting"
+      "time": "10:00",
+      "title": "Venue staff career development"
     },
     {
-      "time": "10:45",
-      "title": "10.45am - Nancy Spains & ACEs - St Patrick's Day"
+      "time": "11:00",
+      "title": "Nancy Spains Festivals - full team"
     },
     {
-      "time": "13:00",
-      "title": "Canceled: Cost Report Review"
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "12:30",
+      "title": "Marketing Catch-Up"
     },
     {
       "time": "14:00",
-      "title": "Irish Festival - Clapham Common:"
+      "title": "Bi-weekly head office catch-up"
+    },
+    {
+      "time": "15:30",
+      "title": "MN x PM"
+    },
+    {
+      "time": "17:00",
+      "title": "Post Work - Dinner and Drinks"
     }
   ],
   "todayLabel": "Wednesday 30 September"
