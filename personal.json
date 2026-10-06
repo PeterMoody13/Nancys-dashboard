@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "6 Oct 2026, 10:31",
+  "updated": "6 Oct 2026, 10:33",
   "departments": [
     {
       "dept": "Finance",
@@ -195,6 +195,11 @@
     },
     {
       "text": "Will day rate and time tracking",
+      "priority": "Medium",
+      "state": "Open"
+    },
+    {
+      "text": "Bristol musician review session",
       "priority": "Medium",
       "state": "Open"
     }
