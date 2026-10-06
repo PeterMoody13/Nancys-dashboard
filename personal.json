@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "6 Oct 2026, 00:56",
+  "updated": "6 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -201,8 +201,20 @@
   ],
   "today": [
     {
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
+    },
+    {
       "time": "12:00",
-      "title": "Nancy Spains x DiamondAV"
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+    },
+    {
+      "time": "12:00",
+      "title": "NS Bristol - Pre Start / Site Start meeting 6 October 2026 - 12pm"
+    },
+    {
+      "time": "15:15",
+      "title": "Nancy Spains x ACE"
     }
   ],
   "todayLabel": "Tuesday 6 October"
