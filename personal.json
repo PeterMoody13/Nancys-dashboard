@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "7 Oct 2026, 05:54",
+  "updated": "7 Oct 2026, 05:56",
   "departments": [
     {
       "dept": "Finance",
@@ -204,6 +204,31 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "08:30",
+      "title": "Hop | Nancy Spains"
+    },
+    {
+      "time": "09:45",
+      "title": "Live Recruitment catch up"
+    },
+    {
+      "time": "10:15",
+      "title": "Long Acre - Site Review - Rosemead / NS / M2"
+    },
+    {
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "12:30",
+      "title": "Marketing Catch-Up"
+    },
+    {
+      "time": "15:00",
+      "title": "Teams Meeting"
+    }
+  ],
   "todayLabel": "Wednesday 7 October"
 }
