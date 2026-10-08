@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "8 Oct 2026, 00:58",
+  "updated": "8 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -206,28 +206,12 @@
   ],
   "today": [
     {
-      "time": "08:30",
-      "title": "Hop | Nancy Spains"
-    },
-    {
-      "time": "09:45",
-      "title": "Live Recruitment catch up"
-    },
-    {
-      "time": "10:15",
-      "title": "Long Acre - Site Review - Rosemead / NS / M2"
-    },
-    {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
-    },
-    {
-      "time": "12:30",
-      "title": "Marketing Catch-Up"
+      "time": "11:15",
+      "title": "Peter Moody x Will"
     },
     {
       "time": "15:00",
-      "title": "Meeting with SJM promoter Lucy"
+      "title": "PM x MN"
     }
   ],
   "todayLabel": "Thursday 8 October"
