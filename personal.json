@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "9 Oct 2026, 11:08",
+  "updated": "9 Oct 2026, 11:10",
   "departments": [
     {
       "dept": "Finance",
@@ -204,6 +204,19 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "09:00",
+      "title": "AL"
+    },
+    {
+      "time": "10:30",
+      "title": "HR Catch up"
+    },
+    {
+      "time": "17:00",
+      "title": "Office Padel 🎾"
+    }
+  ],
   "todayLabel": "Friday 9 October"
 }
