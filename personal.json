@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "14 Oct 2026, 00:58",
+  "updated": "14 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -204,6 +204,23 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "09:30",
+      "title": "Nancy Spains - Bristol"
+    },
+    {
+      "time": "12:00",
+      "title": "Weekly Catch-Up - HR"
+    },
+    {
+      "time": "13:30",
+      "title": "Blacklock City"
+    },
+    {
+      "time": "16:00",
+      "title": "MN x PM"
+    }
+  ],
   "todayLabel": "Wednesday 14 October"
 }
