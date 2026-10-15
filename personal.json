@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 15:04",
+  "updated": "15 Oct 2026, 15:06",
   "departments": [
     {
       "dept": "Finance",
@@ -178,6 +178,10 @@
     {
       "time": "16:00",
       "title": "Nancy Spains/TC Group - Initial Meeting"
+    },
+    {
+      "time": "16:15",
+      "title": "Catch up on Head of Events - Festivals"
     },
     {
       "time": "16:30",
