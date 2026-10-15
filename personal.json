@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 12:02",
+  "updated": "15 Oct 2026, 12:04",
   "departments": [
     {
       "dept": "Finance",
@@ -95,7 +95,12 @@
     },
     {
       "dept": "People",
-      "pillars": [],
+      "pillars": [
+        {
+          "name": "Implement employee check in scoring",
+          "status": "notstart"
+        }
+      ],
       "flags": [
         {
           "text": "Monitor training enrolment",

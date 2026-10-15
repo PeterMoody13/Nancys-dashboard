@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 12:02",
+  "updated": "15 Oct 2026, 12:04",
   "departments": [
     {
       "dept": "Finance",
@@ -103,8 +103,13 @@
       "dept": "People",
       "rock": "People — Q4 rock: Create a seamless HR system for scale",
       "progress": 0,
-      "subtasks": 0,
-      "pillars": []
+      "subtasks": 1,
+      "pillars": [
+        {
+          "name": "Implement employee check in scoring",
+          "status": "notstart"
+        }
+      ]
     }
   ]
 }
