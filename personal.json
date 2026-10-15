@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 12:06",
+  "updated": "15 Oct 2026, 12:08",
   "departments": [
     {
       "dept": "Finance",
@@ -98,10 +98,18 @@
       "pillars": [
         {
           "name": "Implement employee check in scoring",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Staff Bristol, CG and existing venues",
+          "status": "working"
+        },
+        {
+          "name": "Office Bonus Plans",
+          "status": "notstart"
+        },
+        {
+          "name": "Access system implementation (create training and induction materials)",
           "status": "notstart"
         }
       ],
