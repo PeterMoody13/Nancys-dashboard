@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 09:22",
+  "updated": "15 Oct 2026, 09:24",
   "departments": [
     {
       "dept": "Finance",
@@ -84,6 +84,10 @@
         },
         {
           "name": "Find Solution for Social Media and Content",
+          "status": "working"
+        },
+        {
+          "name": "Nancy Spains LinkedIn",
           "status": "working"
         }
       ],
