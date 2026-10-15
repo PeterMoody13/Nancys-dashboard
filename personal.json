@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 09:04",
+  "updated": "15 Oct 2026, 09:06",
   "departments": [
     {
       "dept": "Finance",
@@ -89,67 +89,7 @@
   ],
   "todos": [
     {
-      "text": "Summer party",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Culture Deck",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Openings systems",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Apprentices to spend 2 hours a week in office for coursework",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Website redesign",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
-      "text": "Festivals",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "GigPig",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "CG cleaning/washing",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "London pizza",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Newmark",
-      "priority": "Medium",
-      "state": "Doing"
-    },
-    {
       "text": "Talk to Rich about shadow behind gold lettering",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Shoreditch pendant light",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "tag on to Murphy's Robyn Lynch",
       "priority": "Medium",
       "state": "Open"
     },
@@ -164,32 +104,12 @@
       "state": "Open"
     },
     {
-      "text": "Wednesday 9-12 set Monument. Too much pop music, no Irish at all",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Ring bar fab",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Staff satisfaction scores for Liz",
-      "priority": "Medium",
-      "state": "Awaiting response"
-    },
-    {
       "text": "Bristol metre reading",
       "priority": "Medium",
       "state": "Awaiting response"
     },
     {
       "text": "Ring Brendan",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Branding pack to Paul",
       "priority": "Medium",
       "state": "Open"
     },
