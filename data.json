@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "15 Oct 2026, 09:18",
+  "updated": "15 Oct 2026, 09:20",
   "departments": [
     {
       "dept": "Finance",
@@ -79,10 +79,14 @@
       "dept": "Marketing",
       "rock": "Marketing — Q4 rock: Develop an in-house customer engagement system",
       "progress": 0,
-      "subtasks": 1,
+      "subtasks": 2,
       "pillars": [
         {
           "name": "Rebuild the Website into an integrated CRM system",
+          "status": "working"
+        },
+        {
+          "name": "Find new PR Agency",
           "status": "working"
         }
       ]
