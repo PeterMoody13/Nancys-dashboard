@@ -5,21 +5,21 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 14:23",
+  "updated": "16 Oct 2026, 14:24",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance - Q4 rock: New System implementation",
       "progress": 0,
-      "subtasks": 8,
+      "subtasks": 9,
       "pillars": [
         {
           "name": "EPOS set up back end",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Procurement set up back end",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Rota Scheduling back end",
@@ -43,6 +43,10 @@
         },
         {
           "name": "Hilda's upskill",
+          "status": "notstart"
+        },
+        {
+          "name": "Guestpay",
           "status": "notstart"
         }
       ]
