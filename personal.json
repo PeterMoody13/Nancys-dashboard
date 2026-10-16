@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 16:52",
+  "updated": "16 Oct 2026, 16:54",
   "departments": [
     {
       "dept": "Finance",
@@ -190,6 +190,10 @@
     {
       "time": "11:00",
       "title": "Nancy Spains Project Catchup"
+    },
+    {
+      "time": "11:30",
+      "title": "Weekly Catch-Up - HR"
     },
     {
       "time": "11:30",
