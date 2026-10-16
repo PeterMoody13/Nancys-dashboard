@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 11:55",
+  "updated": "16 Oct 2026, 11:56",
   "departments": [
     {
       "dept": "Finance",
@@ -162,6 +162,27 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "10:00",
+      "title": "Festival Budgets"
+    },
+    {
+      "time": "11:00",
+      "title": "Nancy Spains Project Catchup"
+    },
+    {
+      "time": "11:30",
+      "title": "Ticketing System Catch up"
+    },
+    {
+      "time": "12:00",
+      "title": "Marketing Catch-Up"
+    },
+    {
+      "time": "17:00",
+      "title": "Office Padel 🎾"
+    }
+  ],
   "todayLabel": "Friday 16 October"
 }
