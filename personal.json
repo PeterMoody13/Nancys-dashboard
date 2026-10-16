@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 00:58",
+  "updated": "16 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -164,28 +164,20 @@
   ],
   "today": [
     {
+      "time": "10:00",
+      "title": "Festival Budgets"
+    },
+    {
+      "time": "11:00",
+      "title": "Nancy Spains Project Catchup"
+    },
+    {
       "time": "12:00",
-      "title": "Nancy Spain x Depot"
+      "title": "Marketing Catch-Up"
     },
     {
-      "time": "13:30",
-      "title": "In Person Interview Confirmations"
-    },
-    {
-      "time": "15:30",
-      "title": "In Person Interview Confirmations"
-    },
-    {
-      "time": "16:00",
-      "title": "Nancy Spains/TC Group - Initial Meeting"
-    },
-    {
-      "time": "16:15",
-      "title": "Catch up on Head of Events - Festivals"
-    },
-    {
-      "time": "16:30",
-      "title": "Nancy Spains - Bristol"
+      "time": "17:00",
+      "title": "Office Padel 🎾"
     }
   ],
   "todayLabel": "Friday 16 October"
