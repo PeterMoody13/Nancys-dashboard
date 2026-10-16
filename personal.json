@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 14:24",
+  "updated": "16 Oct 2026, 14:26",
   "departments": [
     {
       "dept": "Finance",
@@ -28,7 +28,7 @@
         },
         {
           "name": "SOPs & manuals financial",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "EMI",
@@ -43,8 +43,8 @@
           "status": "notstart"
         },
         {
-          "name": "Guestpay",
-          "status": "notstart"
+          "name": "Trail back end",
+          "status": "working"
         }
       ],
       "flags": []
