@@ -5,13 +5,13 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 14:28",
+  "updated": "16 Oct 2026, 14:30",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance - Q4 rock: New System implementation",
       "progress": 8,
-      "subtasks": 12,
+      "subtasks": 13,
       "pillars": [
         {
           "name": "EPOS set up back end",
@@ -59,6 +59,10 @@
         },
         {
           "name": "Funding for Bristol",
+          "status": "working"
+        },
+        {
+          "name": "Forecast update and cash flow",
           "status": "working"
         }
       ]
