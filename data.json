@@ -5,13 +5,13 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 14:26",
+  "updated": "16 Oct 2026, 14:28",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance - Q4 rock: New System implementation",
-      "progress": 0,
-      "subtasks": 9,
+      "progress": 8,
+      "subtasks": 12,
       "pillars": [
         {
           "name": "EPOS set up back end",
@@ -43,10 +43,22 @@
         },
         {
           "name": "Hilda's upskill",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Trail back end",
+          "status": "working"
+        },
+        {
+          "name": "New bank accounts",
+          "status": "done"
+        },
+        {
+          "name": "New company Festivals, PAYE, VAT registration for new sites",
+          "status": "working"
+        },
+        {
+          "name": "Funding for Bristol",
           "status": "working"
         }
       ]

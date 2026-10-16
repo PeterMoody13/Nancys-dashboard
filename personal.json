@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "16 Oct 2026, 14:26",
+  "updated": "16 Oct 2026, 14:28",
   "departments": [
     {
       "dept": "Finance",
@@ -40,10 +40,22 @@
         },
         {
           "name": "Hilda's upskill",
-          "status": "notstart"
+          "status": "working"
         },
         {
           "name": "Trail back end",
+          "status": "working"
+        },
+        {
+          "name": "New bank accounts",
+          "status": "done"
+        },
+        {
+          "name": "New company Festivals, PAYE, VAT registration for new sites",
+          "status": "working"
+        },
+        {
+          "name": "Funding for Bristol",
           "status": "working"
         }
       ],
