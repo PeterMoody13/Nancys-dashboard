@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "19 Oct 2026, 10:26",
+  "updated": "19 Oct 2026, 10:28",
   "departments": [
     {
       "dept": "Finance",
@@ -16,7 +16,7 @@
         },
         {
           "name": "Social Wifi - Access",
-          "status": "notstart"
+          "status": "done"
         },
         {
           "name": "Procurement set up back end",
