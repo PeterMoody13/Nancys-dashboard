@@ -5,17 +5,21 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "19 Oct 2026, 10:24",
+  "updated": "19 Oct 2026, 10:26",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance - Q4 rock: New System implementation",
-      "progress": 8,
-      "subtasks": 13,
+      "progress": 7,
+      "subtasks": 14,
       "pillars": [
         {
           "name": "EPOS set up back end",
           "status": "working"
+        },
+        {
+          "name": "Social Wifi - Access",
+          "status": "notstart"
         },
         {
           "name": "Procurement set up back end",
