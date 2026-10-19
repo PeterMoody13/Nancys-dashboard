@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "19 Oct 2026, 09:54",
+  "updated": "19 Oct 2026, 09:56",
   "departments": [
     {
       "dept": "Finance",
@@ -26,6 +26,10 @@
           "status": "notstart"
         },
         {
+          "name": "Trail back end",
+          "status": "working"
+        },
+        {
           "name": "Payroll set up",
           "status": "notstart"
         },
@@ -43,10 +47,6 @@
         },
         {
           "name": "Hilda's upskill",
-          "status": "working"
-        },
-        {
-          "name": "Trail back end",
           "status": "working"
         },
         {
