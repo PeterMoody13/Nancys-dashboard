@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "22 Oct 2026, 08:48",
+  "updated": "22 Oct 2026, 08:50",
   "departments": [
     {
       "dept": "Finance",
@@ -172,11 +172,6 @@
     },
     {
       "text": "Ring Brendan",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Will day rate and time tracking",
       "priority": "Medium",
       "state": "Open"
     },
