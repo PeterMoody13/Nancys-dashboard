@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "22 Oct 2026, 00:58",
+  "updated": "22 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -188,16 +188,12 @@
   ],
   "today": [
     {
-      "time": "12:00",
-      "title": "Weekly Catch-Up - HR"
+      "time": "11:45",
+      "title": "CW Bases Charlton Site Visit"
     },
     {
-      "time": "15:00",
-      "title": "Nancy Spains x Posh Cockney - PR Meeting"
-    },
-    {
-      "time": "15:30",
-      "title": "MN x PM"
+      "time": "13:30",
+      "title": "Nancy Spains x SJM"
     }
   ],
   "todayLabel": "Thursday 22 October"
