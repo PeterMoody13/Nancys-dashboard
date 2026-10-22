@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "22 Oct 2026, 23:58",
+  "updated": "23 Oct 2026, 00:01",
   "departments": [
     {
       "dept": "Finance",
@@ -195,5 +195,5 @@
       "title": "MN x PM"
     }
   ],
-  "todayLabel": "Thursday 22 October"
+  "todayLabel": "Friday 23 October"
 }
