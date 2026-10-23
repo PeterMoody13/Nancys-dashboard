@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "23 Oct 2026, 00:58",
+  "updated": "23 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -183,16 +183,12 @@
   ],
   "today": [
     {
-      "time": "11:45",
-      "title": "CW Bases Charlton Site Visit"
+      "time": "11:00",
+      "title": "Nancy Spains Project Catchup"
     },
     {
-      "time": "13:30",
-      "title": "Nancy Spains x SJM"
-    },
-    {
-      "time": "15:30",
-      "title": "MN x PM"
+      "time": "11:00",
+      "title": "Clapham Common SWEM"
     }
   ],
   "todayLabel": "Friday 23 October"
