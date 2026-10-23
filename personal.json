@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "23 Oct 2026, 11:46",
+  "updated": "23 Oct 2026, 11:48",
   "departments": [
     {
       "dept": "Finance",
@@ -188,6 +188,10 @@
     {
       "time": "11:00",
       "title": "Clapham Common SWEM"
+    },
+    {
+      "time": "15:30",
+      "title": "Clapham Common"
     }
   ],
   "todayLabel": "Friday 23 October"
