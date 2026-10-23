@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "23 Oct 2026, 08:54",
+  "updated": "23 Oct 2026, 08:56",
   "departments": [
     {
       "dept": "Finance",
@@ -172,11 +172,6 @@
     },
     {
       "text": "Ring Brendan",
-      "priority": "Medium",
-      "state": "Open"
-    },
-    {
-      "text": "Bristol musician review session",
       "priority": "Medium",
       "state": "Open"
     }
