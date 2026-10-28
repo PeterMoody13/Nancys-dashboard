@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Oct 2026, 08:20",
+  "updated": "28 Oct 2026, 08:22",
   "departments": [
     {
       "dept": "Finance",
@@ -94,6 +94,10 @@
         },
         {
           "name": "Create Rolls & Invite Users",
+          "status": "notstart"
+        },
+        {
+          "name": "Roll out Trail 02/11",
           "status": "notstart"
         }
       ],
