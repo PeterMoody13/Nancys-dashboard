@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "27 Oct 2026, 23:58",
+  "updated": "28 Oct 2026, 00:01",
   "departments": [
     {
       "dept": "Finance",
@@ -177,5 +177,5 @@
     }
   ],
   "today": [],
-  "todayLabel": "Tuesday 27 October"
+  "todayLabel": "Wednesday 28 October"
 }
