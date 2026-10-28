@@ -5,13 +5,13 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Oct 2026, 15:02",
+  "updated": "28 Oct 2026, 15:04",
   "departments": [
     {
       "dept": "Finance",
       "rock": "Finance - Q4 rock: New System implementation",
-      "progress": 14,
-      "subtasks": 14,
+      "progress": 20,
+      "subtasks": 10,
       "pillars": [
         {
           "name": "EPOS set up back end",
@@ -34,23 +34,7 @@
           "status": "working"
         },
         {
-          "name": "Payroll set up",
-          "status": "notstart"
-        },
-        {
           "name": "SOPs & manuals financial",
-          "status": "working"
-        },
-        {
-          "name": "EMI",
-          "status": "notstart"
-        },
-        {
-          "name": "Onboarding & training external bookkeeper for day to day processings",
-          "status": "notstart"
-        },
-        {
-          "name": "Hilda's upskill",
           "status": "working"
         },
         {
