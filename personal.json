@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "28 Oct 2026, 00:58",
+  "updated": "28 Oct 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -176,6 +176,31 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "11:00",
+      "title": "PM x POH Weekly Meeting"
+    },
+    {
+      "time": "11:00",
+      "title": "Weekly Directors Catch-Up"
+    },
+    {
+      "time": "13:00",
+      "title": "Site Standards Review"
+    },
+    {
+      "time": "14:00",
+      "title": "Bi-weekly head office catch-up"
+    },
+    {
+      "time": "15:00",
+      "title": "Jon Yantin / Peter Moody"
+    },
+    {
+      "time": "15:30",
+      "title": "MN x PM"
+    }
+  ],
   "todayLabel": "Wednesday 28 October"
 }
