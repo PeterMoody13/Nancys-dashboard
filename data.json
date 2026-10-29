@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "29 Oct 2026, 10:40",
+  "updated": "29 Oct 2026, 10:42",
   "departments": [
     {
       "dept": "Finance",
@@ -54,7 +54,7 @@
     {
       "dept": "Operations",
       "rock": "Operations — Q4 rock: Implement new tech systems",
-      "progress": 0,
+      "progress": 29,
       "subtasks": 7,
       "pillars": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "name": "Set up Trail",
-          "status": "working"
+          "status": "done"
         },
         {
           "name": "Install new broadband to all sites",
@@ -79,7 +79,7 @@
         },
         {
           "name": "Create Rolls & Invite Users",
-          "status": "notstart"
+          "status": "done"
         },
         {
           "name": "Roll out Trail 02/11",
