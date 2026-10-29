@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "29 Oct 2026, 13:24",
+  "updated": "29 Oct 2026, 13:26",
   "departments": [
     {
       "dept": "Finance",
@@ -168,10 +168,6 @@
     {
       "time": "13:30",
       "title": "Canceled: Site Standards Review"
-    },
-    {
-      "time": "15:05",
-      "title": "LSBU collaborations"
     }
   ],
   "todayLabel": "Thursday 29 October"
