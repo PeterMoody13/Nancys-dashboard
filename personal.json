@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "2 Nov 2026, 13:36",
+  "updated": "2 Nov 2026, 13:38",
   "departments": [
     {
       "dept": "Finance",
@@ -180,6 +180,10 @@
     {
       "time": "14:00",
       "title": "Bristol Project Review"
+    },
+    {
+      "time": "All day",
+      "title": "New Event"
     }
   ],
   "todayLabel": "Monday 2 November"
