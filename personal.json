@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "2 Nov 2026, 22:32",
+  "updated": "2 Nov 2026, 22:34",
   "departments": [
     {
       "dept": "Finance",
@@ -164,6 +164,23 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "11:00",
+      "title": "Canceled: Call w/ Lynn LSBU"
+    },
+    {
+      "time": "11:00",
+      "title": "LSBU collaborations"
+    },
+    {
+      "time": "12:30",
+      "title": "Hollie - Events Introduction"
+    },
+    {
+      "time": "14:00",
+      "title": "Bristol Project Review"
+    }
+  ],
   "todayLabel": "Monday 2 November"
 }
