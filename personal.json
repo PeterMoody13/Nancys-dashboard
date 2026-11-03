@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "3 Nov 2026, 09:14",
+  "updated": "3 Nov 2026, 09:16",
   "departments": [
     {
       "dept": "Finance",
@@ -166,16 +166,16 @@
   ],
   "today": [
     {
+      "time": "09:30",
+      "title": "PM x POH Weekly Meeting"
+    },
+    {
       "time": "11:00",
       "title": "Will x Hollie introduciton"
     },
     {
       "time": "12:00",
       "title": "Nancy Spains x Posh Cockney: PR Catch-up"
-    },
-    {
-      "time": "12:00",
-      "title": "PM x POH Weekly Meeting"
     },
     {
       "time": "14:00",
