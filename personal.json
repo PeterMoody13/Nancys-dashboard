@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "3 Nov 2026, 00:58",
+  "updated": "3 Nov 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -167,19 +167,19 @@
   "today": [
     {
       "time": "11:00",
-      "title": "LSBU collaborations"
+      "title": "Will x Hollie introduciton"
     },
     {
-      "time": "11:00",
-      "title": "Canceled: Call w/ Lynn LSBU"
+      "time": "12:00",
+      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
     },
     {
-      "time": "12:30",
-      "title": "Hollie - Events Introduction"
+      "time": "12:00",
+      "title": "PM x POH Weekly Meeting"
     },
     {
       "time": "14:00",
-      "title": "Bristol Project Review"
+      "title": "Nancy Spains Festival - Lambeth Council: Street Cleaning"
     }
   ],
   "todayLabel": "Tuesday 3 November"
