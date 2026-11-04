@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "4 Nov 2026, 09:24",
+  "updated": "4 Nov 2026, 09:26",
   "departments": [
     {
       "dept": "Finance",
@@ -182,7 +182,7 @@
       "title": "MN x PM"
     },
     {
-      "time": "15:30",
+      "time": "16:00",
       "title": "Nancy Spains x HUK: Q3 Review"
     }
   ],
