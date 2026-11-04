@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "4 Nov 2026, 09:46",
+  "updated": "4 Nov 2026, 09:50",
   "departments": [
     {
       "dept": "Finance",
@@ -164,6 +164,27 @@
       "state": "Open"
     }
   ],
-  "today": [],
+  "today": [
+    {
+      "time": "10:00",
+      "title": "Poster Designs"
+    },
+    {
+      "time": "11:00",
+      "title": "Weekly Directors Catch-Up"
+    },
+    {
+      "time": "14:30",
+      "title": "Bristol Opening - Handover and timeline planning"
+    },
+    {
+      "time": "15:30",
+      "title": "MN x PM"
+    },
+    {
+      "time": "16:00",
+      "title": "Nancy Spains x HUK: Q3 Review"
+    }
+  ],
   "todayLabel": "Wednesday 4 November"
 }
