@@ -5,7 +5,7 @@
     "start": "2026-10-01",
     "end": "2026-12-31"
   },
-  "updated": "4 Nov 2026, 00:58",
+  "updated": "4 Nov 2026, 01:01",
   "departments": [
     {
       "dept": "Finance",
@@ -166,20 +166,24 @@
   ],
   "today": [
     {
-      "time": "09:30",
-      "title": "PM x POH Weekly Meeting"
+      "time": "10:00",
+      "title": "Poster Designs"
     },
     {
       "time": "11:00",
-      "title": "Will x Hollie introduciton"
+      "title": "Weekly Directors Catch-Up"
     },
     {
-      "time": "12:00",
-      "title": "Nancy Spains x Posh Cockney: PR Catch-up"
+      "time": "14:30",
+      "title": "Bristol Opening - Handover and timeline planning"
     },
     {
-      "time": "14:00",
-      "title": "Nancy Spains Festival - Lambeth Council: Street Cleaning"
+      "time": "15:30",
+      "title": "MN x PM"
+    },
+    {
+      "time": "15:30",
+      "title": "Nancy Spains x HUK: Q3 Review"
     }
   ],
   "todayLabel": "Wednesday 4 November"
